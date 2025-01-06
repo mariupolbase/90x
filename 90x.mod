@@ -9,4 +9,4 @@ tags={
 }
 name="Девяностые 2"
 supported_version="1.15.*"
-path="mod/90s2"
+path="mod/90x"
