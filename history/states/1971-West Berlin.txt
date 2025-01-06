@@ -1,0 +1,28 @@
+state={
+	id=1971
+	name="STATE_1971"
+	provinces={
+		14363
+	}
+	history={
+		owner = WGR
+		victory_points = {
+			14363 25 
+		}
+		add_core_of = WGR
+		add_core_of = DDR
+		buildings = {
+			infrastructure = 5
+			arms_factory = 2
+			industrial_complex = 4
+			14363 ={
+				bunker = 7
+			}
+		}
+
+	}
+	manpower=2100000
+	buildings_max_level_factor=1.000
+	local_supplies=1.000
+	state_category = city
+}

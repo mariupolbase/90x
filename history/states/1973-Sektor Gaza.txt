@@ -1,0 +1,28 @@
+state={
+	id=1973
+	name="STATE_1973"
+	provinces={
+		14365
+	}
+	history={
+		owner = PAL
+		victory_points = {
+			14365 5
+		}
+		add_core_of = PAL
+		add_core_of = ISR
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+			14365 ={
+				bunker = 6
+				naval_base = 1
+			}
+		}
+	}
+	manpower=660000
+	buildings_max_level_factor=0.000
+	local_supplies=1.000
+	state_category = city
+}
