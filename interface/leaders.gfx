@@ -1,0 +1,68 @@
+spriteTypes = {	
+    				
+	spriteType = {
+		name = "GFX_Gorbachev"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_Gorbachev.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Rizhikov"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_Rizhikov.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Bakatin"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_Bakatin.dds"
+	}
+	spriteType = {
+		name = "GFX_Ion_Iliesku"
+		texturefile = "gfx/leaders/ROM/Portrait_ROM_Ion_Iliescu.dds"
+	}
+	spriteType = {
+		name = "GFX_Kim_Il_Sung"
+		texturefile = "gfx/leaders/NKR/Portrait_NKR_Kim_Il_Sung.dds"
+	}
+	spriteType = {
+		name = "GFX_Hosny"
+		texturefile = "gfx/leaders/EGY/Portrait_EGY_Hosny.dds"
+	}
+	spriteType = {
+		name = "GFX_Vassiliou"
+		texturefile = "gfx/leaders/CYP/Portrait_CYP_Vassiliou.dds"
+	}
+	spriteType = {
+		name = "GFX_Jaruzelski"
+		texturefile = "gfx/leaders/POL/Portrait_POL_Jaruzelski.dds"
+	}
+	spriteType = {
+		name = "GFX_Manfred"
+		texturefile = "gfx/leaders/DDR/Portrait_DDR_Manfred.dds"
+	}
+	spriteType = {
+		name = "GFX_Weizsacker"
+		texturefile = "gfx/leaders/WGR/Portrait_WGR_Weizsacker.dds"
+	}
+	spriteType = {
+		name = "GFX_Bush"
+		texturefile = "gfx/leaders/USA/Portrait_USA_Bush.dds"
+	}
+	spriteType = {
+		name = "GFX_Yeltsin"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_Yeltsin.dds"
+	}
+	spriteType = {
+		name = "GFX_Letov"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_Letov.dds"
+	}
+	spriteType = {
+		name = "GFX_Szuros"
+		texturefile = "gfx/leaders/HUN/Portrait_HUN_Szuros.dds"
+	}
+	spriteType = {
+		name = "GFX_Fransua"
+		texturefile = "gfx/leaders/FRA/Portrait_FRA_Fransua.dds"
+	}
+}
+
+
+

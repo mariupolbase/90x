@@ -1,0 +1,29 @@
+add_namespace = letov
+
+country_event = {
+	id = letov.1
+	title = letov.1.t
+	desc = letov.1.d
+	picture = GFX_report_event_japanese_transport_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = letov.1.a
+		load_focus_tree = letov_focus
+		set_politics = {
+			ruling_party = anarchism
+		}
+		add_popularity = {
+			ideology = anarchism 
+			popularity = 0.75
+		}
+		create_country_leader = {
+			name = "Egor Letov"
+			picture = GFX_Letov
+			expire = "2008.1.1"
+			ideology = anarchism_communism
+			traits = { anarchist_zeal }
+		}
+	}
+}

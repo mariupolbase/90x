@@ -1,0 +1,677 @@
+focus_tree = {
+	id = USA
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = USA
+		}
+	}
+	
+	default = no
+	focus = {
+		id = USA_army
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10
+		x = 13
+		y = 1
+		completion_reward = {
+		add_war_support = 0.1
+		}
+
+	}
+	focus = {
+		id = USA_bush_starshiy
+		icon = GFX_goal_support_democracy
+		cost = 10
+		x = 30
+		y = 2
+		completion_reward = {
+		add_political_power = 100
+		}
+
+	}
+	focus = {
+		id = USA_prom
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10
+		x = 43
+		y = 2
+
+	}
+	focus = {
+		id = USA_Air
+		icon = GFX_goal_generic_air_fighter2
+		cost = 5
+		prerequisite = {
+			focus = USA_army
+		}
+		x = 7
+		y = 2
+		completion_reward = {
+		air_experience = 20
+		}
+
+	}
+	focus = {
+		id = USA_vopros_air
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = USA_Air
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = USA_gumanitarnie_bimbi
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 5
+		prerequisite = {
+			focus = USA_vopros_air
+		}
+		mutually_exclusive = {
+			focus = USA_istrebitilli
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = USA_PVO
+		icon = GFX_goal_generic_construct_military
+		cost = 0
+		prerequisite = {
+			focus = USA_gumanitarnie_bimbi
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = USA_istrebitilli
+		icon = GFX_goal_generic_air_fighter
+		cost = 5
+		prerequisite = {
+			focus = USA_vopros_air
+		}
+		mutually_exclusive = {
+			focus = USA_gumanitarnie_bimbi
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = USA_istrebitely_novie
+		icon = GFX_goal_generic_air_production
+		cost = 0
+		prerequisite = {
+			focus = USA_istrebitilli
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = USA_gospodstvo_v_nebesax
+		icon = GFX_goal_generic_air_doctrine
+		cost = 0
+		prerequisite = {
+			focus = USA_istrebitely_novie
+			focus = USA_PVO
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = USA_infatry
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 5
+		prerequisite = {
+			focus = USA_army
+		}
+		x = 13
+		y = 2
+		completion_reward = {
+		army_experience = 20
+		}
+
+	}
+	focus = {
+		id = USA_strurmoviki
+		icon = GFX_goal_generic_air_bomber
+		cost = 0
+		prerequisite = {
+			focus = USA_Air
+			focus = USA_infatry
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = USA_vopros_infatry
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = USA_infatry
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = USA_Freedom_army
+		icon = GFX_goal_generic_small_arms
+		cost = 5
+		prerequisite = {
+			focus = USA_vopros_infatry
+		}
+		mutually_exclusive = {
+			focus = USA_morotizacia
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = USA_Artilry
+		icon = GFX_goal_generic_army_artillery2
+		cost = 5
+		prerequisite = {
+			focus = USA_Freedom_army
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = USA_morotizacia
+		icon = GFX_goal_generic_army_motorized
+		cost = 5
+		prerequisite = {
+			focus = USA_vopros_infatry
+		}
+		mutually_exclusive = {
+			focus = USA_Freedom_army
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = USA_tanks
+		icon = GFX_goal_generic_army_tanks
+		cost = 5
+		prerequisite = {
+			focus = USA_morotizacia
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = USA_garant_democrasy
+		icon = GFX_goal_support_democracy
+		cost = 5
+		prerequisite = {
+			focus = USA_Artilry
+			focus = USA_tanks
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = USA_havy
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 5
+		prerequisite = {
+			focus = USA_army
+		}
+		x = 19
+		y = 2
+		completion_reward = {
+		navy_experience = 20
+		}
+
+	}
+	focus = {
+		id = USA_podderzka_s_mora
+		icon = GFX_goal_generic_navy_carrier
+		cost = 0
+		prerequisite = {
+			focus = USA_infatry
+			focus = USA_havy
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = USA_vopros_havy
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = USA_havy
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = USA_Lincori
+		icon = GFX_goal_generic_navy_battleship
+		cost = 5
+		prerequisite = {
+			focus = USA_vopros_havy
+		}
+		mutually_exclusive = {
+			focus = USA_yellow_submarine
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = Usa_esminci
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 5
+		prerequisite = {
+			focus = USA_Lincori
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = USA_yellow_submarine
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 5
+		prerequisite = {
+			focus = USA_vopros_havy
+		}
+		mutually_exclusive = {
+			focus = USA_Lincori
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = USA_raider_flot
+		icon = GFX_goal_generic_navy_submarine
+		cost = 5
+		prerequisite = {
+			focus = USA_yellow_submarine
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = USA_Havy_gospodstvo
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5
+		prerequisite = {
+			focus = Usa_esminci
+			focus = USA_raider_flot
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = USA_USSR
+		icon = GFX_goal_support_communism
+		cost = 10
+		prerequisite = {
+			focus = USA_bush_starshiy
+		}
+		mutually_exclusive = {
+			focus = USA_Fuck_commi
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = USA_fuck_naziez
+		icon = GFX_goal_generic_demand_territory
+		cost = 5
+		prerequisite = {
+			focus = USA_USSR
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = USA_nalazivat_otnoshenia
+		icon = GFX_goal_tripartite_pact
+		cost = 5
+		prerequisite = {
+			focus = USA_fuck_naziez
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = USA_duplomatic_pobeda
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		prerequisite = {
+			focus = USA_nalazivat_otnoshenia
+		}
+		x = 25
+		y = 6
+
+	}
+	focus = {
+		id = USA_Fuck_commi
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10
+		prerequisite = {
+			focus = USA_bush_starshiy
+		}
+		mutually_exclusive = {
+			focus = USA_USSR
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = USA_uraaaaa
+		icon = GFX_goal_generic_small_arms
+		cost = 5
+		prerequisite = {
+			focus = USA_Fuck_commi
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = USA_mobilizatia
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		prerequisite = {
+			focus = USA_uraaaaa
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = USA_man_power
+		icon = GFX_goal_generic_CAS
+		cost = 5
+		prerequisite = {
+			focus = USA_mobilizatia
+		}
+		x = 28
+		y = 6
+		completion_reward = {
+		add_manpower = 10000
+		}
+
+	}
+	focus = {
+		id = USA_gegemoni
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		prerequisite = {
+			focus = USA_bush_starshiy
+		}
+		mutually_exclusive = {
+			focus = USA_lideri
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = USA_Zahvat
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		prerequisite = {
+			focus = USA_gegemoni
+		}
+		prerequisite = {
+			focus = USA_Fuck_commi
+		}
+		x = 30
+		y = 4
+		completion_reward = {
+			create_wargoal = {
+			type = puppet_wargoal_focus
+			target = MEX
+			}
+		}
+
+	}
+	focus = {
+		id = USA_down_up_commi
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10
+		prerequisite = {
+			focus = USA_gegemoni
+		}
+		x = 32
+		y = 4
+		completion_reward = {
+		add_war_support = 0.1		
+		}
+		
+	}
+	focus = {
+		id = USA_Noviy_plan
+		icon = GFX_goal_generic_attack_allies
+		cost = 10
+		prerequisite = {
+			focus = USA_down_up_commi
+		}
+		x = 32
+		y = 5
+		completion_reward = {
+			create_wargoal = {
+			type = puppet_wargoal_focus
+			target = PRC
+			}
+		}
+	
+	}
+	focus = {
+		id = USA_lideri
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10
+		prerequisite = {
+			focus = USA_bush_starshiy
+		}
+		mutually_exclusive = {
+			focus = USA_gegemoni
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = USA_nato
+		icon = GFX_goal_generic_improve_relations
+		cost = 10
+		prerequisite = {
+			focus = USA_lideri
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = USA_mir
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		prerequisite = {
+			focus = USA_nato
+		}
+		x = 34
+		y = 5
+		completion_reward = {
+		add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = USA_Glory
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		prerequisite = {
+			focus = USA_mir
+			focus = USA_Noviy_plan
+		}
+		x = 33
+		y = 6
+		completion_reward = {
+		add_political_power = 150
+		}
+
+	}
+	focus = {
+		id = USA_otnoshenia
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		prerequisite = {
+			focus = USA_lideri
+		}
+		x = 36
+		y = 4
+
+	}
+	focus = {
+		id = USA_var_zavodi
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = USA_prom
+		}
+		x = 42
+		y = 3
+		completion_reward = {
+		add_building_construction = {
+			type = industrial_complex	
+			level = 3
+			instant_build = yes
+			}
+		}
+
+	}
+	focus = {
+		id = USA_podderzka_companiy
+		icon = GFX_goal_generic_small_arms
+		cost = 10
+		prerequisite = {
+			focus = USA_var_zavodi
+		}
+		mutually_exclusive = {
+			focus = USA_infrastructura
+		}
+		x = 42
+		y = 4
+
+	}
+	focus = {
+		id = USA_verfi
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10
+		prerequisite = {
+			focus = USA_podderzka_companiy
+		}
+		x = 42
+		y = 5
+		completion_reward = {
+		add_building_construction = {
+			type = 	dockyard
+			level = 3
+			instant_build = yes
+			}
+		}
+
+	}
+	focus = {
+		id = USA_invisticii
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5
+		prerequisite = {
+			focus = USA_prom
+		}
+		x = 45
+		y = 3
+
+	}
+	focus = {
+		id = USA_infrastructura
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		prerequisite = {
+			focus = USA_invisticii
+		}
+		mutually_exclusive = {
+			focus = USA_podderzka_companiy
+		}
+		x = 44
+		y = 4
+		completion_reward = {
+		set_building_level = {
+			type = infrastructure
+			level = 7
+			instant_build = yes
+			}
+		}
+
+	}
+	focus = {
+		id = USA_pomoch
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5
+		prerequisite = {
+			focus = USA_invisticii
+		}
+		x = 46
+		y = 4
+
+	}
+	focus = {
+		id = USA_economic_bum
+		icon = GFX_goal_generic_construction
+		cost = 10
+		prerequisite = {
+			focus = USA_pomoch
+		}
+		prerequisite = {
+			focus = USA_infrastructura
+		}
+		x = 45
+		y = 5
+
+	}
+	focus = {
+		id = USA_vibori_1993
+		icon = GFX_goal_generic_propaganda
+		cost = 1
+		prerequisite = {
+			focus = USA_Glory
+			focus = USA_man_power
+			focus = USA_duplomatic_pobeda
+		}
+		x = 30
+		y = 7
+		completion_reward = {
+		add_political_power = 15
+		}
+
+	}
+}

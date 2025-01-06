@@ -1,0 +1,15 @@
+Characters = {
+	USA_bush = {
+		name = USA_bush
+		portraits = {
+			civilian = {
+				large = GFX_Bush
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "2022.1.1.1"
+			id = -1
+		}
+	}
+}

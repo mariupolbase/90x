@@ -1,0 +1,15 @@
+Characters = {
+	HUN_Szuros = {
+		name = HUN_Szuros
+		portraits = {
+			civilian = {
+				large = GFX_Szuros
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "2025.1.1.1"
+			id = -1
+		}
+	}
+}

@@ -1,0 +1,134 @@
+focus_tree = {
+	id = letov_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 1
+			tag = SOV
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 55 y = 8000 }
+
+	focus = {
+		id = SOV_borders
+		icon = GFX_SOV_Perestroyka
+		cost = 70.00
+		x = 8
+		y = 1
+		available = {
+
+		}
+		completion_reward = {
+		add_political_power = 75
+			add_popularity = {
+				ideology = democratic 
+				popularity = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_Lenin
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 70.00
+		prerequisite = {
+			focus = SOV_borders
+		}
+		x = 8
+		y = 2
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					industrial_complex > 0
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2	
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					industrial_complex > 0
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOV_plesen
+		icon = GFX_focus_generic_befriend_saudi_arabia
+		cost = 30.00
+		prerequisite = {
+			focus = SOV_Lenin
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = SOV_perestroyka
+		icon = GFX_focus_generic_befriend_saudi_arabia
+		cost = 30.00
+		prerequisite = {
+			focus = SOV_plesen
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = SOV_led
+		icon = GFX_focus_generic_befriend_saudi_arabia
+		cost = 30.00
+		prerequisite = {
+			focus = SOV_perestroyka
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = SOV_poplanu1
+		icon = GFX_focus_generic_befriend_saudi_arabia
+		cost = 30.00
+		prerequisite = {
+			focus = SOV_led
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = SOV_poplanu2
+		icon = GFX_focus_generic_befriend_saudi_arabia
+		cost = 30.00
+		prerequisite = {
+			focus = SOV_poplanu1
+		}
+		x = 8
+		y = 8
+
+	}
+}

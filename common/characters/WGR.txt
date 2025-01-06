@@ -1,0 +1,16 @@
+Characters = {
+	WGR_Weizsacker = {
+		name = WGR_Weizsacker
+		portraits = {
+			civilian = {
+				large = GFX_Weizsacker
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "2015.1.1.1"
+			id = -1
+			traits = { smooth_talking_charmer }
+		}
+	}
+}

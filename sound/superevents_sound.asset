@@ -1,0 +1,4 @@
+sound = {
+	name = "raspad"
+	file = "superevents/raspad.ogg"
+}

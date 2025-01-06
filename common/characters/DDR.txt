@@ -1,0 +1,16 @@
+Characters = {
+	DDR_Manfred = {
+		name = DDR_Manfred
+		portraits = {
+			civilian = {
+				large = GFX_Manfred
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "2011.1.1.1"
+			id = -1
+			traits = { DEN_venstre }
+		}
+	}
+}

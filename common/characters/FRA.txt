@@ -1,0 +1,16 @@
+Characters = {
+	FRA_Fransua = {
+		name = FRA_Fransua
+		portraits = {
+			civilian = {
+				large = GFX_Fransua
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1996.1.1.1"
+			id = -1
+			traits = { veteran_guerrilla_fighter DEN_kommunist }
+		}
+	}
+}

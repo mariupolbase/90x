@@ -1,0 +1,16 @@
+Characters = {
+	POL_Jaruzelski = {
+		name = POL_Jaruzelski
+		portraits = {
+			civilian = {
+				large = GFX_Jaruzelski
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "2014.1.1.1"
+			id = -1
+			traits = { veteran_communist }
+		}
+	}
+}

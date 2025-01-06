@@ -1,0 +1,16 @@
+Characters = {
+	EGY_Hosny = {
+		name = EGY_Hosny
+		portraits = {
+			civilian = {
+				large = GFX_Hosny
+			}
+		}
+		country_leader = {
+			ideology = populism
+			expire = "2020.1.1.1"
+			id = -1
+			traits = { dictator }
+		}
+	}
+}

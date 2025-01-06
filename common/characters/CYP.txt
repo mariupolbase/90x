@@ -1,0 +1,16 @@
+Characters = {
+	CYP_Vassiliou = {
+		name = CYP_Vassiliou
+		portraits = {
+			civilian = {
+				large = GFX_Vassiliou
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			expire = "2025.1.1.1"
+			id = -1
+			traits = { DEN_kommunist }
+		}
+	}
+}

@@ -1,0 +1,15 @@
+Characters = {
+	ROM_Ion_Iliesku = {
+		name = ROM_Ion_Iliesku
+		portraits = {
+			civilian = {
+				large = GFX_Ion_Iliesku
+			}
+		}
+		country_leader = {
+			ideology = Conservatism
+			expire = "2022.1.1.1"
+			id = -1
+		}
+	}
+}
