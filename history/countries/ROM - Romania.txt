@@ -292,7 +292,7 @@ set_convoys = 10
 			desc = "POLITICS_CAROL_II_DESC"
 			picture = GFX_Portrait_ROM_Ion_Iliescu	
 			expire = "1965.1.1"
-			ideology = Conservative
+			ideology = conservatism
 			traits = {
 			}
 			id = 550
