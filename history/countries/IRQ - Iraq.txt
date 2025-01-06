@@ -38,12 +38,12 @@ if = {
 set_convoys = 5
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = despotism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 17
-	fascism = 83
+	nationalism = 20
+	despotism = 80
 }

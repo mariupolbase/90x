@@ -7,9 +7,9 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=fascism_ideology
+			ideology=personalist_dictatorship
 			traits = {
-				dictator
+				SOV_genadiy_yanaev_desc
 			}
 		}
 	}
