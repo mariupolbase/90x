@@ -35,8 +35,8 @@ state = {
 		add_core_of = ORO
 
 		1936.6.1 = {
-			owner = ETH
-			controller = ETH
+			owner = ITA
+			controller = ITA
 		}
 	}
 
