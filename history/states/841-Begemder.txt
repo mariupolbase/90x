@@ -34,8 +34,8 @@ state = {
 		add_core_of = QEM
 
 		1936.6.1 = {
-			owner = ITA
-			controller = ITA
+			owner = ETH
+			controller = ETH
 		}
 	}
 

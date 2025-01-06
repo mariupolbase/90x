@@ -2,7 +2,7 @@ state={
 	id=796
 	name="STATE_796"
 	history={
-		owner = POR
+		owner = ANG
 		buildings = {
 			infrastructure = 1
 			2115 = {
@@ -15,7 +15,7 @@ state={
 		add_core_of = ANG
 	}
 	provinces={
-		2115 
+		2115 13365
 	}
 	manpower=25000
 	buildings_max_level_factor=1.000
