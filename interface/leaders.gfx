@@ -62,6 +62,10 @@ spriteTypes = {
 		name = "GFX_Fransua"
 		texturefile = "gfx/leaders/FRA/Portrait_FRA_Fransua.dds"
 	}
+	spriteType = {
+		name = "GFX_IRQ_sadam_husein"
+		texturefile = "gfx/leaders/IRQ/IRQ_sadam_husein.dds"
+	}
 }
 
 
