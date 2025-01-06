@@ -287,16 +287,6 @@ set_convoys = 10
 		#King stuff
 		unlock_national_focus = ROM_institute_royal_dictatorship
 		unlock_national_focus = ROM_revise_the_constitution
-		create_country_leader = {
-			name = "Ion Iliesku"
-			desc = "POLITICS_CAROL_II_DESC"
-			picture = GFX_Portrait_ROM_Ion_Iliescu	
-			expire = "1965.1.1"
-			ideology = conservatism
-			traits = {
-			}
-			id = 550
-		}
 		#ROM = {
 		#	#Pick from list of the sane events first
 		#	random_list = {
@@ -343,7 +333,7 @@ set_convoys = 10
 }
 
 set_politics = {
-	ruling_party = democracy
+	ruling_party = democratic
 	last_election = "1986.5.20"
 	election_frequency = 48
 	elections_allowed = yes
@@ -357,7 +347,7 @@ set_popularities = {
 
 1939.1.1 = {
 	set_politics = {
-		ruling_party = democracy
+		ruling_party = democratic
 		last_election = "1986.5.20"
 		election_frequency = 48
 		elections_allowed = yes
