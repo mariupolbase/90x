@@ -15,7 +15,7 @@ state={
 		add_core_of = ANG
 	}
 	provinces={
-		2115 13365
+		2115 
 	}
 	manpower=25000
 	buildings_max_level_factor=1.000
