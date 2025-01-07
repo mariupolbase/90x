@@ -1,8 +1,8 @@
 state = {
-	id = 827
-	name = "STATE_827"
+	id = 990
+	name = "STATE_990"
 	resources = {
-		chromium = 17 # was: 35 in the caucasus, but was split
+		chromium = 8 # was: 18 before split off from Caucasus mountains (233)
 	}
 
 	history = {
@@ -12,18 +12,18 @@ state = {
 
 		}
 		add_core_of = SOV
-		add_core_of = KBK
+		add_core_of = NOA
 		victory_points = {
-			11614 1
+			9626 3
 		}
 	}
 
 	provinces = {
-		685 11614
+	  1530 9626  
 	}
-	manpower = 387990
+	manpower = 99102
 	buildings_max_level_factor = 1.000
-	state_category = pastoral
+	state_category = rural
 
 	local_supplies = 0.0 
 }
