@@ -24,4 +24,6 @@ Characters = {
 			ideology = liberalism
 			expire = "2007.1.1.1"
 			id = -1
+		}
+	}
 }
