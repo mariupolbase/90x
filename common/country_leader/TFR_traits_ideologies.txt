@@ -1,0 +1,138 @@
+leader_traits = {
+	#Generic
+	ide_tot_soc = {
+		random = no
+	}
+	ide_aut_soc = {
+		random = no
+	}
+	ide_lib_soc = {
+		random = no
+	}
+	ide_soc_dem = {
+		random = no
+	}
+	ide_soc_lib = {
+		random = no
+	}
+	ide_mar_lib = {
+		random = no
+	}
+	ide_soc_con = {
+		random = no
+	}
+	ide_aut_dem = {
+		random = no
+	}
+	ide_despot = {
+		random = no
+	}
+	ide_fascist = {
+		random = no
+	}
+	ide_nat_soc = {
+		random = no
+	}
+	ide_eth_nat = {
+		random = no
+	}
+	#USC
+	USC_patriot_fac = {
+		random = no
+	}
+	USC_populist_fac = {
+		random = no
+	}
+	USC_libertarian_fac = {
+		random = no
+	}
+	#USB
+	USB_liberal_fac = {
+		random = no
+	}
+	USB_conservative_fac = {
+		random = no
+	}
+	USB_progressive_fac = {
+		random = no
+	}
+	USB_innovationist_fac = {
+		random = no
+	}
+	USB_unity_figure = {
+		random = no
+	}
+	USB_liberal_populist_fac = {
+		random = no
+	}
+	#PTF
+	PTF_faction_blueshirt = {
+		random = no
+	}
+	PTF_faction_njp = {
+		random = no
+	}
+	PTF_faction_jacksonian = {
+		random = no
+	}
+	PTF_faction_hamiltonian = {
+		random = no
+	}
+	#APA
+	APA_faction_jacobin = {
+		random = no
+	}
+	APA_faction_octoberist = {
+		random = no
+	}
+	APA_faction_anarchist = {
+		random = no
+	}
+	APA_faction_neosocialist = {
+		random = no
+	}
+	APA_faction_greens = {
+		random = no
+	}
+	#JAP
+	JAP_faction_JRCL = {
+		random = no
+	}
+	JAP_faction_JCP = {
+		random = no
+	}
+	JAP_faction_SDP = {
+		random = no
+	}
+	JAP_faction_JSP = {
+		random = no
+	}
+	JAP_faction_REI = {
+		random = no
+	}
+	JAP_faction_CDP = {
+		random = no
+	}
+	JAP_faction_DPP = {
+		random = no
+	}
+	JAP_faction_INO = {
+		random = no
+	}
+	JAP_faction_LDP = {
+		random = no
+	}
+	JAP_faction_Komeito = {
+		random = no
+	}
+	#ATW
+	ATW_faction_satanist = {
+		random = no
+	}
+	ATW_faction_accelerationist = {
+		random = no
+	}
+	ATW_faction_christian = {
+		random = no
+	}
+}
