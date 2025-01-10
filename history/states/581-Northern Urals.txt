@@ -21,7 +21,7 @@ state = {
 		add_core_of = KOM
 
 		victory_points = {
-			11098 50
+			11098 1
 		}
 	}
 
