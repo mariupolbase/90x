@@ -24,6 +24,9 @@ focus_tree = {
 
 		}
 		completion_reward = {
+			set_power_balance = {
+				id = SOV_power_balance
+			}
 		add_political_power = 75
 			add_popularity = {
 				ideology = democratic 
@@ -451,3 +454,4 @@ focus_tree = {
 		}
 
 	}
+}
