@@ -24,7 +24,7 @@ idea_categories = {
 		slot = intelligence_minister
 		slot = theorist_minister
 		
-		cost = 100
+		cost = 9999
 		removal_cost = -1
 		ledger = civilian
 	}

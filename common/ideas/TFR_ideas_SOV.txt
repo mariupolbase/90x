@@ -6,7 +6,7 @@ ideas = {
 		SOV_Medvedev = {
 			picture = Dmitry_Medvedev
 			allowed = {
-				always = no
+				original_tag = SOV
 			}
 			visible = {
 				NOT = {
