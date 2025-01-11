@@ -120,19 +120,6 @@ if = {
 
 	add_political_power = 0
 	add_command_power = 0
-
-	if = {
-		limit = {
-			has_dlc = "Death or Dishonor"
-		}
-		
-		#Handle this manually
-		unlock_national_focus = HUN_renounce_the_treaty_of_trianon
-		add_ideas = {
-			limited_conscription
-			HUN_treaty_of_triannon_3
-		}		
-	}
 	
 	set_technology = {
 		interwar_artillery = 1
