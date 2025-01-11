@@ -19,7 +19,7 @@ state={
 			radar_station = 4
 		}
 	}
-	manpower=4821000
+	manpower=8880124
 	buildings_max_level_factor=0.000
 	local_supplies=1.000
 	state_category = city
