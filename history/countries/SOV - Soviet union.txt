@@ -563,7 +563,7 @@ set_technology = {
 #### VANILLA ####
 ####
 
-capital = 1976
+capital = 988
 
 starting_train_buffer = 3.0
 
