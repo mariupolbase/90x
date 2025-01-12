@@ -1,6 +1,6 @@
 Characters = {
 	SOV_Gorbachev = {
-		name = SOV_Gorbachev
+		name = SOV_Gorbachev # Полматоф лох
 		portraits = {
 			civilian = {
 				large = GFX_Gorbachev
@@ -24,6 +24,6 @@ Characters = {
 			ideology = liberalism
 			expire = "2007.1.1.1"
 			id = -1
-		}
 	}
+}
 }
