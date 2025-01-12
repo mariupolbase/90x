@@ -980,28 +980,7 @@ add_ideas = {
 		concentrated_industry2 = 1
 		concentrated_industry3 = 1
 	}
-	if = {
-		limit = {
-			NOT = { has_dlc = "No Step Back" }
-		}
-		set_technology = {
-			improved_light_tank = 1 
-			basic_heavy_tank = 1    # Should be available in 1936 (T-35)
-			basic_medium_tank = 1 # Should be available in 1936 (T-28)
-		}
-		set_oob = "SOV_1939"
-	}
-	if = {
-		limit = {
-			has_dlc = "No Step Back"
-		}
-		set_technology = {
-			improved_light_tank_chassis = 1
-			basic_heavy_tank_chassis = 1
-			basic_medium_tank_chassis = 1 
-		}
-		set_oob = "SOV_1939_nsb"
-	}
+
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
 		set_technology = {

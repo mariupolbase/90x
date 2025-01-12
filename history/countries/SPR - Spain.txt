@@ -1,6 +1,5 @@
 ﻿capital = 41
 
-oob = "SPR_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "SPR_1936_naval_mtg"
@@ -373,8 +372,6 @@ set_stability = 0.5
 			neutrality = 8
 		}
 	}
-	
-	oob = "SPA_1939"
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 			set_naval_oob = "SPA_1939_naval_mtg"
