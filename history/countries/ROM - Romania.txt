@@ -66,8 +66,8 @@ set_convoys = 10
 	
 	remove_ideas = neutrality_idea
 
-	add_political_power = 1198
-	add_command_power = 100
+	add_political_power = 100
+	add_command_power = 50
 
 	set_technology = {
 		interwar_artillery = 1
@@ -130,28 +130,6 @@ set_convoys = 10
 		}
 	}
 	
-	if = {
-		limit = { NOT = { has_dlc = "No Step Back" } }
-		set_oob = "ROM_1939"
-	}
-	if = {
-		limit = { has_dlc = "No Step Back" } 
-		set_oob = "ROM_1939_nsb"
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "ROM_1939_naval_mtg"
-		else = {
-			set_naval_oob = "ROM_1939_naval_legacy"
-		}
-	}
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "ROM_1939_air_bba"
-		else = {
-			set_air_oob = "ROM_1939_air_legacy"
-		}
-	}
 }
 
 set_politics = {
