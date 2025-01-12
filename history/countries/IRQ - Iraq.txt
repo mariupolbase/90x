@@ -1,11 +1,11 @@
 ﻿capital = 291
 
-recruit_character = IRQ_sadam_husein # кукусклан гителорапрапр
+recruit_character = IRQ_sadam_husein
 
 #Нац-духи
 
 
-#oob = "IRQ_1936" я пидор
+#oob = "IRQ_1936"
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		#set_air_oob = "IRQ_1936_air_bba"

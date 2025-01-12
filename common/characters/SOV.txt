@@ -1,6 +1,6 @@
 Characters = {
 	SOV_Gorbachev = {
-		name = SOV_Gorbachev # Полматоф лох
+		name = SOV_Gorbachev
 		portraits = {
 			civilian = {
 				large = GFX_Gorbachev
