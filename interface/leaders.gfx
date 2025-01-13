@@ -66,6 +66,10 @@ spriteTypes = {
 		name = "GFX_IRQ_sadam_husein"
 		texturefile = "gfx/leaders/IRQ/IRQ_sadam_husein.dds"
 	}
+	spriteType = {
+		name = "GFX_Shangkun"
+		texturefile = "gfx/leaders/PRC/Portrait_PRC_Shangkun.dds"
+	}
 }
 
 

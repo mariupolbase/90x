@@ -1,16 +1,16 @@
 Characters = {
-	WGR_Weizsacker = {
-		name = WGR_Weizsacker
+	PRC_Shangkun = {
+		name = PRC_Shangkun
 		portraits = {
 			civilian = {
-				large = GFX_Weizsacker
+				large = GFX_Shangkun
 			}
 		}
 		country_leader = {
 			ideology = marxism
 			expire = "1998.1.1.1"
 			id = -1
-			traits = { smooth_talking_charmer }
+			traits = { retired_officer }
 		}
 	}
 }

@@ -10,7 +10,7 @@ set_technology = {
 set_stability = 0.6
 set_war_support = 0.7
 
-recruit_character = PRC_mao_zedong
+recruit_character = PRC_Shangkun
 recruit_character = PRC_zhu_de
 recruit_character = PRC_chen_yi
 recruit_character = PRC_peng_dehuai
@@ -46,57 +46,10 @@ save_global_event_target_as = WTT_communist_china
 
 1939.1.1 = {
 
-	add_political_power = 1198
-	add_command_power = 100
-
-	if = {
-		limit = {
-			has_dlc = "Waking the Tiger"
-		}
-		complete_national_focus = PRC_strengthen_the_central_secretariat
-		complete_national_focus = PRC_land_redistribution
-		complete_national_focus = PRC_enforce_the_three_rules
-		complete_national_focus = PRC_agrarian_socialism
-		complete_national_focus = PRC_the_yanan_base_area
-		complete_national_focus = PRC_focus_on_china
-		complete_national_focus = PRC_infiltration
-		complete_national_focus = PRC_revolutionary_military_commission
-		complete_national_focus = PRC_literacy_programs
-		complete_national_focus = CHI_invite_foreign_investors
-		complete_national_focus = CHI_mission_to_the_soviet_union
-		complete_national_focus = PRC_ban_the_opium_trade
-		complete_national_focus = PRC_military_intelligence_department
-		complete_national_focus = PRC_prepare_for_war_with_japan
-		complete_national_focus = PRC_anti_japanese_expedition
-		complete_national_focus = PRC_provoke_japan
-		complete_national_focus = PRC_mobile_warfare
+	add_political_power = 0
+	add_command_power = 0
 
 		set_research_slots = 3
-
-		add_ideas = {
-			PRC_revolutionary_military_commission
-			PRC_low_popular_support_3
-			PRC_the_long_march_2
-			PRC_mobile_warfare
-			PRC_focus_on_china
-		}
-		remove_ideas = {
-			PRC_low_popular_support_1
-			PRC_the_long_march_1
-		}
-		else = {
-			#generic focuses
-			complete_national_focus = army_effort
-			complete_national_focus = equipment_effort
-			complete_national_focus = motorization_effort
-			complete_national_focus = aviation_effort
-			complete_national_focus = naval_effort
-			complete_national_focus = flexible_navy
-			complete_national_focus = industrial_effort
-			complete_national_focus = construction_effort
-			complete_national_focus = production_effort
-		}
-	}
 	
 	# Chinese Popular Front effects
 	
@@ -165,25 +118,8 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	communism = 100
-}
-
-add_ideas = {
-	closed_economy
-	service_by_requirement
-	partial_economic_mobilisation
-}
-
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}
-	add_ideas = {
-		PRC_the_long_march_1
-		PRC_low_popular_support_3
-		PRC_power_struggles
-		PRC_red_army_weakened
-	}
+	communism = 99.5
+	democratic = 0.5
 }
 
 add_opinion_modifier = { target = CHI modifier = hostile_status }
