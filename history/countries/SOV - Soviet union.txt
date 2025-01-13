@@ -15,6 +15,11 @@ set_party_name = {
 	long_name = SOV_fascism_party_russian_long
 	name = SOV_fascism_party_russian
 }
+set_party_name = {
+	ideology = democratic
+	long_name = SOV_democratic_party_russian_long
+	name = SOV_democratic_party_russian
+}
 
 #COUNTRY LEADERS
 recruit_character = SOV_Gorbachev
