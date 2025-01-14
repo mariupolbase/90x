@@ -12,8 +12,7 @@ focus_tree = {
 	default = no
 	
 	focus = {
-		id = NKR_parlvib
-(parlamentskiye vibori blizko) 
+		id = NKR_parlvib #Парламентские выборы близко 
 		icon = 
 		x = 2
 		y = 0
@@ -24,13 +23,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = NKR_pobkom
-(pobeda Kommunistov) 
+		id = NKR_pobkom # Победа коммунистов 
 		icon = 
+		cost = 70
 		prerequisite = { focus = NKR_parlvib }
 		x = 2
 		y = 1
-		cost = 70
 		completion_reward = {
 			add_political_power = 200
   add_stability = 0.10
@@ -46,11 +44,11 @@ focus_tree = {
 		id = NKR_iskopp
  (
 		icon = 
-		prerequisite = { focus = NKR_pobkom }
-		mutually_exclusive = { focus = NKR_razvpol }
+		cost = 70
 		x = 6
 		y = 2
-		cost = 70
+		prerequisite = { focus = NKR_pobkom }
+		mutually_exclusive = { focus = NKR_razvpol }
 		completion_reward = {
 			add_political_power = -50
   add_stability = -0.05
@@ -59,9 +57,9 @@ focus_tree = {
 	  democratic = -20
   	neutrality = -15
   	fascism = -15
-  }
+				}
+			}
 		}
-	}
 	focus = {
 		id = NKR_razvpol
 		x = 2
