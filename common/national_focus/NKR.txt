@@ -25,7 +25,7 @@ focus_tree = {
 	focus = {
 		id = NKR_pobkom # Победа коммунистов 
 		icon = 
-		cost = 70
+		cost = 10
 		prerequisite = { focus = NKR_parlvib }
 		x = 2
 		y = 1
@@ -40,11 +40,21 @@ focus_tree = {
   }
 		}
 	}
-	focus = {
-		id = NKR_iskopp
- (
+focus = {
+		id = NKR_razvpol # развитие политики
 		icon = 
-		cost = 70
+		prerequisite = { focus = NKR_pobkom }
+		x = 2
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = NKR_iskopp # искоренить оппозицию
+		icon = 
+		cost = 10
 		x = 6
 		y = 2
 		prerequisite = { focus = NKR_pobkom }
@@ -60,13 +70,5 @@ focus_tree = {
 				}
 			}
 		}
-	focus = {
-		id = NKR_razvpol
-		x = 2
-		y = 2
-		cost = 70
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
 }
+	
