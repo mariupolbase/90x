@@ -1,0 +1,16 @@
+Characters = {
+	YUG_Janez = {
+		name = YUG_Janez
+		portraits = {
+			civilian = {
+				large = GFX_Janez
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "2008.1.1.1"
+			id = -1
+			traits = { social_reformer }
+		}
+	}
+}

@@ -9,7 +9,7 @@ characters={
 		country_leader={
 			ideology=despotism
 			traits = {
-				SOV_genadiy_yanaev_desc
+				dictator
 			}
 		}
 	}

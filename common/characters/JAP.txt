@@ -1,0 +1,16 @@
+Characters = {
+	JAP_Kaifu = {
+		name = JAP_Kaifu
+		portraits = {
+			civilian = {
+				large = GFX_Kaifu
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "2022.1.1.1"
+			id = -1
+			traits = { DEN_venstre }
+		}
+	}
+}
