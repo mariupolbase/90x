@@ -1,0 +1,13 @@
+music_station = "tfr_music"
+music = {
+	song = "sigma_MMCT"
+	chance = {
+		base = 10
+	}
+}
+music = {
+	song = "sigma_russian_MMCT"
+	chance = {
+		base = 10
+	}
+}
