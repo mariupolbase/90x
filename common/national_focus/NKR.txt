@@ -13,10 +13,10 @@ focus_tree = {
 	
 	focus = {
 		id = NKR_parlvib #Парламентские выборы близко 
-		icon = 
+		icon = GFX_goal_generic_war_with_comintern
 		x = 2
 		y = 0
-		cost = 10
+		cost = 70
 		completion_reward = {
 			add_political_power = -25
   add_stability = 0.05
@@ -24,8 +24,8 @@ focus_tree = {
 	}
 	focus = {
 		id = NKR_pobkom # Победа коммунистов 
-		icon = 
-		cost = 10
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 70
 		prerequisite = { focus = NKR_parlvib }
 		x = 2
 		y = 1
@@ -42,19 +42,20 @@ focus_tree = {
 	}
 focus = {
 		id = NKR_razvpol # развитие политики
-		icon = 
-		prerequisite = { focus = NKR_pobkom }
+		icon = GFX_goal_support_democracy
 		x = 2
 		y = 2
-		cost = 10
+		cost = 70
+		prerequisite = { focus = NKR_pobkom }
+		mutually_exclusive = { focus = NKR_iskopp }
 		completion_reward = {
 			add_political_power = 100
 		}
 	}
 	focus = {
 		id = NKR_iskopp # искоренить оппозицию
-		icon = 
-		cost = 10
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 70
 		x = 6
 		y = 2
 		prerequisite = { focus = NKR_pobkom }
@@ -63,12 +64,11 @@ focus = {
 			add_political_power = -50
   add_stability = -0.05
   add_manpower = -20000
-  add_popularities = {
-	  democratic = -20
-  	neutrality = -15
-  	fascism = -15
+  add_popularity = { ideology = democratic popularity = -0.2 }
+  add_popularity = { ideology = neutrality popularity = -0.15 }
+  add_popularity = { ideology = fascism popularity = -0.15 }
 				}
 			}
 		}
-}
+	}
 	

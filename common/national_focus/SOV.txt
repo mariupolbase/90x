@@ -131,7 +131,7 @@ focus_tree = {
 			focus = SOV_work_for_future
 		}
 		mutually_exclusive = {
-			focus = SOV_plan
+			focus = SOV_rinok
 		}
 		x = 3
 		y = 4
