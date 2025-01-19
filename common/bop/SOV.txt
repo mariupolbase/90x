@@ -1,7 +1,3 @@
-#############################
-## CHINESE BALANCE OF POWER ##
-#############################
-
 SOV_power_balance = {
 	initial_value = 0
 	left_side = SOV_Gorbachev
