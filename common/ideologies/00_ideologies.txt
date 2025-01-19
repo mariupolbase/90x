@@ -307,3 +307,107 @@ ideologies = {
 		ai_communist = yes
 		ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
 	}
+	social_liberalism = {
+		types = {
+			social_liberalism_ideology = {}
+			narodnichestvo = {}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		color = { 245 140 0 } #255 170 0
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.25
+		
+		modifiers = {
+			join_faction_tension = 0.30
+			generate_wargoal_tension = 0.75
+			puppet_cost_factor = 0.3
+			drift_defence_factor = -0.3
+			annex_cost_factor = 0.5
+		}
+		ai_democratic = yes
+		can_be_boosted = no
+	}
+
+	market_liberalism = {
+		types = {
+			market_liberalism_ideology = {}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		color = { 240 186 0 } # 73 121 198 # 240 186 0 #255 216 0
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.25
+		
+		modifiers = {
+			join_faction_tension = 0.80
+			generate_wargoal_tension = 0.5
+			puppet_cost_factor = 0.7
+			annex_cost_factor = 0.5
+		}
+		ai_democratic = yes
+		can_be_boosted = no
+	}
+	
+	conservatism = {
+		types = {
+			conservatism_ideology = {}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		color = { 30 85 205 } # 20 55 235 #0 35 235 #0 0 255
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25
+		faction_impact_on_world_tension = 0.25
+		
+		modifiers = {
+			join_faction_tension = 0.30
+			generate_wargoal_tension = 0.30
+			puppet_cost_factor = 0.6
+			annex_cost_factor = 0.25
+		}
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+}
