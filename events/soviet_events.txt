@@ -1,4 +1,4 @@
-namespace = sovievent
+add_namespace = sovievent
 
 country_event = {
 	id = sovievent.1
@@ -23,6 +23,5 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = sovievent.1.a
+		name = sovievent.2.a
 	}
-}
