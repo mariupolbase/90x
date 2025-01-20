@@ -1,0 +1,28 @@
+namespace = sovievent
+
+country_event = {
+	id = sovievent.1
+	title = sovievent.1.t
+	description = sovievent.1.desc
+	picture = GFX_report_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		add_political_power = 100
+		name = sovievent.1.a
+	}
+}
+
+country_event = {
+	id = sovievent.2
+	title = sovievent.2.t
+	description = sovievent.2.desc
+	picture = GFX_report_event_picture
+
+	is_triggered_only = yes
+
+	option = {
+		name = sovievent.1.a
+	}
+}

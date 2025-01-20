@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_soviet_gorbachev"
+		texturefile = "gfx/interface/gui_leaders/Portrait_SOV_Gorbachev.dds"
+	}
+	spriteType = {
+		name = "GFX_soviet_leader2"
+		texturefile = "gfx/interface/soviet_leader2.dds"
+	}
+}

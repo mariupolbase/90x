@@ -1,0 +1,58 @@
+guiTypes = {
+	windowType = {
+		name = "soviet_decision_window"
+		position = { x = center y = center }
+		size = { width = 800 height = 600 }
+		moveable = yes
+		borderSize = { x = 16 y = 16 }
+		background = "GFX_window_background"
+
+		elements = {
+			# Заголовок окна
+			textBoxType = {
+				position = { x = 20 y = 20 }
+				size = { width = 760 height = 40 }
+				text = "soviet_decusions"
+				font = "hoi_24b"
+				format = center
+			}
+
+			# Портреты лидеров
+			portraitType = {
+				name = "GFX_soviet_gorbachev"
+				position = { x = 50 y = 80 }
+				size = { width = 200 height = 200 }
+				spriteType = "GFX_soviet_leader1"
+			}
+			portraitType = {
+				name = "leader2_portrait"
+				position = { x = 300 y = 80 }
+				size = { width = 200 height = 200 }
+				spriteType = "GFX_soviet_leader2"
+			}
+
+			# Кнопки решений
+			buttonType = {
+				name = "decision1_button"
+				position = { x = 50 y = 300 }
+				quadTextureSprite = "GFX_decision_button"
+				text = "soviet_decusions"
+				clickedEffect = "event sovievent.1"
+			}
+			buttonType = {
+				name = "decision2_button"
+				position = { x = 300 y = 300 }
+				quadTextureSprite = "GFX_decision_button"
+				text = "soviet_decusions"
+				clickedEffect = "event sovievent.2"
+			}
+
+			# Кнопка закрытия окна
+			buttonType = {
+				position = { x = 760 y = 20 }
+				quadTextureSprite = "GFX_close_button"
+				clickedEffect = "close_window"
+			}
+		}
+	}
+}
