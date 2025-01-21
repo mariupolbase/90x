@@ -1,23 +1,22 @@
 
 state={
-	id=103
-	name="STATE_103" # Dalmatia
-	manpower = 1431700
+	id=992
+	name="STATE_992"
+	manpower = 20043
 
 	state_category = large_town
 
 
 	history={
 		owner = YUG
-		victory_points = { #Split
-			3924 3
+		victory_points = { #Dubrovnik
+			6889 3 
 		}
 		buildings = {
 			infrastructure = 3
-			dockyard = 1
-			industrial_complex = 2
-			3924 = {
-				naval_base = 3
+			industrial_complex = 1
+			6889 = {
+				naval_base = 1
 			}
 		}
 		add_core_of = YUG
@@ -26,7 +25,7 @@ state={
 	}
 
 	provinces={
-		591 984 3924 3974 6611 6672 11901 13252
+		3868 6889
 	}
 
 	local_supplies=4.0 
