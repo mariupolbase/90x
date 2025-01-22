@@ -6,8 +6,12 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_Rizhikov"
-		texturefile = "gfx/leaders/SOV/Portrait_SOV_Rizhikov.dds"
+		name = "GFX_Rizhkow"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_rizhkow.dds"
+	}
+	spriteType = {
+		name = "GFX_kruchov"
+		texturefile = "gfx/leaders/SOV/Portrait_SOV_kruchov.dds"
 	}
 	
 	spriteType = {
