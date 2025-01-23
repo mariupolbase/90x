@@ -1,0 +1,311 @@
+guiTypes = {		
+containerWindowType = {
+		name = "ps_open_button_window"
+		position = { x = 430 y = 2 }
+		buttonType ={
+			name ="politicsview_hos_button"
+			spriteType = "GFX_windmill_button"
+			position = { x=-40 y=-8 }
+			shortcut = "ctrl+1"
+			clicksound = click_scroll
+		}
+	}
+containerWindowType = {
+		name = "ps_screen_main"
+        position = { x = 8 y= 0 }
+        size = { width=545 height=700 }
+			clipping = yes
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 100
+			show_sound = menu_open_window	
+        background = {
+            name = "Background"
+            quadTextureSprite ="GFX_tiled_window2_1b_border"
+        }
+
+		buttonType = {
+			name = "close_ps_button"
+			position = { x = 0 y = 5 }
+			quadTextureSprite = "GFX_closebutton"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+			shortcut = "ESCAPE"
+		}
+		iconType = {
+			name = "pic_background"
+			position = { x = 16 y = 50 }
+			quadTextureSprite = "GFX_parliament_nazi"
+			scale = 0.270
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "pic_coat_of_arms"
+			position = { x = 355 y = 770 }
+			quadTextureSprite = "GFX_nazi_coat_of_arms"
+			scale = 0.2
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "political_title"
+			position = { x = -120 y = -430 }
+			textureFile = ""
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0}
+			text = "The Inner Circle"
+			orientation = CENTER
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "succession_title"
+			position = { x = -150 y = 70 }
+			textureFile = ""
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0}
+			text = "Status of Succession"
+			orientation = CENTER
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		iconType = {
+			name = "pic_coat_of_arms"
+			position = { x = 300 y = 100 }
+			quadTextureSprite = "GFX_nazi_coat_of_arms"
+			scale = 0.9
+			alwaystransparent = yes
+		}
+		}
+containerWindowType = {
+		name = "Gorbachev_screen_main"
+        position = { x = 8 y = 0 } #og x490 y0 x moved 73
+        scale = 0.85
+		iconType = {
+			name = "Gorbachev_portrait"
+			position = { x = 48 y = 110 }
+			spriteType = "GFX_Gorbachev"
+			pdx_tooltip = "GorbachevPOWER"
+		}
+		iconType = {
+			name = "pic_coat_of_arms"
+			position = { x = 120 y = 550 }
+			quadTextureSprite = "GFX_nazi_coat_of_arms"
+			scale = 0.250
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "leader_frame2"
+			spriteType = "GFX_pol_leader_frame"
+			position = { x = 40 y = 100 }		
+			allwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "political_title"
+			position = { x = 35 y = 97 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 30 y = 229 }
+			text = "ГЕНСЕК ЦК КПСС"
+			orientation = CENTER
+			maxWidth = 400
+			maxHeight = 50
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		}
+containerWindowType = {
+		name = "rizkow_screen_main"
+        position = { x = 200 y = 101 }
+        scale = 0.85
+		iconType = {
+			name = "rizkow_portrait"
+			position = { x = 3 y = -3 }
+			spriteType = "GFX_Rizhkow"
+			tooltip = "RizhkowPOWER"
+		}
+		iconType = {
+			name = "leader_frame2"
+			spriteType = "GFX_pol_leader_frame"
+			position = { x = -5 y = -18 }		
+			allwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "political_title"
+			position = { x = 35 y = 200 }
+			textureFile = ""
+			font = "hoi_30header"
+			borderSize = {x = -25 y = 5 }
+			text = "Глава Совмина СССР"
+			orientation = LEFT
+			maxWidth = 200
+			maxHeight = 200
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		}
+containerWindowType = {
+		name = "kruchov_screen_main"
+        position = { x = 350 y = 101 }
+        scale = 0.85
+		iconType = {
+			name = "kruchov_portrait"
+			position = { x = 3 y = -3 }
+			spriteType = "GFX_kruchov"
+			pdx_tooltip = "kruchovPOWER"
+		}
+		iconType = {
+			name = "leader_frame2"
+			spriteType = "GFX_pol_leader_frame"
+			position = { x = -5 y = -18 }		
+			allwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "political_title"
+			position = { x = 140 y = 228 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = -110 y = -20}
+			text = "Глава КГБ СССР"
+			orientation = CENTER
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		}
+containerWindowType = {
+		name = "bormanns_screen_main"
+        position = { x = 910 y = 320 }
+        scale = 0.85
+		iconType = {
+			name = "bormann_portrait"
+			position = { x = 3 y = -3 }
+			spriteType = "GFX_portrait_bormann"
+			pdx_tooltip = "BORMANNPOWER"
+		}
+		iconType = {
+			name = "leader_frame2"
+			spriteType = "GFX_pol_leader_frame"
+			position = { x = -5 y = -18 }		
+			allwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "political_title"
+			position = { x = 117 y = 228 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = -90 y = -20}
+			text = "Martin Bormann"
+			orientation = CENTER
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		}
+containerWindowType = {
+		name = "himmlers_screen_main"
+        position = { x = 910 y = 85 }
+        scale = 0.85
+		iconType = {
+			name = "himmler_portrait"
+			position = { x = 3 y = -3 }
+			spriteType = "GFX_portrait_himmler"
+			pdx_tooltip = "HIMMLERPOWER"
+		}
+		iconType = {
+			name = "leader_frame2"
+			spriteType = "GFX_pol_leader_frame"
+			position = { x = -5 y = -18 }		
+			allwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "political_title"
+			position = { x = 114 y = 228 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = -90 y = -20}
+			text = "Heinrich Himmler"
+			orientation = CENTER
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		}
+
+containerWindowType = {
+		name = "likegoebbels_main"
+        position = { x = 544 y = 60 }
+        scale = 0.85
+		iconType = {
+			name = "goebbels_portrait_glow"
+			position = { x = 3 y = 0 }
+			spriteType = "GFX_glowly_portrait_effect"
+			alwaystransparent = yes
+		}
+		}
+containerWindowType = {
+		name = "likegoering_main"
+        position = { x = 721 y = 200 }
+        scale = 0.85
+		iconType = {
+			name = "goering_portrait_glow"
+			position = { x = 3 y = 0 }
+			spriteType = "GFX_glowly_portrait_effect"
+			alwaystransparent = yes
+		}
+		}
+containerWindowType = {
+		name = "likespeer_main"
+        position = { x = 544 y = 295 }
+        scale = 0.85
+		iconType = {
+			name = "speer_portrait_glow"
+			position = { x = 3 y = 0 }
+			spriteType = "GFX_glowly_portrait_effect"
+			alwaystransparent = yes
+		}
+		}
+containerWindowType = {
+		name = "likebormann_main"
+        position = { x = 891 y = 295 }
+        scale = 0.85
+		iconType = {
+			name = "bormann_portrait_glow"
+			position = { x = 3 y = 0 }
+			spriteType = "GFX_glowly_portrait_effect"
+			alwaystransparent = yes
+		}
+		}
+containerWindowType = {
+		name = "likehimmler_main"
+        position = { x = 891 y = 60 }
+        scale = 0.85
+		iconType = {
+			name = "himmler_portrait_glow"
+			position = { x = 3 y = 0 }
+			spriteType = "GFX_glowly_portrait_effect"
+			alwaystransparent = yes
+		}
+		}
+
+containerWindowType = {
+		name = "status_desc_main"
+        position = { x = 645 y = 580 }
+		instantTextboxType = {
+			name = "status_title"
+			position = { x = 10 y = 0 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = -90 y = -20}
+			text = "STATUSDESCRIPTION"
+			orientation = CENTER
+			maxWidth = 500
+			maxHeight = 500
+			fixedsize = yes
+		}
+	}
+}
