@@ -121,7 +121,7 @@ containerWindowType = {
         scale = 0.85
 		iconType = {
 			name = "rizkow_portrait"
-			position = { x = 3 y = -3 }
+			position = { x = 3 y = -10 }
 			spriteType = "GFX_Rizhkow"
 			tooltip = "RizhkowPOWER"
 		}
@@ -136,8 +136,8 @@ containerWindowType = {
 			position = { x = 35 y = 200 }
 			textureFile = ""
 			font = "hoi_30header"
-			borderSize = {x = -25 y = 5 }
-			text = "Глава Совмина СССР"
+			borderSize = {x = -5 y = 7 }
+			text = "Глава Совмина"
 			orientation = CENTER
 			maxWidth = 200
 			maxHeight = 200
@@ -151,7 +151,7 @@ containerWindowType = {
         scale = 0.85
 		iconType = {
 			name = "kruchov_portrait"
-			position = { x = 3 y = -3 }
+			position = { x = 3 y = -10 }
 			spriteType = "GFX_kruchov"
 			pdx_tooltip = "kruchovPOWER"
 		}
@@ -166,8 +166,8 @@ containerWindowType = {
 			position = { x = 140 y = 228 }
 			textureFile = ""
 			font = "hoi_18mbs"
-			borderSize = {x = -110 y = -20}
-			text = "Глава КГБ СССР"
+			borderSize = {x = -96 y = -20}
+			text = "Глава КГБ "
 			orientation = CENTER
 			maxWidth = 400
 			maxHeight = 40
