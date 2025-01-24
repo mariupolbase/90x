@@ -106,8 +106,8 @@ containerWindowType = {
 			position = { x = 35 y = 97 }
 			textureFile = ""
 			font = "hoi_18mbs"
-			borderSize = {x = 30 y = 229 }
-			text = "ГЕНСЕК ЦК КПСС"
+			borderSize = {x = 40 y = 229 }
+			text = "Генсек ЦК КПСС"
 			orientation = CENTER
 			maxWidth = 400
 			maxHeight = 50
@@ -133,11 +133,11 @@ containerWindowType = {
 		}
 		instantTextboxType = {
 			name = "political_title"
-			position = { x = 35 y = 200 }
+			position = { x = 20 y = 200 }
 			textureFile = ""
 			font = "hoi_30header"
 			borderSize = {x = -5 y = 7 }
-			text = "Глава Совмина"
+			text = "Председатель СМ"
 			orientation = CENTER
 			maxWidth = 200
 			maxHeight = 200
@@ -163,11 +163,11 @@ containerWindowType = {
 		}
 		instantTextboxType = {
 			name = "political_title"
-			position = { x = 140 y = 228 }
+			position = { x = 110 y = 228 }
 			textureFile = ""
 			font = "hoi_18mbs"
 			borderSize = {x = -96 y = -20}
-			text = "Глава КГБ "
+			text = "Председатель КГБ "
 			orientation = CENTER
 			maxWidth = 400
 			maxHeight = 40
