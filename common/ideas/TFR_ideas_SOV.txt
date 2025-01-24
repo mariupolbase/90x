@@ -108,21 +108,21 @@ ideas = {
 			}
 			on_add = {
 				add_popularity = {
-					ideology = social_democrat
+					ideology = democratic
 					popularity = 0.02
 				}
 				add_popularity = {
-					ideology = libertarian_socialist
+					ideology = social_liberalism
 					popularity = 0.01
 				}
 			}
 			on_remove = {
 				add_popularity = {
-					ideology = social_democrat
+					ideology = democratic
 					popularity = -0.02
 				}
 				add_popularity = {
-					ideology = libertarian_socialist
+					ideology = social_liberalism
 					popularity = -0.01
 				}
 			}
@@ -204,7 +204,7 @@ ideas = {
 				has_country_flag = SOV_zhir_demushkin_flag
 			}
 			available = {
-				has_government = fascist
+				has_government = fascism
 			}
 			traits = {
 				hog_smiling_serpent
@@ -566,7 +566,7 @@ ideas = {
 				original_tag = SOV
 			}
 			visible = {
-				has_government = fascist
+				has_government = fascism
 				OR = {
 					NOT = {
 						has_completed_focus = SOV_populist_revolution
@@ -703,8 +703,8 @@ ideas = {
 			}
 			visible = {
 				OR = {
-					has_government = totalitarian_socialist
-					has_government = national_socialist
+					has_government = communism
+					has_government = fascism
 				}
 			}
 			traits = {
@@ -731,15 +731,15 @@ ideas = {
 			}
 			visible = {
 				OR = {
-					has_government = totalitarian_socialist
-					has_government = national_socialist
+					has_government = communism
+					has_government = fascism
 				}
 			}
 			available = {
 				has_completed_focus = SOV_soviet_nostalgia
 				OR = {
-					has_government = totalitarian_socialist
-					has_government = national_socialist
+					has_government = communism
+					has_government = fascism
 				}
 			}
 			traits = {
@@ -878,9 +878,9 @@ ideas = {
 			visible = {
 				has_country_flag = SOV_invited_dugin_flag
 				OR = {
-					has_government = communist
-					has_government = totalitarian_socialist
-					has_government = authoritarian_democrat
+					has_government = communism
+					has_government = communism
+					has_government = neutrality
 				}
 			}
 			available = {
@@ -966,7 +966,7 @@ ideas = {
 				has_country_flag = SOV_zhir_savelyev_flag
 			}
 			available = {
-				has_government = fascist
+				has_government = fascism
 			}
 			traits = {
 				for_expansionist
@@ -979,8 +979,8 @@ ideas = {
 			}
 			visible = {
 				OR = {
-					has_government = totalitarian_socialist
-					has_government = national_socialist
+					has_government = communism
+					has_government = fascism
 				}
 			}
 			traits = {
@@ -1581,16 +1581,16 @@ ideas = {
 			}
 			visible = {
 				OR = {
-					has_government = totalitarian_socialist
-					has_government = national_socialist
+					has_government = communism
+					has_government = fascism
 					has_completed_focus = SOV_social_market_economy
 					has_completed_focus = SOV_radical_reforms
 				}
 			}
 			available = {
 				OR = {
-					has_government = totalitarian_socialist
-					has_government = national_socialist
+					has_government = communism
+					has_government = fascism
 					has_completed_focus = SOV_social_market_economy
 					has_completed_focus = SOV_radical_reforms
 				}
@@ -1606,15 +1606,15 @@ ideas = {
 			}
 			visible = {
 				OR = {
-					has_government = totalitarian_socialist
-					has_government = national_socialist
+					has_government = communism
+					has_government = fascism
 				}
 			}
 			available = {
 				has_completed_focus = SOV_national_goals_over_profit_motives
 				OR = {
-					has_government = totalitarian_socialist
-					has_government = national_socialist
+					has_government = communism
+					has_government = fascism
 				}
 			}
 			traits = {
@@ -1628,15 +1628,15 @@ ideas = {
 			}
 			visible = {
 				OR = {
-					has_government = totalitarian_socialist
-					has_government = national_socialist
+					has_government = communism
+					has_government = fascism
 				}
 			}
 			available = {
 				has_completed_focus = SOV_work_with_the_national_bourgoise
 				OR = {
-					has_government = totalitarian_socialist
-					has_government = national_socialist
+					has_government = communism
+					has_government = fascism
 				}
 			}
 			traits = {
@@ -2035,7 +2035,7 @@ ideas = {
 				original_tag = SOV
 			}
 			visible = {
-				has_government = fascist
+				has_government = fascism
 			}
 			traits = {
 				sec_efficient_sociopath
@@ -2069,13 +2069,13 @@ ideas = {
 			}
 			on_add = {
 				add_popularity = {
-					ideology = fascist
+					ideology = fascism
 					popularity = 0.05
 				}
 			}
 			on_remove = {
 				add_popularity = {
-					ideology = fascist
+					ideology = fascism
 					popularity = -0.05
 				}
 			}
@@ -2096,13 +2096,13 @@ ideas = {
 			}
 			on_add = {
 				add_popularity = {
-					ideology = authoritarian_democrat
+					ideology = neutrality
 					popularity = 0.05
 				}
 			}
 			on_remove = {
 				add_popularity = {
-					ideology = authoritarian_democrat
+					ideology = neutrality
 					popularity = -0.05
 				}
 			}
@@ -2132,8 +2132,8 @@ ideas = {
 			}
 			visible = {
 				OR = {
-					has_government = totalitarian_socialist
-					has_government = national_socialist
+					has_government = communism
+					has_government = fascism
 				}
 			}
 			traits = {
@@ -2180,15 +2180,15 @@ ideas = {
 			}
 			visible = {
 				OR = {
-					has_government = totalitarian_socialist
-					has_government = national_socialist
+					has_government = communism
+					has_government = fascism
 				}
 			}
 			available = {
 				has_completed_focus = SOV_conservative_revolution
 				OR = {
-					has_government = totalitarian_socialist
-					has_government = national_socialist
+					has_government = communism
+					has_government = fascism
 				}
 			}
 			traits = {
@@ -2445,8 +2445,8 @@ ideas = {
 			}
 			visible = {
 				OR = {
-					has_government = totalitarian_socialist
-					has_government = national_socialist
+					has_government = communism
+					has_government = fascism
 				}
 			}
 			traits = {
