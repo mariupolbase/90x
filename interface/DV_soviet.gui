@@ -138,7 +138,7 @@ containerWindowType = {
 			font = "hoi_30header"
 			borderSize = {x = -25 y = 5 }
 			text = "Глава Совмина СССР"
-			orientation = LEFT
+			orientation = CENTER
 			maxWidth = 200
 			maxHeight = 200
 			fixedsize = yes
