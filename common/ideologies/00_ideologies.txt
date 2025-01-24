@@ -310,7 +310,6 @@ ideologies = {
 	social_liberalism = {
 		types = {
 			social_liberalism_ideology = {}
-			narodnichestvo = {}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_DEMOCRATIC_1"
