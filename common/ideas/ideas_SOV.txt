@@ -1,4 +1,40 @@
 ideas = {
+	country = {
+		SOV_mefo_bills_1 = {
+			name = SOV_mefo_bills
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				consumer_goods_factor = 0.5
+				war_support_factor = -0.05
+				stability_factor = -0.05
+				production_speed_buildings_factor = -0.4
+				social_liberalism_drift = 0.01
+				market_liberalism_drift = 0.01
+				production_speed_arms_factory_factor = -0.25
+				production_speed_dockyard_factor = -0.25
+				production_speed_naval_base_factor = -0.25
+				production_speed_coastal_bunker_factor = -0.25
+				production_speed_bunker_factor = -0.25
+				production_speed_air_base_factor = -0.25
+				production_speed_anti_air_building_factor = -0.25
+				production_speed_radar_station_factor = -0.25
+				production_speed_fuel_silo_factor = -0.25
+				production_speed_synthetic_refinery_factor = -0.15
+				political_power_cost = 0.4
+			}
+		}
+	}
 	hidden_ideas = {
 
 	}
@@ -703,7 +739,7 @@ ideas = {
 			}
 			visible = {
 				OR = {
-					has_government = totalitarian_socialist
+					has_government = cum
 					has_government = national_socialist
 				}
 			}
