@@ -535,9 +535,9 @@ country_event = {
 }
 
 country_event = {
-	id = soviet.14
-	title = soviet.14.t
-	desc = soviet.14.d
+	id = soviet.15
+	title = soviet.15.t
+	desc = soviet.15.d
 	picture = GFX_report_event_japanese_transport_soldiers
 
 	fire_only_once = yes
@@ -551,7 +551,7 @@ country_event = {
 		days = 0
 	}
 	option = {
-		name = soviet.14.a
+		name = soviet.15.a
 		add_stability = -0.1
 		add_political_power = -200
 		set_country_leader_ideology = liberalism	
@@ -559,9 +559,9 @@ country_event = {
 }
 
 country_event = {
-	id = soviet.15
-	title = soviet.15.t
-	desc = soviet.15.d
+	id = soviet.16
+	title = soviet.16.t
+	desc = soviet.16.d
 	picture = GFX_report_event_japanese_transport_soldiers
 
 	fire_only_once = yes
@@ -575,7 +575,7 @@ country_event = {
 		days = 0
 	}
 	option = {
-		name = soviet.15.a
+		name = soviet.16.a
 		add_stability = -0.05
 		add_political_power = -100	
 		KAZ = { transfer_state = 407 }
@@ -592,7 +592,7 @@ country_event = {
 		KAZ = { transfer_state = 882 }
 	}
 	option = {
-		name = soviet.15.b
+		name = soviet.16.b
 		add_stability = -0.05
 		add_political_power = -100	
 		KAZ = { transfer_state = 407 }
@@ -612,9 +612,9 @@ country_event = {
 }
 
 country_event = {
-	id = soviet.16
-	title = soviet.16.t
-	desc = soviet.16.d
+	id = soviet.17
+	title = soviet.17.t
+	desc = soviet.17.d
 	picture = GFX_report_event_SOV_narodniy
 
 	fire_only_once = yes
@@ -628,31 +628,13 @@ country_event = {
 		days = 0
 	}
 	option = {
-		name = soviet.16.a
+		name = soviet.17.a
 		add_stability = 0.1
 		add_political_power = 50
 		add_popularity = {
 			ideology = democratic 
 			popularity = 0.10
 		}
-	}
-}
-
-country_event = {
-	id = soviet.17
-	title = soviet.17.t
-	desc = soviet.17.d
-	picture = GFX_report_event_japanese_transport_soldiers
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = soviet.17.a
-		country_event = soviet.20
-	}
-	option = {
-		name = soviet.17.b
-		country_event = soviet.18
 	}
 }
 
@@ -666,11 +648,11 @@ country_event = {
 	
 	option = {
 		name = soviet.18.a
-		country_event = soviet.18
+		country_event = soviet.20
 	}
 	option = {
 		name = soviet.18.b
-		country_event = soviet.19
+		country_event = soviet.18
 	}
 }
 
@@ -684,27 +666,11 @@ country_event = {
 	
 	option = {
 		name = soviet.19.a
+		country_event = soviet.20
 	}
 	option = {
 		name = soviet.19.b
-		create_country_leader = {
-			name = "Nikolay Rizhikov"
-			picture = GFX_Rizhikov
-			expire = "2024.1.1"
-			ideology = marxism
-		}
-	}
-	option = {
-		name = soviet.19.c
-		create_country_leader = {
-			name = "Vadim Bakatin"
-			picture = GFX_Bakatin
-			expire = "2022.1.1"
-			ideology = marxism
-			traits = {
-				head_of_intelligence
-			}
-		}
+		country_event = soviet.20
 	}
 }
 
@@ -721,6 +687,40 @@ country_event = {
 	}
 	option = {
 		name = soviet.20.b
-		country_event = soviet.19
+		create_country_leader = {
+			name = "Nikolay Rizhikov"
+			picture = GFX_Rizhikov
+			expire = "2024.1.1"
+			ideology = marxism
+		}
+	}
+	option = {
+		name = soviet.20.c
+		create_country_leader = {
+			name = "Vadim Bakatin"
+			picture = GFX_Bakatin
+			expire = "2022.1.1"
+			ideology = marxism
+			traits = {
+				head_of_intelligence
+			}
+		}
+	}
+}
+
+country_event = {
+	id = soviet.21
+	title = soviet.21.t
+	desc = soviet.21.d
+	picture = GFX_report_event_japanese_transport_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.21.a
+	}
+	option = {
+		name = soviet.21.b
+		country_event = soviet.20
 	}
 }
