@@ -31,7 +31,6 @@ state = {
 			buildings = {
 				# From "Expand Curacao Oil Refieries"
 				industrial_complex = 1
-				synthetic_refinery = 1
 			}
 		}
 	}
