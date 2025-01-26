@@ -30,10 +30,7 @@ PRC_alternate_plan_1 = {
 
 
 	focus_factors = {
-		PRC_anti_japanese_expedition = 5 #goes against Manchuria
-		PRC_provoke_japan = 0
-		PRC_prepare_for_war_with_japan = 5
-		CHI_collaboration_with_the_japanese = 5
+
 	}
 
 	research = {
@@ -100,13 +97,7 @@ PRC_alternate_plan_2 = {
 
 
 	focus_factors = {
-		PRC_focus_on_china = 0
-		PRC_infiltration = 0
-		PRC_coalition_government = 4
-		PRC_purge_the_radicals = 4
-		PRC_strengthen_the_left_wing_of_the_kmt = 4
-		PRC_remove_chiang_kai_shek = 4
-		#PRC_national_leadership = 4
+
 	}
 
 	research = {
@@ -169,11 +160,7 @@ PRC_alternate_plan_3 = {
 
 
 	focus_factors = {
-		PRC_prepare_for_war_with_japan = 4
-		PRC_anti_japanese_expedition = 4
-		PRC_soviet_leadership = 4
-		PRC_soviet_economic_aid = 4
-		PRC_internationalism = 4
+
 	}
 
 	research = {
