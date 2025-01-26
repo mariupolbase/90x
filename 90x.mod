@@ -1,4 +1,3 @@
-replace_path="common/national_focus"
 version="0.0.2"
 tags={
 	"Military"
