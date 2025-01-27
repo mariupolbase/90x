@@ -554,7 +554,11 @@ country_event = {
 		name = soviet.15.a
 		add_stability = -0.1
 		add_political_power = -200
-		set_country_leader_ideology = liberalism	
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+			
+				}
 	}
 }
 
