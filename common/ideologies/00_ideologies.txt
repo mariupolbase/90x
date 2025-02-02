@@ -210,9 +210,9 @@ ideologies = {
 		}
 
 		faction_modifiers = {
-			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+			faction_trade_opinion_factor = 0.50
 		}
-		ai_democratic = yes # uses the democratic AI behaviour
+		ai_democratic = yes
 		ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
 	}
 
@@ -246,7 +246,7 @@ ideologies = {
 
 		color = { 150 75 0 }
 
-		war_impact_on_world_tension = 1.0			#evil!
+		war_impact_on_world_tension = 1.0
 		faction_impact_on_world_tension = 1.0
 
 		rules = {
@@ -268,7 +268,7 @@ ideologies = {
 			lend_lease_tension = 0.50
 		}
 
-		ai_fascist = yes # uses the fascist AI behaviour
+		ai_fascist = yes
 		ai_ideology_wanted_units_factor = 1.65
 	}
 
@@ -342,7 +342,7 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_5"
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
-		color = { 245 140 0 } #255 170 0
+		color = { 245 140 0 }
 		rules = {
 			can_force_government = yes
 			can_send_volunteers = yes
@@ -411,7 +411,7 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_5"
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
-		color = { 30 85 205 } # 20 55 235 #0 35 235 #0 0 255
+		color = { 30 85 205 }
 		rules = {
 			can_force_government = yes
 			can_send_volunteers = yes
