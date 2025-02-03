@@ -6,32 +6,14 @@ set_stability = 0.7
 set_war_support = 0.6
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1935.3.31"
-	election_frequency = 48
+	ruling_party = social_democracy
+	last_election = "1985.9.3"
+	election_frequency = 60
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 25
-	fascism = 31
-	neutrality = 44
-}
-
-#Start Horty as neutral if DOD
+	market_liberalism = 19.69
+	social_democracy = 67.10
+	communism = 13.21
+	}
 recruit_character = HUN_Szuros
-
-
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1985.9.3"
-		election_frequency = 60
-		elections_allowed = yes
-	}
-	set_popularities = {
-		democratic = 76
-		fascism = 0
-		communism = 24
-	}
-}

@@ -191,7 +191,7 @@ ideologies = {
 
 		can_host_government_in_exile = yes
 
-		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		war_impact_on_world_tension = 0.25
 		faction_impact_on_world_tension = 0.1
 
 		modifiers = {
@@ -213,7 +213,7 @@ ideologies = {
 			faction_trade_opinion_factor = 0.50
 		}
 		ai_democratic = yes
-		ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
+		ai_ideology_wanted_units_factor = 1.10
 	}
 
 	neutrality = {
@@ -244,7 +244,7 @@ ideologies = {
 		color = { 124 124 124 }
 
 
-		war_impact_on_world_tension = 0.25		#no major danger
+		war_impact_on_world_tension = 0.25
 		faction_impact_on_world_tension = 0.1
 
 		rules = {
@@ -254,7 +254,7 @@ ideologies = {
 		}
 
 		modifiers = {
-			#increased_influence_factor = 0.3 #30% easier to influence
+			#increased_influence_factor = 0.3
 			generate_wargoal_tension = 0.5
 			join_faction_tension = 0.4
 			lend_lease_tension = 0.6
@@ -270,7 +270,7 @@ ideologies = {
 		faction_modifiers = {
 		}
 
-		ai_neutral = yes #
+		ai_neutral = yes
 		ai_ideology_wanted_units_factor = 1.15
 	}
 
