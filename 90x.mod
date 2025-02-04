@@ -7,6 +7,6 @@ tags={
 	"Map"
 	"Historical"
 }
-name="Девяностые 2"
+name="Fall of the Iron Curtain Alpha"
 supported_version="1.15.*"
 path="mod/90x"
