@@ -24,5 +24,10 @@ set_politics = {
 }
 
 set_popularities = {
-	conservatism = 100
+	conservatism = 53.1
+	market_liberalism = 31.03
+	social_democracy = 1.33
+	communism = 0.51
+	neutrality = 14.03
+
 }

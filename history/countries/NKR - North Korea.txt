@@ -1,10 +1,7 @@
 ﻿capital = 527
 
-#oob = "NKR_1936"
-
 set_research_slots = 2
 
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -31,7 +28,6 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 0
 	fascism = 0
 	communism = 100
 	neutrality = 0

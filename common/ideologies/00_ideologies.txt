@@ -95,7 +95,7 @@ ideologies = {
 		war_impact_on_world_tension = 0.75
 		faction_impact_on_world_tension = 0.5
 
-		ai_communist = yes # uses the commie AI behaviour
+		ai_communist = yes
 		ai_ideology_wanted_units_factor = 1.20
 
 		rules = {
