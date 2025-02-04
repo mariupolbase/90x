@@ -61,8 +61,11 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 54
-	communism = 46
+	conservatism = 54.12
+	social_democracy = 30.05
+	communism = 8.79
+	market_liberalism = 0.43
+	neutrality = 6.61
 }
 recruit_character = JAP_Kaifu
 	
