@@ -1,15 +1,16 @@
 Characters = {
-	ROM_Ion_Iliesku = {
-		name = ROM_Ion_Iliesku
+	BEL_Baudouin = {
+		name = BEL_Baudouin
 		portraits = {
 			civilian = {
-				large = GFX_Ion_Iliesku
+				large = GFX_Baudouin
 			}
 		}
 		country_leader = {
 			ideology = conservatism_ideology
-			expire = "2022.1.1.1"
+			expire = "1993.1.1.1"
 			id = -1
+			traits = { }
 		}
 	}
 }

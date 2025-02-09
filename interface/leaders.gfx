@@ -82,7 +82,10 @@ spriteTypes = {
 		name = "GFX_Janez"
 		texturefile = "gfx/leaders/YUG/Portrait_YUG_Janez.dds"
 	}
+	spriteType = {
+		name = "GFX_Baudouin"
+		texturefile = "gfx/leaders/BEL/Portrait_BEL_Baudouin.dds"
+	}
 }
-
 
 

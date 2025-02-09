@@ -65,7 +65,7 @@ ideologies = {
 		ai_ideology_wanted_units_factor = 1.10
 	}
 	
-		communism = {
+	communism = {
 
 		types = {
 
