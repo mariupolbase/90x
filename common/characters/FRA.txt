@@ -7,7 +7,7 @@ Characters = {
 			}
 		}
 		country_leader = {
-			ideology = social_democracy
+			ideology = old_social_democracy
 			expire = "1996.1.1.1"
 			id = -1
 			traits = { veteran_guerrilla_fighter DEN_kommunist }
