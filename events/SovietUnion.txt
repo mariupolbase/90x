@@ -172,6 +172,7 @@ country_event = {
 		add_political_power = -100	
 		GEO = { transfer_state = 231 }
 		GEO = { transfer_state = 826 }
+		GEO = { transfer_state = 990 }
 	}
 	option = {
 		name = soviet.5.b
@@ -179,6 +180,7 @@ country_event = {
 		add_political_power = -100	
 		GEO = { transfer_state = 231 }
 		GEO = { transfer_state = 826 }
+		GEO = { transfer_state = 990 }
 		GEO = { change_tag_from = SOV }
 	}
 }

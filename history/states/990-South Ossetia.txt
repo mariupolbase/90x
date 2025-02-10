@@ -2,7 +2,7 @@ state = {
 	id = 990
 	name = "STATE_990"
 	resources = {
-		chromium = 8 # was: 18 before split off from Caucasus mountains (233)
+		chromium = 8
 	}
 
 	history = {
@@ -13,6 +13,7 @@ state = {
 		}
 		add_core_of = SOV
 		add_core_of = NOA
+		add_core_of = GEO
 		victory_points = {
 			9626 3
 		}
