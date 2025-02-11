@@ -241,7 +241,6 @@ country_event = {
 		UKR = { transfer_state = 198 }
 		UKR = { transfer_state = 202 }
 		UKR = { transfer_state = 203 }
-		UKR = { transfer_state = 834 }
 		UKR = { transfer_state = 192 }
 		UKR = { transfer_state = 197 }
 		UKR = { transfer_state = 196 }
@@ -271,7 +270,6 @@ country_event = {
 		UKR = { transfer_state = 198 }
 		UKR = { transfer_state = 202 }
 		UKR = { transfer_state = 203 }
-		UKR = { transfer_state = 834 }
 		UKR = { transfer_state = 192 }
 		UKR = { transfer_state = 197 }
 		UKR = { transfer_state = 196 }
@@ -361,12 +359,14 @@ country_event = {
 		add_stability = -0.05
 		add_political_power = -100	
 		MOL = { transfer_state = 78 }
+		MOL = { transfer_state = 834 }
 	}
 	option = {
 		name = soviet.9.b
 		add_stability = -0.05
 		add_political_power = -100	
 		MOL = { transfer_state = 78 }
+		MOL = { transfer_state = 834 }
 		MOL = { change_tag_from = SOV }
 	}
 }
