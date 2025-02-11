@@ -21,7 +21,7 @@ Characters = {
 			}
 		}
 		country_leader = {
-			ideology = market_liberalism
+			ideology = market_liberalism_ideology
 			expire = "2007.1.1.1"
 			id = -1
 		}
