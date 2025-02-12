@@ -557,7 +557,7 @@ country_event = {
 		add_stability = -0.1
 		add_political_power = -200
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = market_liberalism
 					elections_allowed = yes
 			
 				}
