@@ -1,0 +1,49 @@
+animation = {
+	name = "SOV_medium_tank_T_80UD_idle_animation"
+	file = "SOV_medium_tank_T_80UD_idle.anim"
+}
+
+animation = {
+	name = "SOV_medium_tank_T_80UD_moving_animation"
+	file = "SOV_medium_tank_T_80UD_moving.anim"
+}
+
+animation = {
+	name = "SOV_medium_tank_T_80UD_attack_animation"
+	file = "SOV_medium_tank_T_80UD_attack.anim"
+}
+
+animation = {
+	name = "SOV_light_tank_Sprut_SD_idle_animation"
+	file = "SOV_light_tank_Sprut_SD_idle.anim"
+}
+
+animation = {
+	name = "SOV_light_tank_Sprut_SD_moving_animation"
+	file = "SOV_light_tank_Sprut_SD_moving.anim"
+}
+
+animation = {
+	name = "SOV_light_tank_Sprut_SD_attack_animation"
+	file = "SOV_light_tank_Sprut_SD_attack.anim"
+}
+
+animation = {
+	name = "SOV_SPG_MSTA_2S19_idle_animation"
+	file = "SOV_SPG_MSTA_2S19_idle.anim"
+}
+
+animation = {
+	name = "SOV_SPG_MSTA_2S19_moving_animation"
+	file = "SOV_SPG_MSTA_2S19_moving.anim"
+}
+
+animation = {
+	name = "SOV_SPG_MSTA_2S19_attack_animation"
+	file = "SOV_SPG_MSTA_2S19_attack.anim"
+}
+
+animation = {
+	name = "SOV_SPG_MSTA_2S19_support_attack_animation"
+	file = "SOV_SPG_MSTA_2S19_support_attack.anim"
+}

@@ -1,0 +1,30 @@
+objectTypes = {
+	pdxmesh = {
+		name = "building_gas_mesh"
+		file = "gfx/models/test_object.mesh"
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "building_gas_particle"
+		type = "building_gas_file"
+		scale = 0.5
+	}
+	
+	pdxparticle = {
+		name = "TFR_rated_M"
+		type = "blood_file"
+		scale = 0.5
+	}
+	
+	pdxparticle = {
+		name = "TFR_warthunder"
+		type = "ship_explosion_file"
+		scale = 0.5
+	}
+	
+	pdxparticle = {
+		name = "TFR_research_fpe"
+		type = "ship_damaged_smoke_file"
+		scale = 0.5
+	}
+}

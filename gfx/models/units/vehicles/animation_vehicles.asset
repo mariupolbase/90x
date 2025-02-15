@@ -1,0 +1,313 @@
+animation = {
+	name = "motorized_frame_idle_animation"
+	file = "motorized_frame_idle.anim"
+}
+
+animation = {
+	name = "motorized_frame_move_animation"
+	file = "motorized_frame_moving.anim"
+}
+
+animation = {
+	name = "motorized_frame_attack_animation"
+	file = "motorized_frame_attack.anim"
+}
+
+animation = {
+	name = "m35_idle_animation"
+	file = "m35_idle.anim"
+}
+
+animation = {
+	name = "m35_move_animation"
+	file = "m35_moving.anim"
+}
+
+animation = {
+	name = "m35_attack_animation"
+	file = "m35_moving.anim"
+}
+
+animation = {
+	name = "USA_IFV_Bradley_M2_idle_animation"
+	file = "USA_IFV_Bradley_M2_idle.anim"
+}
+
+animation = {
+	name = "USA_IFV_Bradley_M2_moving_animation"
+	file = "USA_IFV_Bradley_M2_moving.anim"
+}
+
+animation = {
+	name = "USA_IFV_Bradley_M2_attack_animation"
+	file = "USA_IFV_Bradley_M2_attack.anim"
+}
+
+animation = {
+	name = "gaz51_move_animation"
+	file = "gaz_51_walk.anim"
+}
+
+animation = {
+	name = "gaz51_idle_animation"
+	file = "gaz_51_idle.anim"
+}
+
+animation = {
+	name = "gaz51_attack_animation"
+	file = "gaz_51_walk.anim"
+}
+
+animation = {
+	name = "GER_APC_Fuchs_idle_animation"
+	file = "GER_APC_Fuchs_idle.anim"
+}
+
+animation = {
+	name = "GER_APC_Fuchs_moving_animation"
+	file = "GER_APC_Fuchs_moving.anim"
+}
+
+animation = {
+	name = "GER_APC_Fuchs_attack_animation"
+	file = "GER_APC_Fuchs_attack.anim"
+}
+
+animation = {
+	name = "m2_bradley_idle_animation"
+	file = "m2_bradley_idle.anim"
+}
+
+animation = {
+	name = "m2_bradley_move_animation"
+	file = "m2_bradley_moving.anim"
+}
+
+animation = {
+	name = "m2_bradley_attack_animation"
+	file = "m2_bradley_attack.anim"
+}
+
+animation = {
+	name = "btr82_idle_animation"
+	file = "btr82_idle.anim"
+}
+
+animation = {
+	name = "btr82_move_animation"
+	file = "btr82_moving.anim"
+}
+
+animation = {
+	name = "btr82_attack_animation"
+	file = "btr82_attack.anim"
+}
+
+animation = {
+	name = "ENG_mechanized_01_idle_animation"
+	file = "ENG_mechanized_01_idle.anim"
+}
+
+animation = {
+	name = "ENG_mechanized_01_move_animation"
+	file = "ENG_mechanized_01_moving.anim"
+}
+
+animation = {
+	name = "ENG_mechanized_01_attack_animation"
+	file = "ENG_mechanized_01_attack.anim"
+}
+
+animation = {
+	name = "generic_motorized_01_idle_animation"
+	file = "generic_motorized_01_idle.anim"
+}
+
+animation = {
+	name = "generic_motorized_01_move_animation"
+	file = "generic_motorized_01_moving.anim"
+}
+
+animation = {
+	name = "GER_mechanized_01_idle_animation"
+	file = "GER_mechanized_01_idle.anim"
+}
+
+animation = {
+	name = "GER_mechanized_01_move_animation"
+	file = "GER_mechanized_01_moving.anim"
+}
+
+animation = {
+	name = "GER_mechanized_01_attack_animation"
+	file = "GER_mechanized_01_attack.anim"
+}
+
+animation = {
+	name = "GER_motorized_01_idle_animation"
+	file = "GER_motorized_01_idle.anim"
+}
+
+animation = {
+	name = "GER_motorized_01_move_animation"
+	file = "GER_motorized_01_moving.anim"
+}
+
+animation = {
+	name = "SOV_mechanized_01_idle_animation"
+	file = "SOV_mechanized_01_idle.anim"
+}
+
+animation = {
+	name = "SOV_mechanized_01_move_animation"
+	file = "SOV_mechanized_01_moving.anim"
+}
+
+animation = {
+	name = "SOV_motorized_01_idle_animation"
+	file = "SOV_motorized_01_idle.anim"
+}
+
+animation = {
+	name = "SOV_motorized_01_move_animation"
+	file = "SOV_motorized_01_moving.anim"
+}
+
+animation = {
+	name = "US_mechanized_01_idle_animation"
+	file = "US_mechanized_01_idle.anim"
+}
+
+animation = {
+	name = "US_mechanized_01_move_animation"
+	file = "US_mechanized_01_moving.anim"
+}
+
+animation = {
+	name = "US_mechanized_01_attack_animation"
+	file = "US_mechanized_01_attack.anim"
+}
+
+animation = {
+	name = "US_motorized_01_idle_animation"
+	file = "US_motorized_01_idle.anim"
+}
+
+animation = {
+	name = "US_motorized_01_move_animation"
+	file = "US_motorized_01_moving.anim"
+}
+
+###########
+# BICYCLE
+###########
+
+animation = {
+	name = "bicycle_frame_idle_animation"
+	file = "bicycle_frame_idle.anim"
+}
+
+animation = {
+	name = "bicycle_frame_move_animation"
+	file = "bicycle_frame_moving.anim"
+}
+
+animation = {
+	name = "bicycle_frame_attack_animation"
+	file = "bicycle_frame_attack.anim"
+}
+
+animation = {
+	name = "bicycle_vehicle_idle_animation"
+	file = "bicycle_vehicle_idle.anim"
+}
+
+animation = {
+	name = "bicycle_vehicle_idle_2_animation"
+	file = "bicycle_vehicle_idle_2.anim"
+}
+
+animation = {
+	name = "bicycle_vehicle_move_animation"
+	file = "bicycle_vehicle_moving.anim"
+}
+
+animation = {
+	name = "bicycle_vehicle_move_2_animation"
+	file = "bicycle_vehicle_moving_2.anim"
+}
+
+animation = {
+	name = "bicycle_vehicle_retreat_animation"
+	file = "bicycle_vehicle_retreat.anim"
+}
+
+animation = {
+	name = "bicycle_vehicle_retreat_2_animation"
+	file = "bicycle_vehicle_retreat_2.anim"
+}
+
+animation = {
+	name = "bicycle_vehicle_still_animation"
+	file = "bicycle_vehicle_still.anim"
+}
+
+animation = { 
+	name = "drone_idle."
+	file = "drone_idle.anim" 
+}
+
+animation = {
+	name = "SOV_IFV_BMP_2_idle_animation"
+	file = "SOV_IFV_BMP_2_idle.anim"
+}
+
+animation = {
+	name = "SOV_IFV_BMP_2_moving_animation"
+	file = "SOV_IFV_BMP_2_moving.anim"
+}
+
+animation = {
+	name = "SOV_IFV_BMP_2_attack_animation"
+	file = "SOV_IFV_BMP_2_attack.anim"
+}
+
+animation = {
+	name = "CHI_IFV_ZBD_03_idle_animation"
+	file = "CHI_IFV_ZBD_03_idle.anim"
+}
+
+animation = {
+	name = "CHI_IFV_ZBD_03_moving_animation"
+	file = "CHI_IFV_ZBD_03_moving.anim"
+}
+
+animation = {
+	name = "CHI_IFV_ZBD_03_attack_animation"
+	file = "CHI_IFV_ZBD_03_attack.anim"
+}
+
+animation = {
+	name = "CZE_light_tank_01_BVP1_attack_animation"
+	file = "CZE_light_tank_01_BVP1_attack.anim"
+}
+
+animation = {
+	name = "CZE_light_tank_01_BVP1_move_animation"
+	file = "CZE_light_tank_01_BVP1_move.anim"
+}
+
+animation = {
+	name = "CZE_light_tank_01_BVP1_idle_animation"
+	file = "CZE_light_tank_01_BVP1_idle.anim"
+}
+
+animation = {
+	name = "CZE_light_tank_01_BVP1_retreat_animation"
+	file = "CZE_light_tank_01_BVP1_retreat.anim"
+}
+
+animation = {
+	name = "CZE_light_tank_01_BVP1_defend_animation"
+	file = "CZE_light_tank_01_BVP1_defend.anim"
+}

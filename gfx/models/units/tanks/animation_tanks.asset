@@ -1,0 +1,777 @@
+animation = {
+	name = "SOV_heavy_armor_1_idle_animation"
+	file = "SOV_heavy_armor_1_idle.anim"
+}
+
+animation = {
+	name = "SOV_heavy_armor_1_moving_animation"
+	file = "SOV_heavy_armor_1_moving.anim"
+}
+
+animation = {
+	name = "SOV_heavy_armor_1_attack_animation"
+	file = "SOV_heavy_armor_1_attack.anim"
+}
+
+animation = {
+	name = "GER_medium_tank_Leopard_2A7_idle_animation"
+	file = "GER_medium_tank_Leopard_2A7_idle.anim"
+}
+
+animation = {
+	name = "GER_medium_tank_Leopard_2A7_moving_animation"
+	file = "GER_medium_tank_Leopard_2A7_moving.anim"
+}
+
+animation = {
+	name = "GER_medium_tank_Leopard_2A7_attack_animation"
+	file = "GER_medium_tank_Leopard_2A7_attack.anim"
+}
+
+animation = {
+	name = "GER_medium_tank_Leopard_2A4_geomod_idle_animation"
+	file = "GER_medium_tank_Leopard_2A4_geomod_idle.anim"
+}
+
+animation = {
+	name = "GER_medium_tank_Leopard_2A4_geomod_moving_animation"
+	file = "GER_medium_tank_Leopard_2A4_geomod_moving.anim"
+}
+
+animation = {
+	name = "GER_medium_tank_Leopard_2A4_geomod_attack_animation"
+	file = "GER_medium_tank_Leopard_2A4_geomod_attack.anim"
+}
+
+animation = {
+	name = "JAP_IFV_Type_89_idle_animation"
+	file = "JAP_IFV_Type_89_idle.anim"
+}
+
+animation = {
+	name = "JAP_IFV_Type_89_moving_animation"
+	file = "JAP_IFV_Type_89_moving.anim"
+}
+
+animation = {
+	name = "JAP_IFV_Type_89_attack_animation"
+	file = "JAP_IFV_Type_89_attack.anim"
+}
+
+animation = {
+	name = "JAP_medium_tank_Type_90_idle_animation"
+	file = "JAP_medium_tank_Type_90_idle.anim"
+}
+
+animation = {
+	name = "JAP_medium_tank_Type_90_moving_animation"
+	file = "JAP_medium_tank_Type_90_moving.anim"
+}
+
+animation = {
+	name = "JAP_medium_tank_Type_90_attack_animation"
+	file = "JAP_medium_tank_Type_90_attack.anim"
+}
+
+animation = {
+	name = "CHI_IFV_ZBL_08_idle_animation"
+	file = "CHI_IFV_ZBL_08_idle.anim"
+}
+
+animation = {
+	name = "CHI_IFV_ZBL_08_moving_animation"
+	file = "CHI_IFV_ZBL_08_moving.anim"
+}
+
+animation = {
+	name = "CHI_IFV_ZBL_08_attack_animation"
+	file = "CHI_IFV_ZBL_08_attack.anim"
+}
+
+animation = {
+	name = "CHI_IFV_VN_17_idle_animation"
+	file = "CHI_IFV_VN_17_idle.anim"
+}
+
+animation = {
+	name = "CHI_IFV_VN_17_moving_animation"
+	file = "CHI_IFV_VN_17_moving.anim"
+}
+
+animation = {
+	name = "CHI_IFV_VN_17_attack_animation"
+	file = "CHI_IFV_VN_17_attack.anim"
+}
+
+animation = {
+	name = "IRQ_medium_tank_T_55A_idle_animation"
+	file = "IRQ_medium_tank_T_55A_idle.anim"
+}
+
+animation = {
+	name = "IRQ_medium_tank_T_55A_moving_animation"
+	file = "IRQ_medium_tank_T_55A_moving.anim"
+}
+
+animation = {
+	name = "IRQ_medium_tank_T_55A_attack_animation"
+	file = "IRQ_medium_tank_T_55A_attack.anim"
+}
+animation = {
+	name = "IRQ_medium_tank_T_55A_training_animation"
+	file = "IRQ_medium_tank_T_55A_training.anim"
+}
+
+animation = {
+	name = "PER_medium_tank_Karrar_idle_animation"
+	file = "PER_medium_tank_Karrar_idle.anim"
+}
+
+animation = {
+	name = "PER_medium_tank_Karrar_moving_animation"
+	file = "PER_medium_tank_Karrar_moving.anim"
+}
+
+animation = {
+	name = "PER_medium_tank_Karrar_attack_animation"
+	file = "PER_medium_tank_Karrar_attack.anim"
+}
+
+animation = {
+	name = "USA_medium_tank_Abrams_M1A1_idle_animation"
+	file = "USA_medium_tank_Abrams_M1A1_idle.anim"
+}
+
+animation = {
+	name = "USA_medium_tank_Abrams_M1A1_moving_animation"
+	file = "USA_medium_tank_Abrams_M1A1_moving.anim"
+}
+
+animation = {
+	name = "USA_medium_tank_Abrams_M1A1_attack_animation"
+	file = "USA_medium_tank_Abrams_M1A1_attack.anim"
+}
+
+animation = {
+	name = "SOV_SPG_2S1_Gvozdika_idle_animation"
+	file = "SOV_SPG_2S1_Gvozdika_idle.anim"
+}
+
+animation = {
+	name = "SOV_SPG_2S1_Gvozdika_moving_animation"
+	file = "SOV_SPG_2S1_Gvozdika_moving.anim"
+}
+
+animation = {
+	name = "SOV_SPG_2S1_Gvozdika_attack_animation"
+	file = "SOV_SPG_2S1_Gvozdika_attack.anim"
+}
+
+animation = {
+	name = "SOV_SPG_2S1_Gvozdika_support_attack_animation"
+	file = "SOV_SPG_2S1_Gvozdika_support_attack.anim"
+}
+
+animation = {
+	name = "SOV_IFV_BMP_3_idle_animation"
+	file = "SOV_IFV_BMP_3_idle.anim"
+}
+
+animation = {
+	name = "SOV_IFV_BMP_3_moving_animation"
+	file = "SOV_IFV_BMP_3_moving.anim"
+}
+
+animation = {
+	name = "SOV_IFV_BMP_3_attack_animation"
+	file = "SOV_IFV_BMP_3_attack.anim"
+}
+
+animation = {
+	name = "SOV_IFV_T_15_Armata_idle_animation"
+	file = "SOV_IFV_T_15_Armata_idle.anim"
+}
+
+animation = {
+	name = "SOV_IFV_T_15_Armata_moving_animation"
+	file = "SOV_IFV_T_15_Armata_moving.anim"
+}
+
+animation = {
+	name = "SOV_IFV_T_15_Armata_attack_animation"
+	file = "SOV_IFV_T_15_Armata_attack.anim"
+}
+
+animation = {
+	name = "GER_IFV_Puma_idle_animation"
+	file = "GER_IFV_Puma_idle.anim"
+}
+
+animation = {
+	name = "GER_IFV_Puma_moving_animation"
+	file = "GER_IFV_Puma_moving.anim"
+}
+
+animation = {
+	name = "GER_IFV_Puma_attack_animation"
+	file = "GER_IFV_Puma_attack.anim"
+}
+
+animation = {
+	name = "GER_medium_tank_Panther_KF_51_idle_animation"
+	file = "GER_medium_tank_Panther_KF_51_idle.anim"
+}
+
+animation = {
+	name = "GER_medium_tank_Panther_KF_51_moving_animation"
+	file = "GER_medium_tank_Panther_KF_51_moving.anim"
+}
+
+animation = {
+	name = "GER_medium_tank_Panther_KF_51_attack_animation"
+	file = "GER_medium_tank_Panther_KF_51_attack.anim"
+}
+
+animation = {
+	name = "CHI_medium_tank_ZTZ_96_idle_animation"
+	file = "CHI_medium_tank_ZTZ_96_idle.anim"
+}
+
+animation = {
+	name = "CHI_medium_tank_ZTZ_96_moving_animation"
+	file = "CHI_medium_tank_ZTZ_96_moving.anim"
+}
+
+animation = {
+	name = "CHI_medium_tank_ZTZ_96_attack_animation"
+	file = "CHI_medium_tank_ZTZ_96_attack.anim"
+}
+
+animation = {
+	name = "CHI_medium_tank_VT_4_idle_animation"
+	file = "CHI_medium_tank_VT_4_idle.anim"
+}
+
+animation = {
+	name = "CHI_medium_tank_VT_4_moving_animation"
+	file = "CHI_medium_tank_VT_4_moving.anim"
+}
+
+animation = {
+	name = "CHI_medium_tank_VT_4_attack_animation"
+	file = "CHI_medium_tank_VT_4_attack.anim"
+}
+
+animation = {
+	name = "ENG_tank_light_attack_animation"
+	file = "ENG_tank_light_attack.anim"
+}
+
+animation = {
+	name = "ENG_tank_light_idle_animation"
+	file = "ENG_tank_light_idle.anim"
+}
+
+animation = {
+	name = "ENG_tank_light_moving_animation"
+	file = "ENG_tank_light_moving.anim"
+}
+
+animation = {
+	name = "ENG_tank_medium_attack_animation"
+	file = "ENG_tank_medium_attack.anim"
+}
+
+animation = {
+	name = "ENG_tank_medium_idle_animation"
+	file = "ENG_tank_medium_idle.anim"
+}
+
+animation = {
+	name = "ENG_tank_medium_moving_animation"
+	file = "ENG_tank_medium_moving.anim"
+}
+
+animation = {
+	name = "ENG_tank_heavy_attack_animation"
+	file = "ENG_tank_heavy_attack.anim"
+}
+
+animation = {
+	name = "ENG_tank_heavy_idle_animation"
+	file = "ENG_tank_heavy_idle.anim"
+}
+
+animation = {
+	name = "ENG_tank_heavy_moving_animation"
+	file = "ENG_tank_heavy_moving.anim"
+}
+
+animation = {
+	name = "FRA_tank_light_attack_animation"
+	file = "FRA_tank_light_attack.anim"
+}
+
+animation = {
+	name = "FRA_tank_light_idle_animation"
+	file = "FRA_tank_light_idle.anim"
+}
+
+animation = {
+	name = "FRA_tank_light_moving_animation"
+	file = "FRA_tank_light_moving.anim"
+}
+
+animation = {
+	name = "FRA_tank_medium_attack_animation"
+	file = "FRA_tank_medium_attack.anim"
+}
+
+animation = {
+	name = "FRA_tank_medium_idle_animation"
+	file = "FRA_tank_medium_idle.anim"
+}
+
+animation = {
+	name = "FRA_tank_medium_moving_animation"
+	file = "FRA_tank_medium_moving.anim"
+}
+
+animation = {
+	name = "FRA_tank_heavy_attack_animation"
+	file = "FRA_tank_heavy_attack.anim"
+}
+
+animation = {
+	name = "FRA_tank_heavy_idle_animation"
+	file = "FRA_tank_heavy_idle.anim"
+}
+
+animation = {
+	name = "FRA_tank_heavy_moving_animation"
+	file = "FRA_tank_heavy_moving.anim"
+}
+
+
+
+animation = {
+	name = "generic_tank_light_attack_animation"
+	file = "generic_tank_light_attack.anim"
+}
+
+animation = {
+	name = "generic_tank_light_idle_animation"
+	file = "generic_tank_light_idle.anim"
+}
+
+animation = {
+	name = "generic_tank_light_moving_animation"
+	file = "generic_tank_light_moving.anim"
+}
+
+animation = {
+	name = "generic_tank_medium_attack_animation"
+	file = "generic_tank_medium_attack.anim"
+}
+
+animation = {
+	name = "generic_tank_medium_idle_animation"
+	file = "generic_tank_medium_idle.anim"
+}
+
+animation = {
+	name = "generic_tank_medium_moving_animation"
+	file = "generic_tank_medium_moving.anim"
+}
+
+animation = {
+	name = "generic_tank_heavy_attack_animation"
+	file = "generic_tank_heavy_attack.anim"
+}
+
+animation = {
+	name = "generic_tank_heavy_idle_animation"
+	file = "generic_tank_heavy_idle.anim"
+}
+
+animation = {
+	name = "generic_tank_heavy_moving_animation"
+	file = "generic_tank_heavy_moving.anim"
+}
+
+
+
+
+animation = {
+	name = "GER_tank_light_attack_animation"
+	file = "GER_tank_light_attack.anim"
+}
+
+animation = {
+	name = "GER_tank_light_idle_animation"
+	file = "GER_tank_light_idle.anim"
+}
+
+animation = {
+	name = "GER_tank_light_moving_animation"
+	file = "GER_tank_light_moving.anim"
+}
+
+animation = {
+	name = "GER_tank_medium_attack_animation"
+	file = "GER_tank_medium_attack.anim"
+}
+
+animation = {
+	name = "GER_tank_medium_idle_animation"
+	file = "GER_tank_medium_idle.anim"
+}
+
+animation = {
+	name = "GER_tank_medium_moving_animation"
+	file = "GER_tank_medium_moving.anim"
+}
+
+animation = {
+	name = "GER_tank_heavy_attack_animation"
+	file = "GER_tank_heavy_attack.anim"
+}
+
+animation = {
+	name = "GER_tank_heavy_idle_animation"
+	file = "GER_tank_heavy_idle.anim"
+}
+
+animation = {
+	name = "GER_tank_heavy_moving_animation"
+	file = "GER_tank_heavy_moving.anim"
+}
+
+animation = {
+	name = "GER_tank_heavy_death_animation"
+	file = "GER_tank_heavy_death.anim"
+}
+
+
+
+
+animation = {
+	name = "ITA_tank_light_attack_animation"
+	file = "ITA_tank_light_attack.anim"
+}
+
+animation = {
+	name = "ITA_tank_light_idle_animation"
+	file = "ITA_tank_light_idle.anim"
+}
+
+animation = {
+	name = "ITA_tank_light_moving_animation"
+	file = "ITA_tank_light_moving.anim"
+}
+
+animation = {
+	name = "ITA_tank_medium_attack_animation"
+	file = "ITA_tank_medium_attack.anim"
+}
+
+animation = {
+	name = "ITA_tank_medium_idle_animation"
+	file = "ITA_tank_medium_idle.anim"
+}
+
+animation = {
+	name = "ITA_tank_medium_moving_animation"
+	file = "ITA_tank_medium_moving.anim"
+}
+
+
+
+
+animation = {
+	name = "JAP_tank_light_attack_animation"
+	file = "JAP_tank_light_attack.anim"
+}
+
+animation = {
+	name = "JAP_tank_light_idle_animation"
+	file = "JAP_tank_light_idle.anim"
+}
+
+animation = {
+	name = "JAP_tank_light_moving_animation"
+	file = "JAP_tank_light_moving.anim"
+}
+
+animation = {
+	name = "JAP_tank_medium_attack_animation"
+	file = "JAP_tank_medium_attack.anim"
+}
+
+animation = {
+	name = "JAP_tank_medium_idle_animation"
+	file = "JAP_tank_medium_idle.anim"
+}
+
+animation = {
+	name = "JAP_tank_medium_moving_animation"
+	file = "JAP_tank_medium_moving.anim"
+}
+
+animation = {
+	name = "JAP_tank_heavy_attack_animation"
+	file = "JAP_tank_heavy_attack.anim"
+}
+
+animation = {
+	name = "JAP_tank_heavy_idle_animation"
+	file = "JAP_tank_heavy_idle.anim"
+}
+
+animation = {
+	name = "JAP_tank_heavy_moving_animation"
+	file = "JAP_tank_heavy_moving.anim"
+}
+
+
+
+
+animation = {
+	name = "ITA_tank_heavy_attack_animation"
+	file = "ITA_tank_heavy_attack.anim"
+}
+
+animation = {
+	name = "ITA_tank_heavy_idle_animation"
+	file = "ITA_tank_heavy_idle.anim"
+}
+
+animation = {
+	name = "ITA_tank_heavy_moving_animation"
+	file = "ITA_tank_heavy_moving.anim"
+}
+
+animation = {
+	name = "SOV_tank_light_moving_animation"
+	file = "SOV_tank_light_moving.anim"
+}
+
+animation = {
+	name = "SOV_tank_light_attack_animation"
+	file = "SOV_tank_light_attack.anim"
+}
+
+animation = {
+	name = "SOV_tank_light_idle_animation"
+	file = "SOV_tank_light_idle.anim"
+}
+
+animation = {
+	name = "SOV_tank_medium_moving_animation"
+	file = "SOV_tank_medium_moving.anim"
+}
+
+animation = {
+	name = "SOV_tank_medium_attack_animation"
+	file = "SOV_tank_medium_attack.anim"
+}
+
+animation = {
+	name = "SOV_tank_medium_idle_animation"
+	file = "SOV_tank_medium_idle.anim"
+}
+
+animation = {
+	name = "SOV_tank_heavy_moving_animation"
+	file = "SOV_tank_heavy_moving.anim"
+}
+
+animation = {
+	name = "SOV_tank_heavy_attack_animation"
+	file = "SOV_tank_heavy_attack.anim"
+}
+
+animation = {
+	name = "SOV_tank_heavy_idle_animation"
+	file = "SOV_tank_heavy_idle.anim"
+}
+
+animation = {
+    name = "TFR_T14_move_animation"
+    file = "TFR_T14_move.anim"
+}
+
+animation = {
+    name = "TFR_T14_idle_animation"
+    file = "TFR_T14_idle.anim"
+}
+
+animation = {
+    name = "TFR_T14_attack_animation"
+    file = "TFR_T14_attack.anim"
+}
+
+animation = {
+	name = "T-90_attack_animation"
+	file = "t-90_attack.anim"
+}
+
+animation = {
+	name = "T-90_idle_animation"
+	file = "t-90_idle.anim"
+}
+
+animation = {
+	name = "T-90_moving_animation"
+	file = "t-90_moving.anim"
+}
+
+animation = {
+	name = "m48a1_attack_animation"
+	file = "m48a1_attack.anim"
+}
+
+animation = {
+	name = "m48a1_idle_animation"
+	file = "m48a1_idle.anim"
+}
+
+animation = {
+	name = "m48a1_moving_animation"
+	file = "m48a1_moving.anim"
+}
+
+animation = {
+	name = "t55_attack_animation"
+	file = "t55_attack.anim"
+}
+
+animation = {
+	name = "t55_idle_animation"
+	file = "t55_idle.anim"
+}
+
+animation = {
+	name = "t55_moving_animation"
+	file = "t55_moving.anim"
+}
+
+animation = {
+	name = "t80_attack_animation"
+	file = "t80_attack.anim"
+}
+
+animation = {
+	name = "t80_idle_animation"
+	file = "t80_idle.anim"
+}
+
+animation = {
+	name = "t80_moving_animation"
+	file = "t80_moving.anim"
+}
+
+animation = {
+	name = "m60_attack_animation"
+	file = "m60_attack.anim"
+}
+
+animation = {
+	name = "m60_idle_animation"
+	file = "m60_idle.anim"
+}
+
+animation = {
+	name = "m60_moving_animation"
+	file = "m60_moving.anim"
+}
+
+animation = {
+	name = "USA_medium_armor_2_attack_animation"
+	file = "USA_medium_armor_2_attack.anim"
+}
+
+animation = {
+	name = "USA_medium_armor_2_idle_animation"
+	file = "USA_medium_armor_2_idle.anim"
+}
+
+animation = {
+	name = "USA_medium_armor_2_moving_animation"
+	file = "USA_medium_armor_2_moving.anim"
+}
+
+animation = {
+	name = "USA_tank_light_attack_animation"
+	file = "USA_tank_light_attack.anim"
+}
+
+animation = {
+	name = "USA_tank_light_idle_animation"
+	file = "USA_tank_light_idle.anim"
+}
+
+animation = {
+	name = "USA_tank_light_moving_animation"
+	file = "USA_tank_light_moving.anim"
+}
+
+animation = {
+	name = "USA_tank_medium_attack_animation"
+	file = "USA_tank_medium_attack.anim"
+}
+
+animation = {
+	name = "USA_tank_medium_idle_animation"
+	file = "USA_tank_medium_idle.anim"
+}
+
+animation = {
+	name = "USA_tank_medium_moving_animation"
+	file = "USA_tank_medium_moving.anim"
+}
+
+animation = {
+	name = "USA_tank_heavy_attack_animation"
+	file = "USA_tank_heavy_attack.anim"
+}
+
+animation = {
+	name = "USA_tank_heavy_idle_animation"
+	file = "USA_tank_heavy_idle.anim"
+}
+
+animation = {
+	name = "USA_tank_heavy_moving_animation"
+	file = "USA_tank_heavy_moving.anim"
+}
+
+animation = {
+	name = "generictank_attack_animation"
+	file = "generictank_attack.anim"
+}
+
+animation = {
+	name = "generictank_idle_animation"
+	file = "generictank_idle.anim"
+}
+
+animation = {
+	name = "generictank_moving_animation"
+	file = "generictank_moving.anim"
+}
+
+animation = {
+	name = "leopard2a5_attack_animation"
+	file = "leopard2a5_attack.anim"
+}
+
+animation = {
+	name = "leopard2a5_idle"
+	file = "leopard2a5_idle.anim"
+}
+
+animation = {
+	name = "leopard2a5_moving_animation"
+	file = "leopard2a5_moving.anim"
+}

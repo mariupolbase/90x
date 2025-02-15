@@ -1,0 +1,13 @@
+﻿PRC = {
+	
+	
+	carrier = {
+		prefix = ""
+		generic = { "PLAN Carrier" }
+		unique = {
+			"Beijing" "Shanghai" "Jiangsu" "Zhejiang" 
+			"Guangdong" "Tianjin" "Heilongjiang" "Hainan" "Sichuan" "Hunan" "Guangxi" "Chongqing" "Henan"
+		}
+	}
+
+}
