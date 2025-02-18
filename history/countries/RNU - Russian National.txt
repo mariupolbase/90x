@@ -1,0 +1,19 @@
+capital = 397
+
+starting_train_buffer = 3.0
+
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.3
+
+set_country_flag = barkashow
+
+set_popularities = {
+	market_liberalism = 1
+	fascism = 99
+}
+
+add_ideas = {	
+	SOV_mefo_bills_1
+	home_of_revolution
+}

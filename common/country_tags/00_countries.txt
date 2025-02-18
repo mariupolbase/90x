@@ -1,5 +1,4 @@
 GER	= "countries/Germany.txt"
-NKR = "countries/North Korea.txt"
 ENG = "countries/United Kingdom.txt"
 SOV = "countries/Soviet Union.txt"
 SWE	= "countries/Sweden.txt"
@@ -320,3 +319,7 @@ NAH = "countries/Nahua.txt"
 IAS = "countries/Isthmo Amerindia.txt"
 
 #NOTE: Useful to add a basic default loc entry for each tag in 00_countries.txt so that hovering over a tag will show the tag's name in loc (ie. PAP: "Papal States")
+# FALL OF IRON CURTAIN
+
+RNU = "countries/Russian National.txt"
+NKR = "countries/North Korea.txt"
