@@ -111,7 +111,7 @@ country_event = {
 		add_to_variable = { fotic_sov_black_market = 1 }
 
 		if = {
-			limit = { date > 1990.3.1 }
+			limit = { date > 1990.2.28 }
 			add_to_variable = { fotic_sov_russian_challenge = 1 }
 		}
 		if = {
@@ -119,7 +119,7 @@ country_event = {
 			add_to_variable = { fotic_sov_russian_challenge = 2 }
 		}
 		if = {
-			limit = { date > 1990.4.1 }
+			limit = { date > 1990.3.31 }
 			add_to_variable = { fotic_sov_gkchp_risk = 1 }
 		}
 		if = {
@@ -156,7 +156,7 @@ country_event = {
 
 		if = {
 			limit = {
-				date > 1990.3.1
+				date > 1990.2.28
 				NOT = { has_country_flag = fotic_sov_ev20_fired }
 			}
 			set_country_flag = fotic_sov_ev20_fired
@@ -164,51 +164,51 @@ country_event = {
 		}
 		if = {
 			limit = {
-				date > 1990.3.11
+				date > 1990.2.28
 				NOT = { has_country_flag = fotic_sov_ev40_fired }
 			}
 			set_country_flag = fotic_sov_ev40_fired
-			country_event = { id = FOTIC_SOV_1990.40 days = 2 }
+			country_event = { id = FOTIC_SOV_1990.40 days = 10 }
 		}
 		if = {
 			limit = {
-				date > 1990.4.15
+				date > 1990.3.31
 				has_country_flag = fotic_sov_ev40_fired
 				NOT = { has_country_flag = fotic_sov_ev42_fired }
 			}
 			set_country_flag = fotic_sov_ev42_fired
-			country_event = { id = FOTIC_SOV_1990.42 days = 3 }
+			country_event = { id = FOTIC_SOV_1990.42 days = 14 }
 		}
 		if = {
 			limit = {
-				date > 1990.5.10
+				date > 1990.4.30
 				has_country_flag = fotic_sov_ev40_fired
 				NOT = { has_country_flag = fotic_sov_ev43_fired }
 			}
 			set_country_flag = fotic_sov_ev43_fired
-			country_event = { id = FOTIC_SOV_1990.43 days = 5 }
+			country_event = { id = FOTIC_SOV_1990.43 days = 9 }
 		}
 		if = {
 			limit = {
-				date > 1990.5.25
+				date > 1990.4.30
 				NOT = { has_country_flag = fotic_sov_ev50_fired }
 			}
 			set_country_flag = fotic_sov_ev50_fired
-			country_event = { id = FOTIC_SOV_1990.50 days = 2 }
+			country_event = { id = FOTIC_SOV_1990.50 days = 24 }
 		}
 		if = {
 			limit = {
-				date > 1990.6.12
+				date > 1990.5.31)
 				has_country_flag = fotic_sov_ev50_fired
 				NOT = { has_country_flag = fotic_sov_ev51_fired }
 			}
 			set_country_flag = fotic_sov_ev51_fired
 			set_country_flag = fotic_sov_rsfsr_declaration_fired
-			country_event = { id = FOTIC_SOV_1990.51 days = 2 }
+			country_event = { id = FOTIC_SOV_1990.51 days = 11 }
 		}
 		if = {
 			limit = {
-				date > 1990.7.1
+				date > 1990.6.30
 				NOT = { has_country_flag = fotic_sov_ev70_fired }
 			}
 			set_country_flag = fotic_sov_ev70_fired
@@ -216,15 +216,15 @@ country_event = {
 		}
 		if = {
 			limit = {
-				date > 1990.7.16
+				date > 1990.6.30
 				NOT = { has_country_flag = fotic_sov_ev60_fired }
 			}
 			set_country_flag = fotic_sov_ev60_fired
-			country_event = { id = FOTIC_SOV_1990.60 days = 3 }
+			country_event = { id = FOTIC_SOV_1990.60 days = 15 }
 		}
 		if = {
 			limit = {
-				date > 1990.8.1
+				date > 1990.7.31
 				has_country_flag = fotic_sov_ev51_fired
 				NOT = { has_country_flag = fotic_sov_ev52_fired }
 			}
@@ -233,7 +233,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				date > 1990.9.1
+				date > 1990.8.31
 				NOT = { has_country_flag = fotic_sov_ev63_fired }
 			}
 			set_country_flag = fotic_sov_ev63_fired
@@ -301,7 +301,7 @@ country_event = {
 				has_country_flag = fotic_sov_ev60_fired
 			}
 			set_country_flag = fotic_sov_ev61_fired
-			country_event = { id = FOTIC_SOV_1990.61 days = 14 }
+			country_event = { id = FOTIC_SOV_1990.61 days = 29 }
 		}
 		if = {
 			limit = {
@@ -332,31 +332,31 @@ country_event = {
 
 		if = {
 			limit = {
-				date > 1990.7.2
+				date > 1990.6.30
 				NOT = { has_country_flag = fotic_sov_ev120_fired }
 			}
 			set_country_flag = fotic_sov_ev120_fired
-			country_event = { id = FOTIC_SOV_1990.120 days = 2 }
+			country_event = { id = FOTIC_SOV_1990.120 days = 1 }
 		}
 		if = {
 			limit = {
-				date > 1990.9.10
+				date > 1990.8.31
 				NOT = { has_country_flag = fotic_sov_ev110_fired }
 			}
 			set_country_flag = fotic_sov_ev110_fired
-			country_event = { id = FOTIC_SOV_1990.110 days = 3 }
+			country_event = { id = FOTIC_SOV_1990.110 days = 9 }
 		}
 		if = {
 			limit = {
-				date > 1990.8.2
+				date > 1990.7.31
 				NOT = { has_country_flag = fotic_sov_ev130_fired }
 			}
 			set_country_flag = fotic_sov_ev130_fired
-			country_event = { id = FOTIC_SOV_1990.130 days = 2 }
+			country_event = { id = FOTIC_SOV_1990.130 days = 1 }
 		}
 		if = {
 			limit = {
-				date > 1990.10.3
+				date > 1990.9.30
 				NOT = { has_country_flag = fotic_sov_ev131_fired }
 			}
 			set_country_flag = fotic_sov_ev131_fired
@@ -364,31 +364,31 @@ country_event = {
 		}
 		if = {
 			limit = {
-				date > 1990.10.15
+				date > 1990.9.30
 				NOT = { has_country_flag = fotic_sov_ev132_fired }
 			}
 			set_country_flag = fotic_sov_ev132_fired
-			country_event = { id = FOTIC_SOV_1990.132 days = 3 }
+			country_event = { id = FOTIC_SOV_1990.132 days = 14 }
 		}
 		if = {
 			limit = {
-				date > 1990.9.5
+				date > 1990.8.31
 				NOT = { has_country_flag = fotic_sov_ev145_fired }
 			}
 			set_country_flag = fotic_sov_ev145_fired
-			country_event = { id = FOTIC_SOV_1990.145 days = 3 }
+			country_event = { id = FOTIC_SOV_1990.145 days = 4 }
 		}
 		if = {
 			limit = {
-				date > 1990.10.20
+				date > 1990.9.30
 				NOT = { has_country_flag = fotic_sov_ev140_fired }
 			}
 			set_country_flag = fotic_sov_ev140_fired
-			country_event = { id = FOTIC_SOV_1990.140 days = 2 }
+			country_event = { id = FOTIC_SOV_1990.140 days = 19 }
 		}
 		if = {
 			limit = {
-				date > 1990.8.1
+				date > 1990.7.31
 				NOT = { has_country_flag = fotic_sov_ev190_fired }
 			}
 			set_country_flag = fotic_sov_ev190_fired
@@ -396,15 +396,15 @@ country_event = {
 		}
 		if = {
 			limit = {
-				date > 1990.9.20
+				date > 1990.8.31
 				NOT = { has_country_flag = fotic_sov_ev191_fired }
 			}
 			set_country_flag = fotic_sov_ev191_fired
-			country_event = { id = FOTIC_SOV_1990.191 days = 3 }
+			country_event = { id = FOTIC_SOV_1990.191 days = 19 }
 		}
 		if = {
 			limit = {
-				date > 1990.11.1
+				date > 1990.10.31
 				has_country_flag = fotic_sov_ev190_fired
 				NOT = { has_country_flag = fotic_sov_ev192_fired }
 			}
@@ -414,7 +414,7 @@ country_event = {
 
 		if = {
 			limit = {
-				date > 1990.2.1
+				date > 1990.1.31
 				date < 1990.12.20
 			}
 			random_list = {
@@ -434,20 +434,20 @@ country_event = {
 
 		if = {
 			limit = {
-				date > 1990.12.20
+				date > 1990.11.30
 				NOT = { has_country_flag = fotic_sov_ev80_fired }
 			}
 			set_country_flag = fotic_sov_ev80_fired
-			country_event = { id = FOTIC_SOV_1990.80 days = 1 }
+			country_event = { id = FOTIC_SOV_1990.80 days = 19 }
 		}
 
 		if = {
 			limit = {
-				date > 1990.12.28
+				date > 1990.11.30
 				NOT = { has_country_flag = fotic_sov_ev90_fired }
 			}
 			set_country_flag = fotic_sov_ev90_fired
-			country_event = { id = FOTIC_SOV_1990.90 }
+			country_event = { id = FOTIC_SOV_1990.90 days = 27 }
 		}
 
 		FOTIC_SOV_apply_law_monthly_drift = yes
@@ -610,8 +610,18 @@ country_event = {
 			}
 			set_country_flag = fotic_1991_yanayev_committee_possible
 		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = fotic_sov_miner_unrest_resolved }
+				check_variable = { fotic_sov_deficit > 60 }
+				check_variable = { fotic_sov_street_pressure > 45 }
+			}
+			set_country_flag = fotic_sov_miner_unrest_resolved
+			set_country_flag = fotic_1991_kuzbass_unrest
+		}
 
 		FOTIC_SOV_clamp_crisis_variables = yes
+		FOTIC_SOV_update_modifiers = yes
 	}
 }
 

@@ -7,6 +7,7 @@ SOV_1990_union_crisis_category = {
 
 		available = {
 			has_country_flag = fotic_sov_1990_initialized
+			NOT = { has_country_flag = fotic_sov_1991_started }
 		}
 
 		complete_effect = {
@@ -28,6 +29,7 @@ SOV_1990_supply_category = {
 
 		available = {
 			has_country_flag = fotic_sov_1990_initialized
+			NOT = { has_country_flag = fotic_sov_1991_started }
 		}
 
 		complete_effect = {
@@ -57,6 +59,7 @@ SOV_1990_supply_category = {
 		available = {
 			has_country_flag = fotic_sov_1990_initialized
 			check_variable = { fotic_sov_deficit > 40 }
+			NOT = { has_country_flag = fotic_sov_1991_started }
 		}
 
 		complete_effect = {
@@ -84,6 +87,7 @@ SOV_1990_supply_category = {
 
 		available = {
 			has_country_flag = fotic_sov_1990_initialized
+			NOT = { has_country_flag = fotic_sov_1991_started }
 		}
 
 		complete_effect = {
@@ -109,6 +113,7 @@ SOV_1990_supply_category = {
 
 		available = {
 			has_country_flag = fotic_sov_1990_initialized
+			NOT = { has_country_flag = fotic_sov_1991_started }
 		}
 
 		complete_effect = {
@@ -135,6 +140,7 @@ SOV_1990_supply_category = {
 		available = {
 			has_country_flag = fotic_sov_1990_initialized
 			check_variable = { fotic_sov_black_market > 40 }
+			NOT = { has_country_flag = fotic_sov_1991_started }
 		}
 
 		complete_effect = {
@@ -164,6 +170,7 @@ SOV_1990_party_category = {
 
 		available = {
 			has_country_flag = fotic_sov_1990_initialized
+			NOT = { has_country_flag = fotic_sov_1991_started }
 		}
 
 		complete_effect = {
@@ -187,6 +194,7 @@ SOV_1990_party_category = {
 
 		available = {
 			has_country_flag = fotic_sov_1990_initialized
+			NOT = { has_country_flag = fotic_sov_1991_started }
 		}
 
 		complete_effect = {
@@ -216,6 +224,7 @@ SOV_1990_party_category = {
 
 		available = {
 			has_country_flag = fotic_sov_1990_initialized
+			NOT = { has_country_flag = fotic_sov_1991_started }
 		}
 
 		complete_effect = {
@@ -244,6 +253,7 @@ SOV_1990_security_category = {
 		available = {
 			has_country_flag = fotic_sov_1990_initialized
 			has_completed_focus = SOV_1990_lubyanka_report
+			NOT = { has_country_flag = fotic_sov_1991_started }
 		}
 
 		complete_effect = {
@@ -266,6 +276,7 @@ SOV_1990_security_category = {
 		available = {
 			has_country_flag = fotic_sov_1990_initialized
 			has_completed_focus = SOV_1990_lubyanka_report
+			NOT = { has_country_flag = fotic_sov_1991_started }
 		}
 
 		complete_effect = {
@@ -291,6 +302,7 @@ SOV_1990_security_category = {
 		available = {
 			has_country_flag = fotic_sov_1990_initialized
 			check_variable = { fotic_sov_street_pressure > 40 }
+			NOT = { has_country_flag = fotic_sov_1991_started }
 		}
 
 		complete_effect = {
@@ -320,6 +332,7 @@ SOV_1990_union_treaty_category = {
 		available = {
 			has_country_flag = fotic_sov_1990_initialized
 			date > 1990.03.11
+			NOT = { has_country_flag = fotic_sov_1991_started }
 		}
 
 		complete_effect = {
@@ -346,6 +359,7 @@ SOV_1990_union_treaty_category = {
 		available = {
 			has_country_flag = fotic_sov_1990_initialized
 			date > 1990.03.11
+			NOT = { has_country_flag = fotic_sov_1991_started }
 		}
 
 		complete_effect = {
@@ -481,6 +495,7 @@ SOV_1990_union_treaty_category = {
 		is_good = no
 		days_mission_timeout = 100
 		fire_only_once = yes
+		cancel_trigger = { has_country_flag = fotic_sov_1991_started }
 		available = {
 			check_variable = { fotic_sov_union_treaty_progress > 25 }
 		}
@@ -508,6 +523,7 @@ SOV_1990_street_category = {
 
 		available = {
 			has_country_flag = fotic_sov_1990_initialized
+			NOT = { has_country_flag = fotic_sov_1991_started }
 		}
 
 		complete_effect = {
@@ -538,6 +554,7 @@ SOV_1990_street_category = {
 		available = {
 			has_country_flag = fotic_sov_1990_initialized
 			date > 1990.06.01
+			NOT = { has_country_flag = fotic_sov_1991_started }
 		}
 
 		complete_effect = {
@@ -566,6 +583,7 @@ SOV_1990_street_category = {
 		is_good = no
 		days_mission_timeout = 90
 		fire_only_once = yes
+		cancel_trigger = { has_country_flag = fotic_sov_1991_started }
 		available = {
 			OR = {
 				check_variable = { fotic_sov_street_pressure < 40 }
@@ -772,6 +790,7 @@ SOV_1990_russian_question_category = {
 		available = {
 			has_country_flag = fotic_sov_1990_initialized
 			date > 1990.06.01
+			NOT = { has_country_flag = fotic_sov_1991_started }
 		}
 
 		complete_effect = {
@@ -798,6 +817,7 @@ SOV_1990_russian_question_category = {
 		available = {
 			has_country_flag = fotic_sov_1990_initialized
 			date > 1990.06.01
+			NOT = { has_country_flag = fotic_sov_1991_started }
 		}
 
 		complete_effect = {
@@ -909,12 +929,15 @@ SOV_1990_russian_question_category = {
 		icon = generic_political_discourse
 		activation = {
 			has_country_flag = fotic_sov_ev51_fired
+			date > 1990.6.11
 			NOT = { has_country_flag = fotic_sov_rsfsr_timer_resolved }
+			NOT = { has_country_flag = fotic_sov_1991_started }
 		}
 		is_good = no
 		selectable_mission = no
 		days_mission_timeout = 90
 		fire_only_once = yes
+		cancel_trigger = { has_country_flag = fotic_sov_1991_started }
 		available = {
 			has_completed_focus = SOV_1990_russian_question
 		}
