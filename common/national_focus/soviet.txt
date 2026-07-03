@@ -1098,6 +1098,7 @@ focus_tree = {
 			custom_effect_tooltip = FOTIC_tt_kgb_influence_up
 			country_event = { id = FOTIC_SOV_1990.37 days = 4 }
 			fotic_set_security_emergency = yes
+			set_country_flag = fotic_law_emergency
 			FOTIC_SOV_clamp_crisis_variables = yes
 		}
 	}
