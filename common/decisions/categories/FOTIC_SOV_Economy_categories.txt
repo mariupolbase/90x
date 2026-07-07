@@ -1,0 +1,6 @@
+FOTIC_SOV_Economy_category = {
+	icon = generic_economy
+	priority = 120
+	allowed = { tag = SOV }
+	visible = { has_country_flag = fotic_sov_econ_initialized }
+}

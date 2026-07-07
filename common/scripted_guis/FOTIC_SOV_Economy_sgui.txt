@@ -1,0 +1,42 @@
+scripted_gui = {
+	fotic_sov_economy_button = {
+		context_type = player_context
+		window_name = "fotic_sov_economy_button_container"
+
+		visible = {
+			tag = SOV
+			has_country_flag = fotic_economy_active
+		}
+
+		effects = {
+			fotic_sov_econ_toggle_button_click = {
+				set_variable = { fotic_sov_econ_window_flag = 1 }
+			}
+		}
+
+		ai_enabled = {
+			always = no
+		}
+	}
+
+	fotic_sov_economy_content = {
+		context_type = player_context
+		window_name = "fotic_sov_economy_content_container"
+
+		visible = {
+			tag = SOV
+			has_country_flag = fotic_economy_active
+			check_variable = { fotic_sov_econ_window_flag = 1 }
+		}
+
+		effects = {
+			fotic_sov_econ_close_button_click = {
+				set_variable = { fotic_sov_econ_window_flag = 0 }
+			}
+		}
+
+		ai_enabled = {
+			always = no
+		}
+	}
+}

@@ -1,0 +1,22 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { tag = SOV }
+				country_event = { id = FOTIC_SOV_Economy.1 }
+			}
+		}
+	}
+
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					tag = SOV
+					has_country_flag = fotic_economy_active
+				}
+				country_event = { id = FOTIC_SOV_Economy.100 }
+			}
+		}
+	}
+}

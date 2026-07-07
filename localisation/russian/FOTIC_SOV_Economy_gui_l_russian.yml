@@ -1,0 +1,8 @@
+﻿l_russian:
+ fotic_sov_econ_toggle_tooltip:0 "Плановая экономика СССР"
+ fotic_sov_econ_window_title:0 "Плановая экономика СССР"
+
+ fotic_sov_econ_plan_display_loc:0 "Выполнение плана: [?fotic_sov_econ_plan_fulfillment|2]"
+ fotic_sov_econ_deficit_display_loc:0 "Дефицит: [?fotic_sov_deficit|0]"
+ fotic_sov_econ_black_market_display_loc:0 "Чёрный рынок: [?fotic_sov_black_market|0]"
+ fotic_sov_econ_hard_currency_display_loc:0 "Твёрдая валюта: [?fotic_sov_econ_hard_currency|0]"

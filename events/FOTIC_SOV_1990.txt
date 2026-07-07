@@ -198,7 +198,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				date > 1990.5.31)
+				date > 1990.5.31
 				has_country_flag = fotic_sov_ev50_fired
 				NOT = { has_country_flag = fotic_sov_ev51_fired }
 			}

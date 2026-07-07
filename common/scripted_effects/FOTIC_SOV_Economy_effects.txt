@@ -1,0 +1,30 @@
+FOTIC_SOV_Economy_clamp_variables = {
+	if = {
+		limit = { check_variable = { fotic_sov_econ_consumer_output < 0 } }
+		set_variable = { fotic_sov_econ_consumer_output = 0 }
+	}
+	if = {
+		limit = { check_variable = { fotic_sov_econ_military_output < 0 } }
+		set_variable = { fotic_sov_econ_military_output = 0 }
+	}
+	if = {
+		limit = { check_variable = { fotic_sov_econ_plan_target < 1 } }
+		set_variable = { fotic_sov_econ_plan_target = 1 }
+	}
+	if = {
+		limit = { check_variable = { fotic_sov_econ_plan_fulfillment < 0 } }
+		set_variable = { fotic_sov_econ_plan_fulfillment = 0 }
+	}
+	if = {
+		limit = { check_variable = { fotic_sov_econ_plan_fulfillment > 5 } }
+		set_variable = { fotic_sov_econ_plan_fulfillment = 5 }
+	}
+	if = {
+		limit = { check_variable = { fotic_sov_econ_hard_currency < 0 } }
+		set_variable = { fotic_sov_econ_hard_currency = 0 }
+	}
+	if = {
+		limit = { check_variable = { fotic_sov_econ_hard_currency > 500 } }
+		set_variable = { fotic_sov_econ_hard_currency = 500 }
+	}
+}

@@ -1,0 +1,13 @@
+﻿l_russian:
+ fotic_econ_toggle_tooltip:0 "Экономика"
+ fotic_econ_window_title:0 "Экономика"
+
+ fotic_econ_gdp_display_loc:0 "ВВП: [?fotic_gdp]"
+ fotic_econ_oil_price_display_loc:0 "Цена нефти: [?fotic_oil_price]"
+ fotic_econ_oil_revenue_display_loc:0 "Нефтяная выручка: [?fotic_oil_revenue]"
+ fotic_econ_income_display_loc:0 "Доходы бюджета: [?fotic_budget_income]"
+ fotic_econ_expense_display_loc:0 "Расходы бюджета: [?fotic_budget_expense_sticky]"
+ fotic_econ_balance_display_loc:0 "Баланс бюджета: [?fotic_budget_balance]"
+ fotic_econ_treasury_display_loc:0 "Казна: [?fotic_treasury]"
+ fotic_econ_debt_display_loc:0 "Государственный долг: [?fotic_debt]"
+ fotic_econ_confidence_display_loc:0 "Деловая уверенность: [?fotic_business_confidence]"

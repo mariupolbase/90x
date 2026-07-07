@@ -1,0 +1,147 @@
+add_namespace = FOTIC_SOV_Economy
+
+country_event = {
+	id = FOTIC_SOV_Economy.1
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SOV
+		has_country_flag = fotic_economy_active
+		NOT = { has_country_flag = fotic_sov_econ_initialized }
+	}
+
+	immediate = {
+		set_country_flag = fotic_sov_econ_initialized
+
+		set_variable = { fotic_sov_econ_consumer_output = num_of_civilian_factories }
+		multiply_variable = { fotic_sov_econ_consumer_output = 3 }
+
+		set_variable = { fotic_sov_econ_military_output = num_of_military_factories }
+		multiply_variable = { fotic_sov_econ_military_output = 2 }
+
+		set_variable = { fotic_sov_econ_plan_target = fotic_sov_econ_consumer_output }
+		multiply_variable = { fotic_sov_econ_plan_target = 1.15 }
+
+		set_variable = { fotic_sov_econ_plan_fulfillment = 1 }
+		set_variable = { fotic_sov_econ_window_flag = 0 }
+		set_variable = { fotic_sov_econ_hard_currency = 0 }
+
+		FOTIC_SOV_Economy_clamp_variables = yes
+	}
+
+	option = {
+		name = FOTIC_SOV_Economy.1.a
+	}
+}
+
+country_event = {
+	id = FOTIC_SOV_Economy.100
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		# --- Sectoral output (invariant: must stay in lockstep with the fotic_gdp formula in FOTIC_Economy.100) ---
+		set_variable = { fotic_sov_econ_consumer_output = num_of_civilian_factories }
+		multiply_variable = { fotic_sov_econ_consumer_output = 3 }
+
+		set_variable = { fotic_sov_econ_military_output = num_of_military_factories }
+		multiply_variable = { fotic_sov_econ_military_output = 2 }
+
+		# --- Plan fulfillment: consumer_output vs the fixed target set once at init ---
+		set_temp_variable = { fotic_tmp2 = fotic_sov_econ_plan_target }
+		if = {
+			limit = { check_variable = { fotic_tmp2 < 1 } }
+			set_temp_variable = { fotic_tmp2 = 1 }
+		}
+		set_variable = { fotic_sov_econ_plan_fulfillment = fotic_sov_econ_consumer_output }
+		divide_variable = { fotic_sov_econ_plan_fulfillment = fotic_tmp2 }
+
+		# --- Plan miss eases into deficit, capped at +3/month ---
+		if = {
+			limit = { check_variable = { fotic_sov_econ_plan_fulfillment < 0.85 } }
+			set_temp_variable = { fotic_tmp = 0.85 }
+			subtract_from_temp_variable = { fotic_tmp = fotic_sov_econ_plan_fulfillment }
+			multiply_temp_variable = { fotic_tmp = 20 }
+			if = {
+				limit = { check_variable = { fotic_tmp > 3 } }
+				set_temp_variable = { fotic_tmp = 3 }
+			}
+			add_to_variable = { fotic_sov_deficit = fotic_tmp }
+		}
+
+		# --- Guns-vs-butter imbalance eases into black market, capped at +3/month ---
+		set_temp_variable = { fotic_tmp2 = fotic_sov_econ_military_output }
+		add_to_temp_variable = { fotic_tmp2 = fotic_sov_econ_consumer_output }
+		if = {
+			limit = { check_variable = { fotic_tmp2 < 1 } }
+			set_temp_variable = { fotic_tmp2 = 1 }
+		}
+		set_temp_variable = { fotic_tmp = fotic_sov_econ_military_output }
+		divide_temp_variable = { fotic_tmp = fotic_tmp2 }
+		if = {
+			limit = { check_variable = { fotic_tmp > 0.5 } }
+			subtract_from_temp_variable = { fotic_tmp = 0.5 }
+			multiply_temp_variable = { fotic_tmp = 10 }
+			if = {
+				limit = { check_variable = { fotic_tmp > 3 } }
+				set_temp_variable = { fotic_tmp = 3 }
+			}
+			add_to_variable = { fotic_sov_black_market = fotic_tmp }
+		}
+
+		FOTIC_SOV_clamp_crisis_variables = yes
+		FOTIC_SOV_update_modifiers = yes
+
+		# --- Hard currency: a small cut of oil export revenue banked for foreign-trade decisions
+		# (kept low deliberately: at real SOV oil output this still nets ~50-100/month, filling the
+		# 100-150 cost decisions in a few months rather than instantly maxing the 500 cap) ---
+		set_temp_variable = { fotic_tmp = fotic_oil_revenue }
+		multiply_temp_variable = { fotic_tmp = 0.02 }
+		add_to_variable = { fotic_sov_econ_hard_currency = fotic_tmp }
+
+		FOTIC_SOV_Economy_clamp_variables = yes
+	}
+
+	option = {
+		name = FOTIC_SOV_Economy.100.a
+	}
+}
+
+country_event = {
+	id = FOTIC_SOV_Economy.10
+	title = FOTIC_SOV_Economy.10.t
+	desc = FOTIC_SOV_Economy.10.d
+	picture = GFX_report_event_picture
+	is_triggered_only = yes
+
+	option = {
+		name = FOTIC_SOV_Economy.10.a
+		add_to_variable = { fotic_sov_conservative_pressure = 2 }
+		custom_effect_tooltip = FOTIC_tt_conservative_pressure_up
+		FOTIC_SOV_clamp_crisis_variables = yes
+	}
+
+	option = {
+		name = FOTIC_SOV_Economy.10.b
+		set_variable = { fotic_sov_econ_plan_target = fotic_sov_econ_consumer_output }
+		multiply_variable = { fotic_sov_econ_plan_target = 1.15 }
+		add_to_variable = { fotic_sov_party_discipline = -3 }
+		custom_effect_tooltip = FOTIC_tt_party_discipline_down
+		add_to_variable = { fotic_sov_reformist_influence = 2 }
+		custom_effect_tooltip = FOTIC_tt_reformist_influence_up
+		FOTIC_SOV_clamp_crisis_variables = yes
+		FOTIC_SOV_Economy_clamp_variables = yes
+	}
+
+	option = {
+		name = FOTIC_SOV_Economy.10.c
+		multiply_variable = { fotic_sov_econ_plan_target = 1.15 }
+		add_to_variable = { fotic_sov_conservative_pressure = 4 }
+		custom_effect_tooltip = FOTIC_tt_conservative_pressure_up
+		add_to_variable = { fotic_sov_party_discipline = 2 }
+		custom_effect_tooltip = FOTIC_tt_party_discipline_up
+		FOTIC_SOV_clamp_crisis_variables = yes
+		FOTIC_SOV_Economy_clamp_variables = yes
+	}
+}

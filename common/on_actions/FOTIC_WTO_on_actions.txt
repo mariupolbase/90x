@@ -18,6 +18,24 @@ on_actions = {
 					can_create_factions = no
 				}
 			}
+			if = {
+				limit = {
+					NOT = { has_global_flag = fotic_wto_goals_initialized }
+				}
+				set_global_flag = fotic_wto_goals_initialized
+				every_country = {
+					limit = {
+						original_tag = SOV
+						is_faction_leader = yes
+					}
+					add_faction_goal_slot = { category = short_term value = 1 }
+					add_faction_goal_slot = { category = medium_term value = 1 }
+					add_faction_goal_slot = { category = long_term value = 1 }
+					add_faction_goal = fotic_wto_short_term_placeholder
+					add_faction_goal = fotic_wto_medium_term_placeholder
+					add_faction_goal = fotic_wto_long_term_placeholder
+				}
+			}
 		}
 	}
 	on_monthly = {

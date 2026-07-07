@@ -1,0 +1,42 @@
+scripted_gui = {
+	fotic_kremlin_topbar = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "fotic_kremlin_topbar_container"
+
+		visible = {
+			tag = SOV
+			has_country_flag = fotic_sov_1990_initialized
+		}
+
+		effects = {
+			fotic_kremlin_open_button_click = {
+				set_variable = { fotic_kremlin_open = 1 }
+			}
+		}
+
+		ai_enabled = {
+			always = no
+		}
+	}
+
+	fotic_kremlin_window = {
+		context_type = player_context
+		window_name = "fotic_kremlin_window_container"
+
+		visible = {
+			tag = SOV
+			check_variable = { fotic_kremlin_open = 1 }
+		}
+
+		effects = {
+			fotic_kremlin_close_button_click = {
+				set_variable = { fotic_kremlin_open = 0 }
+			}
+		}
+
+		ai_enabled = {
+			always = no
+		}
+	}
+}

@@ -1,0 +1,87 @@
+FOTIC_SOV_Economy_category = {
+	FOTIC_SOV_Economy_gosplan_revision = {
+		icon = generic_political_discourse
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+
+		available = {
+			has_country_flag = fotic_sov_econ_initialized
+		}
+
+		complete_effect = {
+			country_event = { id = FOTIC_SOV_Economy.10 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	FOTIC_SOV_Economy_import_grain = {
+		icon = generic_consumer_goods
+
+		available = {
+			has_country_flag = fotic_sov_econ_initialized
+			check_variable = { fotic_sov_econ_hard_currency > 100 }
+		}
+
+		days_re_enable = 180
+
+		complete_effect = {
+			subtract_from_variable = { fotic_sov_econ_hard_currency = 100 }
+			add_to_variable = { fotic_sov_deficit = -3 }
+			custom_effect_tooltip = FOTIC_tt_deficit_down
+			FOTIC_SOV_clamp_crisis_variables = yes
+			FOTIC_SOV_Economy_clamp_variables = yes
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	FOTIC_SOV_Economy_import_consumer_goods = {
+		icon = generic_civil_support
+
+		available = {
+			has_country_flag = fotic_sov_econ_initialized
+			check_variable = { fotic_sov_econ_hard_currency > 100 }
+		}
+
+		days_re_enable = 180
+
+		complete_effect = {
+			subtract_from_variable = { fotic_sov_econ_hard_currency = 100 }
+			add_to_variable = { fotic_sov_black_market = -3 }
+			custom_effect_tooltip = FOTIC_tt_black_market_down
+			FOTIC_SOV_clamp_crisis_variables = yes
+			FOTIC_SOV_Economy_clamp_variables = yes
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	FOTIC_SOV_Economy_import_technology = {
+		icon = generic_research
+
+		available = {
+			has_country_flag = fotic_sov_econ_initialized
+			check_variable = { fotic_sov_econ_hard_currency > 150 }
+		}
+
+		days_re_enable = 180
+
+		complete_effect = {
+			subtract_from_variable = { fotic_sov_econ_hard_currency = 150 }
+			add_timed_idea = { idea = SOV_idea_western_tech_import days = 180 }
+			FOTIC_SOV_Economy_clamp_variables = yes
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

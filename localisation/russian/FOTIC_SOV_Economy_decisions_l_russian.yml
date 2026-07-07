@@ -1,0 +1,15 @@
+﻿l_russian:
+ FOTIC_SOV_Economy_category:0 "Экономика"
+ FOTIC_SOV_Economy_category_desc:0 "§YЭКОНОМИКА§!\n§WВВП:§! §H[?fotic_gdp|0]§!\n§WВыполнение плана:§! §H[?fotic_sov_econ_plan_fulfillment|2]§!\n§WБюджетный баланс:§! §H[?fotic_budget_balance|0]§!"
+
+ FOTIC_SOV_Economy_gosplan_revision:0 "Пересмотреть план"
+ FOTIC_SOV_Economy_gosplan_revision_desc:0 "Госплан готовит очередной пересмотр показателей пятилетки. Держаться прежних цифр, признать реальность или поднять план ещё выше — решение остаётся за руководством."
+
+ FOTIC_SOV_Economy_import_grain:0 "Закупить зерно за валюту"
+ FOTIC_SOV_Economy_import_grain_desc:0 "Часть валютной выручки от экспорта нефти уходит на закупку зерна за границей — это временно снимает остроту дефицита снабжения."
+
+ FOTIC_SOV_Economy_import_consumer_goods:0 "Закупить потребительские товары"
+ FOTIC_SOV_Economy_import_consumer_goods_desc:0 "Импортные товары народного потребления сбивают спрос на чёрном рынке, хотя бы на время."
+
+ FOTIC_SOV_Economy_import_technology:0 "Закупить западные технологии"
+ FOTIC_SOV_Economy_import_technology_desc:0 "Валюта уходит на закупку станков и технологий у капиталистов — это временно ускоряет разработки и промышленность."

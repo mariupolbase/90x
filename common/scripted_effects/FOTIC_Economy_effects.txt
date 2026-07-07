@@ -1,0 +1,51 @@
+FOTIC_Economy_clamp_variables = {
+	if = {
+		limit = { check_variable = { fotic_oil_price > 40 } }
+		set_variable = { fotic_oil_price = 40 }
+	}
+	if = {
+		limit = { check_variable = { fotic_oil_price < 20 } }
+		set_variable = { fotic_oil_price = 20 }
+	}
+
+	if = {
+		limit = { check_variable = { fotic_business_confidence > 100 } }
+		set_variable = { fotic_business_confidence = 100 }
+	}
+	if = {
+		limit = { check_variable = { fotic_business_confidence < 0 } }
+		set_variable = { fotic_business_confidence = 0 }
+	}
+
+	if = {
+		limit = { check_variable = { fotic_gdp < 0 } }
+		set_variable = { fotic_gdp = 0 }
+	}
+	if = {
+		limit = { check_variable = { fotic_treasury < 0 } }
+		set_variable = { fotic_treasury = 0 }
+	}
+	if = {
+		limit = { check_variable = { fotic_debt < 0 } }
+		set_variable = { fotic_debt = 0 }
+	}
+}
+
+FOTIC_Economy_update_modifiers = {
+	set_temp_variable = { fotic_tmp = fotic_business_confidence }
+	subtract_from_temp_variable = { fotic_tmp = 50 }
+	multiply_temp_variable = { fotic_tmp = 0.002 }
+	set_variable = { fotic_econ_mod_stab = fotic_tmp }
+
+	# Low confidence = consumer goods PENALTY (hoarding, shortages), high confidence = relief.
+	# conf 0 -> +0.05, conf 50 -> 0, conf 100 -> -0.05
+	set_temp_variable = { fotic_tmp = 50 }
+	subtract_from_temp_variable = { fotic_tmp = fotic_business_confidence }
+	multiply_temp_variable = { fotic_tmp = 0.001 }
+	set_variable = { fotic_econ_mod_cg = fotic_tmp }
+
+	set_temp_variable = { fotic_tmp = fotic_business_confidence }
+	subtract_from_temp_variable = { fotic_tmp = 50 }
+	multiply_temp_variable = { fotic_tmp = 0.001 }
+	set_variable = { fotic_econ_mod_pp = fotic_tmp }
+}

@@ -1,0 +1,13 @@
+ideas = {
+	country = {
+		SOV_idea_western_tech_import = {
+			picture = generic_license_production
+			allowed = { original_tag = SOV }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.03
+			}
+		}
+	}
+}

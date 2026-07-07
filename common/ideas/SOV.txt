@@ -881,9 +881,6 @@ ideas = {
 
 			picture = generic_democratic_drift_bonus
 
-			modifier = {
-				democratic_acceptance = 15
-			}
 		}
 
 		SOV_support_in_china_fascism = {
@@ -1950,7 +1947,6 @@ ideas = {
 
 			modifier = {
 				communism_acceptance = 35
-				democratic_acceptance = -50
 				fascism_acceptance = -50
 				neutrality_acceptance = -50
 			}
@@ -3337,7 +3333,6 @@ ideas = {
 			}
 
 			modifier = {
-				democratic_acceptance = -35
 				fascism_acceptance = -35
 				neutrality_acceptance = -35
 			}

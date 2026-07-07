@@ -22,7 +22,7 @@ SOV_1990_union_crisis_category = {
 
 SOV_1990_supply_category = {
 	SOV_1990_inspect_food_stocks = {
-		icon = generic_prepare_civilian
+		icon = generic_civil_support
 		cost = 35
 		days_remove = 30
 		days_re_enable = 60
@@ -80,7 +80,7 @@ SOV_1990_supply_category = {
 	}
 
 	SOV_1990_expand_rationing = {
-		icon = generic_goods_red_market
+		icon = generic_consumer_goods
 		cost = 40
 		days_remove = 60
 		days_re_enable = 120
@@ -516,7 +516,7 @@ SOV_1990_union_treaty_category = {
 
 SOV_1990_street_category = {
 	SOV_1990_meet_miners = {
-		icon = generic_prepare_civilian
+		icon = generic_civil_support
 		cost = 30
 		days_remove = 30
 		days_re_enable = 60
@@ -606,7 +606,7 @@ SOV_1990_street_category = {
 	}
 
 	SOV_1990_send_miner_commission = {
-		icon = generic_prepare_civilian
+		icon = generic_civil_support
 		cost = 30
 		days_remove = 30
 		days_re_enable = 60
@@ -738,7 +738,7 @@ SOV_1990_street_category = {
 	}
 
 	SOV_1990_supply_mining_regions = {
-		icon = generic_prepare_civilian
+		icon = generic_civil_support
 		cost = 45
 		days_remove = 45
 		days_re_enable = 90

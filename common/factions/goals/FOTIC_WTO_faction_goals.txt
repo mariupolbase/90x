@@ -1,0 +1,32 @@
+fotic_wto_short_term_placeholder = {
+	name = fotic_wto_short_term_placeholder_name
+	description = fotic_wto_short_term_placeholder_desc
+	category = short_term
+	group = FOCUS_FILTER_POLITICAL_CHARACTER
+	visible = { }
+	available = { }
+	completed = { }
+	ai_will_do = { factor = 0 }
+}
+
+fotic_wto_medium_term_placeholder = {
+	name = fotic_wto_medium_term_placeholder_name
+	description = fotic_wto_medium_term_placeholder_desc
+	category = medium_term
+	group = FOCUS_FILTER_POLITICAL_CHARACTER
+	visible = { }
+	available = { }
+	completed = { }
+	ai_will_do = { factor = 0 }
+}
+
+fotic_wto_long_term_placeholder = {
+	name = fotic_wto_long_term_placeholder_name
+	description = fotic_wto_long_term_placeholder_desc
+	category = long_term
+	group = FOCUS_FILTER_POLITICAL_CHARACTER
+	visible = { }
+	available = { }
+	completed = { }
+	ai_will_do = { factor = 0 }
+}

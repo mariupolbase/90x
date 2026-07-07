@@ -23,10 +23,6 @@ focus_tree = {
 				id = SOV_power_balance
 			}
 		add_political_power = 75
-			add_popularity = {
-				ideology = democratic 
-				popularity = 0.05
-			}
 		}
 	}
 

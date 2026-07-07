@@ -1,0 +1,85 @@
+guiTypes = {
+	containerWindowType = {
+		name = "fotic_kremlin_topbar_container"
+		position = { x = 124 y = 38 }
+		size = { width = 100%% height = 100%% }
+
+		buttonType = {
+			name = "fotic_kremlin_open_button"
+			position = { x = 976 y = -33 }
+			quadTextureSprite = "GFX_generic_box_96"
+			buttonText = "fotic_kremlin_button_text"
+			buttonFont = "hoi_16mbs"
+
+			clicksound = click_default
+			oversound = ui_menu_over
+
+			pdx_tooltip = "fotic_kremlin_button_tt"
+		}
+	}
+
+	containerWindowType = {
+		name = "fotic_kremlin_window_container"
+		position = { x = 560 y = 110 }
+		size = { width = 480 height = 300 }
+
+		background = {
+			name = "fotic_kremlin_bg"
+			quadTextureSprite = "GFX_tiled_window_1b_border"
+		}
+
+		containerWindowType = {
+			name = "fotic_kremlin_title_bar"
+			position = { x = 0 y = 0 }
+			size = { width = 100%% height = 40 }
+
+			background = {
+				name = "fotic_kremlin_title_bg"
+				quadTextureSprite = "GFX_header_bg"
+			}
+
+			instantTextBoxType = {
+				name = "fotic_kremlin_title_text"
+				position = { x = 12 y = 8 }
+				font = "hoi_24header"
+				text = "fotic_kremlin_window_title"
+				format = left
+				maxWidth = 400
+			}
+
+			buttonType = {
+				name = "fotic_kremlin_close_button"
+				position = { x = -34 y = 4 }
+				quadTextureSprite = "GFX_closebutton"
+				orientation = UPPER_RIGHT
+
+				clicksound = click_close
+				oversound = ui_menu_over
+			}
+		}
+
+		containerWindowType = {
+			name = "fotic_kremlin_body"
+			position = { x = 14 y = 52 }
+			size = { width = 452 height = 240 }
+
+			instantTextBoxType = {
+				name = "fotic_kremlin_subtitle"
+				position = { x = 0 y = 4 }
+				font = "hoi_18mbs"
+				text = "fotic_kremlin_window_subtitle"
+				format = left
+				maxWidth = 440
+			}
+
+			instantTextBoxType = {
+				name = "fotic_kremlin_sections_hint"
+				position = { x = 0 y = 40 }
+				font = "hoi_18mbs"
+				text = "fotic_kremlin_window_hint"
+				format = left
+				maxWidth = 440
+			}
+		}
+	}
+}

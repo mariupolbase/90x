@@ -10,11 +10,6 @@ bookmarks = {
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = social_democracy
-			ideas = {
-				FRA_victors_of_wwi
-				FRA_disjointed_government
-				FRA_protected_by_the_maginot_line
-			}
 		}
 
 		"USA"={
@@ -27,47 +22,22 @@ bookmarks = {
 		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = conservatism
-			ideas = {
-				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
-				george_v
-			}
 		}
 		"WGR"={
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = conservatism
-			ideas = {
-				sour_loser
-				general_staff
-				GER_mefo_bills_1
-			}
 		}
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = conservatism
-			ideas = {
-				vittorio_emanuele
-				ITA_iri_fake_ns
-				ITA_re_fake_ns
-			}	
 		}
 		"JAP"={
 			history = "JAP_GATHERING_STORM_DESC"
 			ideology = conservatism
-			ideas = {
-				state_shintoism
-				JAP_zaibatsus
-				JAP_militarism
-			}	
 		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
-			ideas = {
-				trotskyite_plot_nsb
-				SOV_second_five_year_plan_fake_1936_ns
-				SOV_politicized_military
-			}
 		}
 
 		"---"={

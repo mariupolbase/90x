@@ -2168,12 +2168,9 @@ ideas = {
 			}
 
 			available = {
-				OR = {
-					has_country_leader = {
-						character = GRE_aristotle_onassis
-						ruling_only = yes
-					}
-					has_idea = GRE_aristotle_onassis
+				has_country_leader = {
+					character = GRE_aristotle_onassis
+					ruling_only = yes
 				}
 			}
 

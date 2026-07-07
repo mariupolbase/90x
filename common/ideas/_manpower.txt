@@ -213,25 +213,6 @@ ideas = {
 				}
 				if = {
 					limit = {
-						original_tag = BUL
-						has_dlc = "Battle for the Bosporus"
-					}
-					if = {
-						limit = {
-							has_dlc = "Arms Against Tyranny"
-						}
-						NOT = {
-							has_idea = BUL_army_restrictions_aat
-						}
-					}
-					else = {
-						NOT = {
-							has_idea = BUL_army_restrictions
-						}
-					}
-				}
-				if = {
-					limit = {
 						DEN_aat_is_subject = yes
 					}
 					NOT = { has_country_flag = DEN_cannot_increase_conscription_law }
@@ -434,25 +415,6 @@ ideas = {
 					limit = {
 						original_tag = SPR
 						has_dlc = "La Resistance"
-					}
-				}
-				if = {
-					limit = {
-						original_tag = BUL
-						has_dlc = "Battle for the Bosporus"
-					}
-					if = {
-						limit = {
-							has_dlc = "Arms Against Tyranny"
-						}
-						NOT = {
-							has_idea = BUL_army_restrictions_aat
-						}
-					}
-					else = {
-						NOT = {
-							has_idea = BUL_army_restrictions
-						}
 					}
 				}
 				if = {
@@ -663,25 +625,6 @@ ideas = {
 				}
 				if = {
 					limit = {
-						original_tag = BUL
-						has_dlc = "Battle for the Bosporus"
-					}
-					if = {
-						limit = {
-							has_dlc = "Arms Against Tyranny"
-						}
-						NOT = {
-							has_idea = BUL_army_restrictions_aat
-						}
-					}
-					else = {
-						NOT = {
-							has_idea = BUL_army_restrictions
-						}
-					}
-				}
-				if = {
-					limit = {
 						DEN_aat_is_subject = yes
 					}
 					NOT = { has_country_flag = DEN_cannot_increase_conscription_law }
@@ -878,25 +821,6 @@ ideas = {
 				}
 				if = {
 					limit = {
-						original_tag = BUL
-						has_dlc = "Battle for the Bosporus"
-					}
-					if = {
-						limit = {
-							has_dlc = "Arms Against Tyranny"
-						}
-						NOT = {
-							has_idea = BUL_army_restrictions_aat
-						}
-					}
-					else = {
-						NOT = {
-							has_idea = BUL_army_restrictions
-						}
-					}
-				}
-				if = {
-					limit = {
 						DEN_aat_is_subject = yes
 					}
 					NOT = { has_country_flag = DEN_cannot_increase_conscription_law }
@@ -1082,25 +1006,6 @@ ideas = {
 					limit = {
 						original_tag = SPR
 						has_dlc = "La Resistance"
-					}
-				}
-				if = {
-					limit = {
-						original_tag = BUL
-						has_dlc = "Battle for the Bosporus"
-					}
-					if = {
-						limit = {
-							has_dlc = "Arms Against Tyranny"
-						}
-						NOT = {
-							has_idea = BUL_army_restrictions_aat
-						}
-					}
-					else = {
-						NOT = {
-							has_idea = BUL_army_restrictions
-						}
 					}
 				}
 				if = {

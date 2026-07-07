@@ -1,0 +1,195 @@
+add_namespace = FOTIC_Economy
+
+country_event = {
+	id = FOTIC_Economy.1
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = fotic_economy_initialized }
+	}
+
+	immediate = {
+		set_country_flag = fotic_economy_initialized
+		set_country_flag = fotic_economy_active
+
+		set_variable = { fotic_oil_price = 20 }
+		set_variable = { fotic_tax_rate = 0.2 }
+		set_variable = { fotic_gdp = 0 }
+		set_variable = { fotic_oil_revenue = 0 }
+		set_variable = { fotic_budget_income = 0 }
+		set_variable = { fotic_budget_expense_sticky = 0 }
+		set_variable = { fotic_budget_balance = 0 }
+		set_variable = { fotic_debt = 0 }
+		set_variable = { fotic_debt_interest = 0 }
+		set_variable = { fotic_treasury = 0 }
+		set_variable = { fotic_business_confidence = 50 }
+		set_variable = { fotic_economy_window_flag = 0 }
+
+		FOTIC_Economy_update_modifiers = yes
+		add_dynamic_modifier = { modifier = fotic_economy_state }
+	}
+
+	option = {
+		name = FOTIC_Economy.1.a
+	}
+}
+
+country_event = {
+	id = FOTIC_Economy.100
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		# --- 1. World oil price (Gulf Crisis Aug 1990 - Feb 1991 shock, fixed historical curve) ---
+		# Alt-history kill switch: setting global flag fotic_gulf_war_averted suppresses the whole shock.
+		# Phase B will move shock activation onto the actual invasion event chain instead of raw dates.
+		if = {
+			limit = {
+				date > 1990.7.31
+				date < 1990.8.31
+				NOT = { has_global_flag = fotic_gulf_war_averted }
+			}
+			set_variable = { fotic_oil_price = 27 }
+		}
+		if = {
+			limit = {
+				date > 1990.8.31
+				date < 1990.9.30
+				NOT = { has_global_flag = fotic_gulf_war_averted }
+			}
+			set_variable = { fotic_oil_price = 34 }
+		}
+		if = {
+			limit = {
+				date > 1990.9.30
+				date < 1991.1.31
+				NOT = { has_global_flag = fotic_gulf_war_averted }
+			}
+			set_variable = { fotic_oil_price = 40 }
+		}
+		if = {
+			limit = {
+				date > 1991.1.31
+				check_variable = { fotic_oil_price > 20 }
+			}
+			add_to_variable = { fotic_oil_price = -5 }
+		}
+		FOTIC_Economy_clamp_variables = yes
+
+		# --- 2. GDP (factory-based proxy) ---
+		set_variable = { fotic_gdp = num_of_civilian_factories }
+		multiply_variable = { fotic_gdp = 3 }
+		set_temp_variable = { fotic_tmp = num_of_military_factories }
+		multiply_temp_variable = { fotic_tmp = 2 }
+		add_to_variable = { fotic_gdp = fotic_tmp }
+
+		# --- 3. Oil export revenue (works for any oil producer, not SOV-specific) ---
+		set_variable = { fotic_oil_revenue = resource_produced@oil }
+		multiply_variable = { fotic_oil_revenue = fotic_oil_price }
+		multiply_variable = { fotic_oil_revenue = 0.1 }
+
+		# --- 4. Budget income ---
+		set_variable = { fotic_budget_income = fotic_gdp }
+		multiply_variable = { fotic_budget_income = fotic_tax_rate }
+		add_to_variable = { fotic_budget_income = fotic_oil_revenue }
+
+		# --- 5. Sticky expenses: ratchet up instantly, decay slowly ---
+		set_temp_variable = { fotic_tmp = fotic_budget_income }
+		subtract_from_temp_variable = { fotic_tmp = fotic_budget_expense_sticky }
+		if = {
+			limit = { check_variable = { fotic_tmp > 0 } }
+			set_variable = { fotic_budget_expense_sticky = fotic_budget_income }
+		}
+		else = {
+			multiply_variable = { fotic_budget_expense_sticky = 0.95 }
+		}
+
+		# --- 6. Balance ---
+		set_temp_variable = { fotic_tmp = fotic_budget_income }
+		subtract_from_temp_variable = { fotic_tmp = fotic_budget_expense_sticky }
+		set_variable = { fotic_budget_balance = fotic_tmp }
+
+		# --- 7. Treasury / debt (surplus repays debt first, deficit drains treasury first) ---
+		if = {
+			limit = { check_variable = { fotic_budget_balance > 0 } }
+			if = {
+				limit = { check_variable = { fotic_debt > fotic_budget_balance } }
+				subtract_from_variable = { fotic_debt = fotic_budget_balance }
+			}
+			else_if = {
+				limit = { check_variable = { fotic_debt > 0 } }
+				set_temp_variable = { fotic_tmp = fotic_budget_balance }
+				subtract_from_temp_variable = { fotic_tmp = fotic_debt }
+				set_variable = { fotic_debt = 0 }
+				add_to_variable = { fotic_treasury = fotic_tmp }
+			}
+			else = {
+				add_to_variable = { fotic_treasury = fotic_budget_balance }
+			}
+		}
+		else = {
+			set_temp_variable = { fotic_tmp = fotic_budget_balance }
+			multiply_temp_variable = { fotic_tmp = -1 }
+			if = {
+				limit = { check_variable = { fotic_treasury > fotic_tmp } }
+				subtract_from_variable = { fotic_treasury = fotic_tmp }
+			}
+			else = {
+				subtract_from_temp_variable = { fotic_tmp = fotic_treasury }
+				set_variable = { fotic_treasury = 0 }
+				add_to_variable = { fotic_debt = fotic_tmp }
+			}
+		}
+
+		# --- 8. Debt interest (folds into next month's sticky baseline) ---
+		set_variable = { fotic_debt_interest = fotic_debt }
+		multiply_variable = { fotic_debt_interest = 0.01 }
+		add_to_variable = { fotic_budget_expense_sticky = fotic_debt_interest }
+
+		# --- 9. Business confidence: stability floor, debt/GDP penalty ---
+		set_variable = { fotic_business_confidence = stability }
+		multiply_variable = { fotic_business_confidence = 50 }
+		add_to_variable = { fotic_business_confidence = 50 }
+
+		set_temp_variable = { fotic_tmp2 = fotic_gdp }
+		if = {
+			limit = { check_variable = { fotic_tmp2 < 1 } }
+			set_temp_variable = { fotic_tmp2 = 1 }
+		}
+		set_temp_variable = { fotic_tmp = fotic_debt }
+		divide_temp_variable = { fotic_tmp = fotic_tmp2 }
+		multiply_temp_variable = { fotic_tmp = 20 }
+		# Cap the debt drag at 60 so confidence stays responsive to stability even at peak debt
+		if = {
+			limit = { check_variable = { fotic_tmp > 60 } }
+			set_temp_variable = { fotic_tmp = 60 }
+		}
+		subtract_from_variable = { fotic_business_confidence = fotic_tmp }
+
+		# --- 10. SOV-specific: only the price windfall above baseline (20) eases the supply crisis,
+		# capped so the mechanic stays safe regardless of the real resource_produced@oil magnitude ---
+		if = {
+			limit = { tag = SOV }
+			set_temp_variable = { fotic_tmp = fotic_oil_price }
+			subtract_from_temp_variable = { fotic_tmp = 20 }
+			multiply_temp_variable = { fotic_tmp = resource_produced@oil }
+			multiply_temp_variable = { fotic_tmp = 0.003 }
+			if = {
+				limit = { check_variable = { fotic_tmp > 4 } }
+				set_temp_variable = { fotic_tmp = 4 }
+			}
+			multiply_temp_variable = { fotic_tmp = -1 }
+			add_to_variable = { fotic_sov_deficit = fotic_tmp }
+			FOTIC_SOV_clamp_crisis_variables = yes
+			FOTIC_SOV_update_modifiers = yes
+		}
+
+		FOTIC_Economy_clamp_variables = yes
+		FOTIC_Economy_update_modifiers = yes
+	}
+
+	option = {
+		name = FOTIC_Economy.100.a
+	}
+}

@@ -1,0 +1,6 @@
+fotic_economy_state = {
+	enable = { always = yes }
+	stability_factor = fotic_econ_mod_stab
+	consumer_goods_factor = fotic_econ_mod_cg
+	political_power_factor = fotic_econ_mod_pp
+}
