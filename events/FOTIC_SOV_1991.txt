@@ -196,6 +196,7 @@ country_event = {
 		FOTIC_SOV_apply_law_monthly_drift = yes
 		FOTIC_SOV_clamp_crisis_variables = yes
 		FOTIC_SOV_update_modifiers = yes
+		FOTIC_SOV_update_scale_deltas = yes
 	}
 
 	option = {
@@ -491,12 +492,17 @@ country_event = {
 		if = {
 			limit = {
 				check_variable = { fotic_sov_russian_challenge < 55 }
+				check_variable = { fotic_pb_kgb_loyalty < 50 }
 				OR = {
 					AND = {
 						check_variable = { fotic_sov_kgb_influence > 50 }
 						check_variable = { fotic_sov_gkchp_risk > 50 }
 					}
 					has_country_flag = fotic_1991_yanayev_committee_possible
+					AND = {
+						check_variable = { fotic_pb_kgb_loyalty < 35 }
+						check_variable = { fotic_pb_army_loyalty < 45 }
+					}
 				}
 			}
 			set_country_flag = fotic_gkchp_succeeded

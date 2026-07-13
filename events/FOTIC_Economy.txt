@@ -24,7 +24,6 @@ country_event = {
 		set_variable = { fotic_debt_interest = 0 }
 		set_variable = { fotic_treasury = 0 }
 		set_variable = { fotic_business_confidence = 50 }
-		set_variable = { fotic_economy_window_flag = 0 }
 
 		FOTIC_Economy_update_modifiers = yes
 		add_dynamic_modifier = { modifier = fotic_economy_state }
@@ -41,9 +40,6 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		# --- 1. World oil price (Gulf Crisis Aug 1990 - Feb 1991 shock, fixed historical curve) ---
-		# Alt-history kill switch: setting global flag fotic_gulf_war_averted suppresses the whole shock.
-		# Phase B will move shock activation onto the actual invasion event chain instead of raw dates.
 		if = {
 			limit = {
 				date > 1990.7.31
@@ -77,22 +73,40 @@ country_event = {
 		}
 		FOTIC_Economy_clamp_variables = yes
 
-		# --- 2. GDP (factory-based proxy) ---
 		set_variable = { fotic_gdp = num_of_civilian_factories }
 		multiply_variable = { fotic_gdp = 3 }
 		set_temp_variable = { fotic_tmp = num_of_military_factories }
 		multiply_temp_variable = { fotic_tmp = 2 }
 		add_to_variable = { fotic_gdp = fotic_tmp }
 
-		# --- 3. Oil export revenue (works for any oil producer, not SOV-specific) ---
 		set_variable = { fotic_oil_revenue = resource_produced@oil }
 		multiply_variable = { fotic_oil_revenue = fotic_oil_price }
 		multiply_variable = { fotic_oil_revenue = 0.1 }
 
-		# --- 4. Budget income ---
 		set_variable = { fotic_budget_income = fotic_gdp }
 		multiply_variable = { fotic_budget_income = fotic_tax_rate }
 		add_to_variable = { fotic_budget_income = fotic_oil_revenue }
+
+		# SOV tax war: republics withhold union revenue as separatism and the Russian challenge grow.
+		# withhold = (separatism*0.6 + russian_challenge*0.4)/100 * 0.5, capped at 60 percent.
+		if = {
+			limit = { tag = SOV }
+			set_temp_variable = { fotic_tmp = fotic_sov_republican_separatism }
+			multiply_temp_variable = { fotic_tmp = 0.006 }
+			set_temp_variable = { fotic_tmp2 = fotic_sov_russian_challenge }
+			multiply_temp_variable = { fotic_tmp2 = 0.004 }
+			add_to_temp_variable = { fotic_tmp = fotic_tmp2 }
+			multiply_temp_variable = { fotic_tmp = 0.5 }
+			if = {
+				limit = { check_variable = { fotic_tmp > 0.6 } }
+				set_temp_variable = { fotic_tmp = 0.6 }
+			}
+			set_variable = { fotic_sov_econ_republic_withhold_pct = fotic_tmp }
+			multiply_variable = { fotic_sov_econ_republic_withhold_pct = 100 }
+			set_temp_variable = { fotic_tmp2 = 1 }
+			subtract_from_temp_variable = { fotic_tmp2 = fotic_tmp }
+			multiply_variable = { fotic_budget_income = fotic_tmp2 }
+		}
 
 		# --- 5. Sticky expenses: ratchet up instantly, decay slowly ---
 		set_temp_variable = { fotic_tmp = fotic_budget_income }
@@ -142,12 +156,10 @@ country_event = {
 			}
 		}
 
-		# --- 8. Debt interest (folds into next month's sticky baseline) ---
 		set_variable = { fotic_debt_interest = fotic_debt }
 		multiply_variable = { fotic_debt_interest = 0.01 }
 		add_to_variable = { fotic_budget_expense_sticky = fotic_debt_interest }
 
-		# --- 9. Business confidence: stability floor, debt/GDP penalty ---
 		set_variable = { fotic_business_confidence = stability }
 		multiply_variable = { fotic_business_confidence = 50 }
 		add_to_variable = { fotic_business_confidence = 50 }
@@ -160,15 +172,12 @@ country_event = {
 		set_temp_variable = { fotic_tmp = fotic_debt }
 		divide_temp_variable = { fotic_tmp = fotic_tmp2 }
 		multiply_temp_variable = { fotic_tmp = 20 }
-		# Cap the debt drag at 60 so confidence stays responsive to stability even at peak debt
 		if = {
 			limit = { check_variable = { fotic_tmp > 60 } }
 			set_temp_variable = { fotic_tmp = 60 }
 		}
 		subtract_from_variable = { fotic_business_confidence = fotic_tmp }
 
-		# --- 10. SOV-specific: only the price windfall above baseline (20) eases the supply crisis,
-		# capped so the mechanic stays safe regardless of the real resource_produced@oil magnitude ---
 		if = {
 			limit = { tag = SOV }
 			set_temp_variable = { fotic_tmp = fotic_oil_price }

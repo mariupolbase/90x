@@ -1,0 +1,73 @@
+FOTIC_SOV_update_scale_deltas = {
+	if = {
+		limit = { NOT = { has_country_flag = fotic_sov_prev_seeded } }
+		set_country_flag = fotic_sov_prev_seeded
+		set_variable = { fotic_sov_deficit_delta = 0 }
+		set_variable = { fotic_sov_deficit_prev = fotic_sov_deficit }
+		set_variable = { fotic_sov_black_market_delta = 0 }
+		set_variable = { fotic_sov_black_market_prev = fotic_sov_black_market }
+		set_variable = { fotic_sov_party_discipline_delta = 0 }
+		set_variable = { fotic_sov_party_discipline_prev = fotic_sov_party_discipline }
+		set_variable = { fotic_sov_reformist_influence_delta = 0 }
+		set_variable = { fotic_sov_reformist_influence_prev = fotic_sov_reformist_influence }
+		set_variable = { fotic_sov_conservative_pressure_delta = 0 }
+		set_variable = { fotic_sov_conservative_pressure_prev = fotic_sov_conservative_pressure }
+		set_variable = { fotic_sov_kgb_influence_delta = 0 }
+		set_variable = { fotic_sov_kgb_influence_prev = fotic_sov_kgb_influence }
+		set_variable = { fotic_sov_army_loyalty_delta = 0 }
+		set_variable = { fotic_sov_army_loyalty_prev = fotic_sov_army_loyalty }
+		set_variable = { fotic_sov_army_politicization_delta = 0 }
+		set_variable = { fotic_sov_army_politicization_prev = fotic_sov_army_politicization }
+		set_variable = { fotic_sov_republican_separatism_delta = 0 }
+		set_variable = { fotic_sov_republican_separatism_prev = fotic_sov_republican_separatism }
+		set_variable = { fotic_sov_russian_challenge_delta = 0 }
+		set_variable = { fotic_sov_russian_challenge_prev = fotic_sov_russian_challenge }
+		set_variable = { fotic_sov_union_treaty_progress_delta = 0 }
+		set_variable = { fotic_sov_union_treaty_progress_prev = fotic_sov_union_treaty_progress }
+		set_variable = { fotic_sov_street_pressure_delta = 0 }
+		set_variable = { fotic_sov_street_pressure_prev = fotic_sov_street_pressure }
+		set_variable = { fotic_sov_gkchp_risk_delta = 0 }
+		set_variable = { fotic_sov_gkchp_risk_prev = fotic_sov_gkchp_risk }
+	}
+	else = {
+		set_variable = { fotic_sov_deficit_delta = fotic_sov_deficit }
+		subtract_from_variable = { fotic_sov_deficit_delta = fotic_sov_deficit_prev }
+		set_variable = { fotic_sov_deficit_prev = fotic_sov_deficit }
+		set_variable = { fotic_sov_black_market_delta = fotic_sov_black_market }
+		subtract_from_variable = { fotic_sov_black_market_delta = fotic_sov_black_market_prev }
+		set_variable = { fotic_sov_black_market_prev = fotic_sov_black_market }
+		set_variable = { fotic_sov_party_discipline_delta = fotic_sov_party_discipline }
+		subtract_from_variable = { fotic_sov_party_discipline_delta = fotic_sov_party_discipline_prev }
+		set_variable = { fotic_sov_party_discipline_prev = fotic_sov_party_discipline }
+		set_variable = { fotic_sov_reformist_influence_delta = fotic_sov_reformist_influence }
+		subtract_from_variable = { fotic_sov_reformist_influence_delta = fotic_sov_reformist_influence_prev }
+		set_variable = { fotic_sov_reformist_influence_prev = fotic_sov_reformist_influence }
+		set_variable = { fotic_sov_conservative_pressure_delta = fotic_sov_conservative_pressure }
+		subtract_from_variable = { fotic_sov_conservative_pressure_delta = fotic_sov_conservative_pressure_prev }
+		set_variable = { fotic_sov_conservative_pressure_prev = fotic_sov_conservative_pressure }
+		set_variable = { fotic_sov_kgb_influence_delta = fotic_sov_kgb_influence }
+		subtract_from_variable = { fotic_sov_kgb_influence_delta = fotic_sov_kgb_influence_prev }
+		set_variable = { fotic_sov_kgb_influence_prev = fotic_sov_kgb_influence }
+		set_variable = { fotic_sov_army_loyalty_delta = fotic_sov_army_loyalty }
+		subtract_from_variable = { fotic_sov_army_loyalty_delta = fotic_sov_army_loyalty_prev }
+		set_variable = { fotic_sov_army_loyalty_prev = fotic_sov_army_loyalty }
+		set_variable = { fotic_sov_army_politicization_delta = fotic_sov_army_politicization }
+		subtract_from_variable = { fotic_sov_army_politicization_delta = fotic_sov_army_politicization_prev }
+		set_variable = { fotic_sov_army_politicization_prev = fotic_sov_army_politicization }
+		set_variable = { fotic_sov_republican_separatism_delta = fotic_sov_republican_separatism }
+		subtract_from_variable = { fotic_sov_republican_separatism_delta = fotic_sov_republican_separatism_prev }
+		set_variable = { fotic_sov_republican_separatism_prev = fotic_sov_republican_separatism }
+		set_variable = { fotic_sov_russian_challenge_delta = fotic_sov_russian_challenge }
+		subtract_from_variable = { fotic_sov_russian_challenge_delta = fotic_sov_russian_challenge_prev }
+		set_variable = { fotic_sov_russian_challenge_prev = fotic_sov_russian_challenge }
+		set_variable = { fotic_sov_union_treaty_progress_delta = fotic_sov_union_treaty_progress }
+		subtract_from_variable = { fotic_sov_union_treaty_progress_delta = fotic_sov_union_treaty_progress_prev }
+		set_variable = { fotic_sov_union_treaty_progress_prev = fotic_sov_union_treaty_progress }
+		set_variable = { fotic_sov_street_pressure_delta = fotic_sov_street_pressure }
+		subtract_from_variable = { fotic_sov_street_pressure_delta = fotic_sov_street_pressure_prev }
+		set_variable = { fotic_sov_street_pressure_prev = fotic_sov_street_pressure }
+		set_variable = { fotic_sov_gkchp_risk_delta = fotic_sov_gkchp_risk }
+		subtract_from_variable = { fotic_sov_gkchp_risk_delta = fotic_sov_gkchp_risk_prev }
+		set_variable = { fotic_sov_gkchp_risk_prev = fotic_sov_gkchp_risk }
+	}
+}

@@ -11,7 +11,17 @@ scripted_gui = {
 
 		effects = {
 			fotic_kremlin_open_button_click = {
-				set_variable = { fotic_kremlin_open = 1 }
+				if = {
+					limit = { check_variable = { fotic_kremlin_open = 1 } }
+					set_variable = { fotic_kremlin_open = 0 }
+				}
+				else = {
+					set_variable = { fotic_kremlin_open = 1 }
+					if = {
+						limit = { check_variable = { fotic_kremlin_tab = 0 } }
+						set_variable = { fotic_kremlin_tab = 1 }
+					}
+				}
 			}
 		}
 
@@ -20,9 +30,9 @@ scripted_gui = {
 		}
 	}
 
-	fotic_kremlin_window = {
+	fotic_kremlin_shell = {
 		context_type = player_context
-		window_name = "fotic_kremlin_window_container"
+		window_name = "fotic_kremlin_shell_container"
 
 		visible = {
 			tag = SOV
@@ -32,6 +42,145 @@ scripted_gui = {
 		effects = {
 			fotic_kremlin_close_button_click = {
 				set_variable = { fotic_kremlin_open = 0 }
+			}
+		}
+
+		ai_enabled = {
+			always = no
+		}
+	}
+
+	fotic_kremlin_pane_crisis = {
+		context_type = player_context
+		window_name = "fotic_kremlin_pane_crisis"
+
+		visible = {
+			tag = SOV
+			check_variable = { fotic_kremlin_open = 1 }
+			check_variable = { fotic_kremlin_tab = 1 }
+		}
+
+		effects = {
+			fotic_kremlin_c_tab2_click = { set_variable = { fotic_kremlin_tab = 2 } }
+			fotic_kremlin_c_tab3_click = { set_variable = { fotic_kremlin_tab = 3 } }
+			fotic_kremlin_c_tab4_click = { set_variable = { fotic_kremlin_tab = 4 } }
+		}
+
+		ai_enabled = {
+			always = no
+		}
+	}
+
+	fotic_kremlin_pane_econ = {
+		context_type = player_context
+		window_name = "fotic_kremlin_pane_econ"
+
+		visible = {
+			tag = SOV
+			check_variable = { fotic_kremlin_open = 1 }
+			check_variable = { fotic_kremlin_tab = 2 }
+		}
+
+		effects = {
+			fotic_kremlin_e_tab1_click = { set_variable = { fotic_kremlin_tab = 1 } }
+			fotic_kremlin_e_tab3_click = { set_variable = { fotic_kremlin_tab = 3 } }
+			fotic_kremlin_e_tab4_click = { set_variable = { fotic_kremlin_tab = 4 } }
+		}
+
+		ai_enabled = {
+			always = no
+		}
+	}
+
+	fotic_kremlin_pane_reps = {
+		context_type = player_context
+		window_name = "fotic_kremlin_pane_reps"
+
+		visible = {
+			tag = SOV
+			check_variable = { fotic_kremlin_open = 1 }
+			check_variable = { fotic_kremlin_tab = 3 }
+		}
+
+		effects = {
+			fotic_kremlin_r_tab1_click = { set_variable = { fotic_kremlin_tab = 1 } }
+			fotic_kremlin_r_tab2_click = { set_variable = { fotic_kremlin_tab = 2 } }
+			fotic_kremlin_r_tab4_click = { set_variable = { fotic_kremlin_tab = 4 } }
+		}
+
+		ai_enabled = {
+			always = no
+		}
+	}
+
+	fotic_kremlin_pane_acts = {
+		context_type = player_context
+		window_name = "fotic_kremlin_pane_acts"
+
+		visible = {
+			tag = SOV
+			check_variable = { fotic_kremlin_open = 1 }
+			check_variable = { fotic_kremlin_tab = 4 }
+		}
+
+		effects = {
+			fotic_kremlin_a_tab1_click = { set_variable = { fotic_kremlin_tab = 1 } }
+			fotic_kremlin_a_tab2_click = { set_variable = { fotic_kremlin_tab = 2 } }
+			fotic_kremlin_a_tab3_click = { set_variable = { fotic_kremlin_tab = 3 } }
+			fotic_kremlin_interdept_button_click = {
+				add_political_power = 5
+				set_country_flag = { flag = fotic_kremlin_interdept_cooldown days = 60 value = 1 }
+			}
+			fotic_kremlin_grain_button_click = {
+				subtract_from_variable = { fotic_sov_econ_hard_currency = 100 }
+				add_to_variable = { fotic_sov_deficit = -3 }
+				FOTIC_SOV_clamp_crisis_variables = yes
+				FOTIC_SOV_Economy_clamp_variables = yes
+				set_country_flag = { flag = fotic_card_grain_cooldown days = 180 value = 1 }
+			}
+			fotic_kremlin_consumer_button_click = {
+				subtract_from_variable = { fotic_sov_econ_hard_currency = 100 }
+				add_to_variable = { fotic_sov_black_market = -3 }
+				FOTIC_SOV_clamp_crisis_variables = yes
+				FOTIC_SOV_Economy_clamp_variables = yes
+				set_country_flag = { flag = fotic_card_consumer_cooldown days = 180 value = 1 }
+			}
+			fotic_kremlin_tech_button_click = {
+				subtract_from_variable = { fotic_sov_econ_hard_currency = 150 }
+				add_timed_idea = { idea = SOV_idea_western_tech_import days = 180 }
+				FOTIC_SOV_Economy_clamp_variables = yes
+				set_country_flag = { flag = fotic_card_tech_cooldown days = 180 value = 1 }
+			}
+			fotic_kremlin_gosplan_button_click = {
+				add_political_power = -50
+				country_event = { id = FOTIC_SOV_Economy.10 }
+				set_country_flag = { flag = fotic_card_gosplan_cooldown days = 365 value = 1 }
+			}
+		}
+
+		triggers = {
+			fotic_kremlin_interdept_button_click_enabled = {
+				NOT = { has_country_flag = fotic_kremlin_interdept_cooldown }
+			}
+			fotic_kremlin_grain_button_click_enabled = {
+				has_country_flag = fotic_sov_econ_initialized
+				check_variable = { fotic_sov_econ_hard_currency > 100 }
+				NOT = { has_country_flag = fotic_card_grain_cooldown }
+			}
+			fotic_kremlin_consumer_button_click_enabled = {
+				has_country_flag = fotic_sov_econ_initialized
+				check_variable = { fotic_sov_econ_hard_currency > 100 }
+				NOT = { has_country_flag = fotic_card_consumer_cooldown }
+			}
+			fotic_kremlin_tech_button_click_enabled = {
+				has_country_flag = fotic_sov_econ_initialized
+				check_variable = { fotic_sov_econ_hard_currency > 150 }
+				NOT = { has_country_flag = fotic_card_tech_cooldown }
+			}
+			fotic_kremlin_gosplan_button_click_enabled = {
+				has_country_flag = fotic_sov_econ_initialized
+				has_political_power > 49.99
+				NOT = { has_country_flag = fotic_card_gosplan_cooldown }
 			}
 		}
 

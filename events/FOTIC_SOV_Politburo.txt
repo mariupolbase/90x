@@ -1,0 +1,102 @@
+add_namespace = FOTIC_SOV_Politburo
+
+
+
+country_event = {
+	id = FOTIC_SOV_Politburo.1
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = SOV
+		NOT = { has_country_flag = fotic_pb_initialized }
+	}
+
+	immediate = {
+		set_country_flag = fotic_pb_initialized
+
+		set_variable = { fotic_pb_premier_holder = 1 }
+		set_variable = { fotic_pb_premier_loyalty = 65 }
+		set_variable = { fotic_pb_premier_influence = 70 }
+
+		set_variable = { fotic_pb_kgb_holder = 1 }
+		set_variable = { fotic_pb_kgb_loyalty = 55 }
+		set_variable = { fotic_pb_kgb_influence = 80 }
+
+		set_variable = { fotic_pb_army_holder = 1 }
+		set_variable = { fotic_pb_army_loyalty = 60 }
+		set_variable = { fotic_pb_army_influence = 65 }
+
+		set_variable = { fotic_pb_interior_holder = 1 }
+		set_variable = { fotic_pb_interior_loyalty = 85 }
+		set_variable = { fotic_pb_interior_influence = 50 }
+
+		set_variable = { fotic_pb_supsoviet_holder = 1 }
+		set_variable = { fotic_pb_supsoviet_loyalty = 70 }
+		set_variable = { fotic_pb_supsoviet_influence = 60 }
+
+		set_variable = { fotic_pb_ideology_holder = 1 }
+		set_variable = { fotic_pb_ideology_loyalty = 90 }
+		set_variable = { fotic_pb_ideology_influence = 55 }
+
+		set_variable = { fotic_pb_foreign_holder = 1 }
+		set_variable = { fotic_pb_foreign_loyalty = 85 }
+		set_variable = { fotic_pb_foreign_influence = 60 }
+
+		set_variable = { fotic_pb_vice_holder = 0 }
+		set_variable = { fotic_pb_vice_loyalty = 0 }
+		set_variable = { fotic_pb_vice_influence = 0 }
+	}
+
+	option = {
+		name = FOTIC_SOV_Politburo.1.a
+	}
+}
+
+country_event = {
+	id = FOTIC_SOV_Politburo.100
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				date > 1990.11.30
+				NOT = { has_country_flag = fotic_pb_dec90_done }
+			}
+			set_country_flag = fotic_pb_dec90_done
+			set_variable = { fotic_pb_interior_holder = 2 }
+			set_variable = { fotic_pb_interior_loyalty = 40 }
+			set_variable = { fotic_pb_interior_influence = 55 }
+			set_variable = { fotic_pb_vice_holder = 1 }
+			set_variable = { fotic_pb_vice_loyalty = 50 }
+			set_variable = { fotic_pb_vice_influence = 40 }
+		}
+		if = {
+			limit = {
+				has_country_flag = fotic_sov_ev80_fired
+				check_variable = { fotic_pb_foreign_holder = 1 }
+			}
+			set_variable = { fotic_pb_foreign_holder = 2 }
+			set_variable = { fotic_pb_foreign_loyalty = 70 }
+			set_variable = { fotic_pb_foreign_influence = 35 }
+		}
+		if = {
+			limit = {
+				date > 1991.1.13
+				NOT = { has_country_flag = fotic_pb_pavlov_done }
+			}
+			set_country_flag = fotic_pb_pavlov_done
+			set_variable = { fotic_pb_premier_holder = 2 }
+			set_variable = { fotic_pb_premier_loyalty = 55 }
+			set_variable = { fotic_pb_premier_influence = 60 }
+		}
+
+		FOTIC_PB_monthly_drift = yes
+		FOTIC_PB_clamp_variables = yes
+	}
+
+	option = {
+		name = FOTIC_SOV_Politburo.100.a
+	}
+}

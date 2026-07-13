@@ -1,13 +1,13 @@
 guiTypes = {
 	containerWindowType = {
 		name = "fotic_kremlin_topbar_container"
-		position = { x = 124 y = 38 }
+		position = { x = 90 y = 34 }
 		size = { width = 100%% height = 100%% }
 
 		buttonType = {
 			name = "fotic_kremlin_open_button"
 			position = { x = 976 y = -33 }
-			quadTextureSprite = "GFX_generic_box_96"
+			quadTextureSprite = "GFX_button_123x34_gray"
 			buttonText = "fotic_kremlin_button_text"
 			buttonFont = "hoi_16mbs"
 
@@ -19,9 +19,9 @@ guiTypes = {
 	}
 
 	containerWindowType = {
-		name = "fotic_kremlin_window_container"
-		position = { x = 560 y = 110 }
-		size = { width = 480 height = 300 }
+		name = "fotic_kremlin_shell_container"
+		position = { x = 560 y = 70 }
+		size = { width = 520 height = 700 }
 
 		background = {
 			name = "fotic_kremlin_bg"
@@ -44,7 +44,7 @@ guiTypes = {
 				font = "hoi_24header"
 				text = "fotic_kremlin_window_title"
 				format = left
-				maxWidth = 400
+				maxWidth = 440
 			}
 
 			buttonType = {
@@ -57,29 +57,505 @@ guiTypes = {
 				oversound = ui_menu_over
 			}
 		}
+	}
+
+	containerWindowType = {
+		name = "fotic_kremlin_pane_crisis"
+		position = { x = 574 y = 114 }
+		size = { width = 492 height = 646 }
+
+		buttonType = {
+			name = "fotic_kremlin_c_tab1"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_button_123x34_gray"
+			buttonText = "fotic_kremlin_tab_crisis_on"
+			buttonFont = "hoi_16mbs"
+		}
+		buttonType = {
+			name = "fotic_kremlin_c_tab2"
+			position = { x = 123 y = 0 }
+			quadTextureSprite = "GFX_button_123x34_gray"
+			buttonText = "fotic_kremlin_tab_econ"
+			buttonFont = "hoi_16mbs"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		buttonType = {
+			name = "fotic_kremlin_c_tab3"
+			position = { x = 246 y = 0 }
+			quadTextureSprite = "GFX_button_123x34_gray"
+			buttonText = "fotic_kremlin_tab_reps"
+			buttonFont = "hoi_16mbs"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		buttonType = {
+			name = "fotic_kremlin_c_tab4"
+			position = { x = 369 y = 0 }
+			quadTextureSprite = "GFX_button_123x34_gray"
+			buttonText = "fotic_kremlin_tab_acts"
+			buttonFont = "hoi_16mbs"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+
+		instantTextBoxType = {
+			name = "fotic_kremlin_summary_text"
+			position = { x = 0 y = 44 }
+			font = "hoi_18mbs"
+			text = "SOV_1990_union_crisis_category_desc"
+			format = left
+			maxWidth = 464
+			maxHeight = 596
+		}
+	}
+
+	containerWindowType = {
+		name = "fotic_kremlin_pane_econ"
+		position = { x = 574 y = 114 }
+		size = { width = 492 height = 646 }
+
+		buttonType = {
+			name = "fotic_kremlin_e_tab1"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_button_123x34_gray"
+			buttonText = "fotic_kremlin_tab_crisis"
+			buttonFont = "hoi_16mbs"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		buttonType = {
+			name = "fotic_kremlin_e_tab2"
+			position = { x = 123 y = 0 }
+			quadTextureSprite = "GFX_button_123x34_gray"
+			buttonText = "fotic_kremlin_tab_econ_on"
+			buttonFont = "hoi_16mbs"
+		}
+		buttonType = {
+			name = "fotic_kremlin_e_tab3"
+			position = { x = 246 y = 0 }
+			quadTextureSprite = "GFX_button_123x34_gray"
+			buttonText = "fotic_kremlin_tab_reps"
+			buttonFont = "hoi_16mbs"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		buttonType = {
+			name = "fotic_kremlin_e_tab4"
+			position = { x = 369 y = 0 }
+			quadTextureSprite = "GFX_button_123x34_gray"
+			buttonText = "fotic_kremlin_tab_acts"
+			buttonFont = "hoi_16mbs"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
 
 		containerWindowType = {
-			name = "fotic_kremlin_body"
-			position = { x = 14 y = 52 }
-			size = { width = 452 height = 240 }
-
+			name = "fotic_kremlin_kpi_1"
+			position = { x = 0 y = 44 }
+			size = { width = 114 height = 54 }
+			background = {
+				name = "fotic_kremlin_kpi_1_bg"
+				quadTextureSprite = "GFX_tiled_generic_bg_1"
+			}
 			instantTextBoxType = {
-				name = "fotic_kremlin_subtitle"
+				name = "fotic_kremlin_kpi_1_v"
 				position = { x = 0 y = 4 }
-				font = "hoi_18mbs"
-				text = "fotic_kremlin_window_subtitle"
-				format = left
-				maxWidth = 440
+				font = "hoi_24header"
+				text = "fotic_kremlin_kpi_treasury_v"
+				format = centre
+				maxWidth = 114
 			}
-
 			instantTextBoxType = {
-				name = "fotic_kremlin_sections_hint"
-				position = { x = 0 y = 40 }
-				font = "hoi_18mbs"
-				text = "fotic_kremlin_window_hint"
-				format = left
-				maxWidth = 440
+				name = "fotic_kremlin_kpi_1_l"
+				position = { x = 0 y = 34 }
+				font = "hoi_16mbs"
+				text = "fotic_kremlin_kpi_treasury_l"
+				format = centre
+				maxWidth = 114
 			}
+		}
+		containerWindowType = {
+			name = "fotic_kremlin_kpi_2"
+			position = { x = 126 y = 44 }
+			size = { width = 114 height = 54 }
+			background = {
+				name = "fotic_kremlin_kpi_2_bg"
+				quadTextureSprite = "GFX_tiled_generic_bg_1"
+			}
+			instantTextBoxType = {
+				name = "fotic_kremlin_kpi_2_v"
+				position = { x = 0 y = 4 }
+				font = "hoi_24header"
+				text = "fotic_kremlin_kpi_debt_v"
+				format = centre
+				maxWidth = 114
+			}
+			instantTextBoxType = {
+				name = "fotic_kremlin_kpi_2_l"
+				position = { x = 0 y = 34 }
+				font = "hoi_16mbs"
+				text = "fotic_kremlin_kpi_debt_l"
+				format = centre
+				maxWidth = 114
+			}
+		}
+		containerWindowType = {
+			name = "fotic_kremlin_kpi_3"
+			position = { x = 252 y = 44 }
+			size = { width = 114 height = 54 }
+			background = {
+				name = "fotic_kremlin_kpi_3_bg"
+				quadTextureSprite = "GFX_tiled_generic_bg_1"
+			}
+			instantTextBoxType = {
+				name = "fotic_kremlin_kpi_3_v"
+				position = { x = 0 y = 4 }
+				font = "hoi_24header"
+				text = "fotic_kremlin_kpi_conf_v"
+				format = centre
+				maxWidth = 114
+			}
+			instantTextBoxType = {
+				name = "fotic_kremlin_kpi_3_l"
+				position = { x = 0 y = 34 }
+				font = "hoi_16mbs"
+				text = "fotic_kremlin_kpi_conf_l"
+				format = centre
+				maxWidth = 114
+			}
+		}
+		containerWindowType = {
+			name = "fotic_kremlin_kpi_4"
+			position = { x = 378 y = 44 }
+			size = { width = 114 height = 54 }
+			background = {
+				name = "fotic_kremlin_kpi_4_bg"
+				quadTextureSprite = "GFX_tiled_generic_bg_1"
+			}
+			instantTextBoxType = {
+				name = "fotic_kremlin_kpi_4_v"
+				position = { x = 0 y = 4 }
+				font = "hoi_24header"
+				text = "fotic_kremlin_kpi_plan_v"
+				format = centre
+				maxWidth = 114
+			}
+			instantTextBoxType = {
+				name = "fotic_kremlin_kpi_4_l"
+				position = { x = 0 y = 34 }
+				font = "hoi_16mbs"
+				text = "fotic_kremlin_kpi_plan_l"
+				format = centre
+				maxWidth = 114
+			}
+		}
+
+		instantTextBoxType = {
+			name = "fotic_kremlin_econ_sect1"
+			position = { x = 0 y = 112 }
+			font = "hoi_18mbs"
+			text = "fotic_kremlin_econ_sect_national"
+			format = left
+			maxWidth = 464
+		}
+		instantTextBoxType = {
+			name = "fotic_kremlin_econ_gdp"
+			position = { x = 0 y = 140 }
+			font = "hoi_18mbs"
+			text = "fotic_econ_gdp_display_loc"
+			format = left
+			maxWidth = 464
+		}
+		instantTextBoxType = {
+			name = "fotic_kremlin_econ_oil_price"
+			position = { x = 0 y = 164 }
+			font = "hoi_18mbs"
+			text = "fotic_econ_oil_price_display_loc"
+			format = left
+			maxWidth = 464
+		}
+		instantTextBoxType = {
+			name = "fotic_kremlin_econ_oil_revenue"
+			position = { x = 0 y = 188 }
+			font = "hoi_18mbs"
+			text = "fotic_econ_oil_revenue_display_loc"
+			format = left
+			maxWidth = 464
+		}
+		instantTextBoxType = {
+			name = "fotic_kremlin_econ_income"
+			position = { x = 0 y = 212 }
+			font = "hoi_18mbs"
+			text = "fotic_econ_income_display_loc"
+			format = left
+			maxWidth = 464
+		}
+		instantTextBoxType = {
+			name = "fotic_kremlin_econ_expense"
+			position = { x = 0 y = 236 }
+			font = "hoi_18mbs"
+			text = "fotic_econ_expense_display_loc"
+			format = left
+			maxWidth = 464
+		}
+		instantTextBoxType = {
+			name = "fotic_kremlin_econ_balance"
+			position = { x = 0 y = 260 }
+			font = "hoi_18mbs"
+			text = "fotic_econ_balance_display_loc"
+			format = left
+			maxWidth = 464
+		}
+		instantTextBoxType = {
+			name = "fotic_kremlin_econ_withhold"
+			position = { x = 0 y = 284 }
+			font = "hoi_18mbs"
+			text = "fotic_kremlin_econ_withhold_display"
+			format = left
+			maxWidth = 464
+		}
+
+		instantTextBoxType = {
+			name = "fotic_kremlin_econ_sect2"
+			position = { x = 0 y = 320 }
+			font = "hoi_18mbs"
+			text = "fotic_kremlin_econ_sect_plan"
+			format = left
+			maxWidth = 464
+		}
+		instantTextBoxType = {
+			name = "fotic_kremlin_econ_plan"
+			position = { x = 0 y = 348 }
+			font = "hoi_18mbs"
+			text = "fotic_sov_econ_plan_display_loc"
+			format = left
+			maxWidth = 464
+		}
+		instantTextBoxType = {
+			name = "fotic_kremlin_econ_currency"
+			position = { x = 0 y = 372 }
+			font = "hoi_18mbs"
+			text = "fotic_sov_econ_hard_currency_display_loc"
+			format = left
+			maxWidth = 464
+		}
+
+		instantTextBoxType = {
+			name = "fotic_kremlin_econ_note"
+			position = { x = 0 y = 414 }
+			font = "hoi_16mbs"
+			text = "fotic_kremlin_econ_note"
+			format = left
+			maxWidth = 464
+			maxHeight = 60
+		}
+	}
+
+	containerWindowType = {
+		name = "fotic_kremlin_pane_reps"
+		position = { x = 574 y = 114 }
+		size = { width = 492 height = 646 }
+
+		buttonType = {
+			name = "fotic_kremlin_r_tab1"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_button_123x34_gray"
+			buttonText = "fotic_kremlin_tab_crisis"
+			buttonFont = "hoi_16mbs"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		buttonType = {
+			name = "fotic_kremlin_r_tab2"
+			position = { x = 123 y = 0 }
+			quadTextureSprite = "GFX_button_123x34_gray"
+			buttonText = "fotic_kremlin_tab_econ"
+			buttonFont = "hoi_16mbs"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		buttonType = {
+			name = "fotic_kremlin_r_tab3"
+			position = { x = 246 y = 0 }
+			quadTextureSprite = "GFX_button_123x34_gray"
+			buttonText = "fotic_kremlin_tab_reps_on"
+			buttonFont = "hoi_16mbs"
+		}
+		buttonType = {
+			name = "fotic_kremlin_r_tab4"
+			position = { x = 369 y = 0 }
+			quadTextureSprite = "GFX_button_123x34_gray"
+			buttonText = "fotic_kremlin_tab_acts"
+			buttonFont = "hoi_16mbs"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+
+		instantTextBoxType = {
+			name = "fotic_kremlin_reps_reserved"
+			position = { x = 0 y = 200 }
+			font = "hoi_18mbs"
+			text = "fotic_kremlin_reps_reserved"
+			format = centre
+			maxWidth = 464
+			maxHeight = 320
+		}
+	}
+
+	containerWindowType = {
+		name = "fotic_kremlin_pane_acts"
+		position = { x = 574 y = 114 }
+		size = { width = 492 height = 646 }
+
+		buttonType = {
+			name = "fotic_kremlin_a_tab1"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_button_123x34_gray"
+			buttonText = "fotic_kremlin_tab_crisis"
+			buttonFont = "hoi_16mbs"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		buttonType = {
+			name = "fotic_kremlin_a_tab2"
+			position = { x = 123 y = 0 }
+			quadTextureSprite = "GFX_button_123x34_gray"
+			buttonText = "fotic_kremlin_tab_econ"
+			buttonFont = "hoi_16mbs"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		buttonType = {
+			name = "fotic_kremlin_a_tab3"
+			position = { x = 246 y = 0 }
+			quadTextureSprite = "GFX_button_123x34_gray"
+			buttonText = "fotic_kremlin_tab_reps"
+			buttonFont = "hoi_16mbs"
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+		buttonType = {
+			name = "fotic_kremlin_a_tab4"
+			position = { x = 369 y = 0 }
+			quadTextureSprite = "GFX_button_123x34_gray"
+			buttonText = "fotic_kremlin_tab_acts_on"
+			buttonFont = "hoi_16mbs"
+		}
+
+		instantTextBoxType = {
+			name = "fotic_kremlin_acts_hint"
+			position = { x = 0 y = 50 }
+			font = "hoi_18mbs"
+			text = "fotic_kremlin_acts_hint"
+			format = left
+			maxWidth = 464
+			maxHeight = 40
+		}
+
+		buttonType = {
+			name = "fotic_kremlin_grain_button"
+			position = { x = 0 y = 100 }
+			quadTextureSprite = "GFX_button_221x34"
+			buttonText = "fotic_kremlin_grain_button_text"
+			buttonFont = "hoi_16mbs"
+
+			clicksound = click_default
+			oversound = ui_menu_over
+
+			pdx_tooltip = "fotic_kremlin_grain_button_tt"
+		}
+		instantTextBoxType = {
+			name = "fotic_kremlin_grain_caption"
+			position = { x = 2 y = 138 }
+			font = "hoi_16mbs"
+			text = "fotic_kremlin_grain_caption"
+			format = left
+			maxWidth = 464
+		}
+
+		buttonType = {
+			name = "fotic_kremlin_consumer_button"
+			position = { x = 0 y = 176 }
+			quadTextureSprite = "GFX_button_221x34"
+			buttonText = "fotic_kremlin_consumer_button_text"
+			buttonFont = "hoi_16mbs"
+
+			clicksound = click_default
+			oversound = ui_menu_over
+
+			pdx_tooltip = "fotic_kremlin_consumer_button_tt"
+		}
+		instantTextBoxType = {
+			name = "fotic_kremlin_consumer_caption"
+			position = { x = 2 y = 214 }
+			font = "hoi_16mbs"
+			text = "fotic_kremlin_consumer_caption"
+			format = left
+			maxWidth = 464
+		}
+
+		buttonType = {
+			name = "fotic_kremlin_tech_button"
+			position = { x = 0 y = 252 }
+			quadTextureSprite = "GFX_button_221x34"
+			buttonText = "fotic_kremlin_tech_button_text"
+			buttonFont = "hoi_16mbs"
+
+			clicksound = click_default
+			oversound = ui_menu_over
+
+			pdx_tooltip = "fotic_kremlin_tech_button_tt"
+		}
+		instantTextBoxType = {
+			name = "fotic_kremlin_tech_caption"
+			position = { x = 2 y = 290 }
+			font = "hoi_16mbs"
+			text = "fotic_kremlin_tech_caption"
+			format = left
+			maxWidth = 464
+		}
+
+		buttonType = {
+			name = "fotic_kremlin_gosplan_button"
+			position = { x = 0 y = 328 }
+			quadTextureSprite = "GFX_button_221x34"
+			buttonText = "fotic_kremlin_gosplan_button_text"
+			buttonFont = "hoi_16mbs"
+
+			clicksound = click_default
+			oversound = ui_menu_over
+
+			pdx_tooltip = "fotic_kremlin_gosplan_button_tt"
+		}
+		instantTextBoxType = {
+			name = "fotic_kremlin_gosplan_caption"
+			position = { x = 2 y = 366 }
+			font = "hoi_16mbs"
+			text = "fotic_kremlin_gosplan_caption"
+			format = left
+			maxWidth = 464
+		}
+
+		buttonType = {
+			name = "fotic_kremlin_interdept_button"
+			position = { x = 0 y = 404 }
+			quadTextureSprite = "GFX_button_221x34"
+			buttonText = "fotic_kremlin_interdept_button_text"
+			buttonFont = "hoi_16mbs"
+
+			clicksound = click_default
+			oversound = ui_menu_over
+
+			pdx_tooltip = "fotic_kremlin_interdept_button_tt"
+		}
+		instantTextBoxType = {
+			name = "fotic_kremlin_interdept_caption"
+			position = { x = 2 y = 442 }
+			font = "hoi_16mbs"
+			text = "fotic_kremlin_interdept_caption"
+			format = left
+			maxWidth = 464
 		}
 	}
 }

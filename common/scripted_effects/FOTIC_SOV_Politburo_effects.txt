@@ -1,0 +1,218 @@
+# Politburo monthly drift: personal loyalty erodes as the union crisis deepens.
+# All thresholds/rates live here so balance tuning stays in one place.
+# Mirrored by the python simulation in the dev scratchpad (pb_sim).
+
+FOTIC_PB_monthly_drift = {
+	# --- siloviki react to national breakdown ---
+	if = {
+		limit = { check_variable = { fotic_sov_deficit > 60 } }
+		add_to_variable = { fotic_pb_kgb_loyalty = -0.6 }
+		add_to_variable = { fotic_pb_interior_loyalty = -0.4 }
+	}
+	if = {
+		limit = { check_variable = { fotic_sov_republican_separatism > 60 } }
+		add_to_variable = { fotic_pb_kgb_loyalty = -0.5 }
+		add_to_variable = { fotic_pb_army_loyalty = -0.7 }
+	}
+	if = {
+		limit = { check_variable = { fotic_sov_street_pressure > 55 } }
+		add_to_variable = { fotic_pb_interior_loyalty = -0.8 }
+		add_to_variable = { fotic_pb_kgb_loyalty = -0.3 }
+		add_to_variable = { fotic_pb_army_loyalty = -0.3 }
+	}
+	if = {
+		limit = { check_variable = { fotic_sov_russian_challenge > 55 } }
+		add_to_variable = { fotic_pb_kgb_loyalty = -0.6 }
+	}
+	if = {
+		limit = { check_variable = { fotic_sov_army_politicization > 40 } }
+		add_to_variable = { fotic_pb_army_loyalty = -0.5 }
+	}
+	if = {
+		limit = { check_variable = { fotic_sov_gkchp_risk > 25 } }
+		add_to_variable = { fotic_pb_kgb_loyalty = -0.4 }
+		if = {
+			limit = { check_variable = { fotic_pb_vice_holder > 0 } }
+			add_to_variable = { fotic_pb_vice_loyalty = -0.5 }
+		}
+	}
+
+	# --- premier carries the economy ---
+	if = {
+		limit = { check_variable = { fotic_sov_econ_plan_fulfillment < 0.9 } }
+		add_to_variable = { fotic_pb_premier_loyalty = -0.8 }
+	}
+	if = {
+		limit = { check_variable = { fotic_sov_deficit > 65 } }
+		add_to_variable = { fotic_pb_premier_loyalty = -0.4 }
+	}
+
+	# --- Lukyanov drifts toward whoever holds real power ---
+	if = {
+		limit = { check_variable = { fotic_pb_kgb_loyalty < 50 } }
+		add_to_variable = { fotic_pb_supsoviet_loyalty = -0.5 }
+	}
+	if = {
+		limit = { check_variable = { fotic_sov_republican_separatism > 65 } }
+		add_to_variable = { fotic_pb_supsoviet_loyalty = -0.3 }
+	}
+
+	# --- reformers: loyal but squeezed out by the conservative wave ---
+	if = {
+		limit = { check_variable = { fotic_sov_conservative_pressure > 45 } }
+		add_to_variable = { fotic_pb_ideology_influence = -0.5 }
+		add_to_variable = { fotic_pb_foreign_loyalty = -0.3 }
+	}
+	if = {
+		limit = { check_variable = { fotic_sov_conservative_pressure > 55 } }
+		add_to_variable = { fotic_pb_ideology_influence = -0.3 }
+	}
+
+	# --- influence shifts with the security climate ---
+	if = {
+		limit = { check_variable = { fotic_sov_gkchp_risk > 20 } }
+		add_to_variable = { fotic_pb_kgb_influence = 0.3 }
+	}
+	if = {
+		limit = { check_variable = { fotic_sov_street_pressure > 55 } }
+		add_to_variable = { fotic_pb_army_influence = 0.2 }
+	}
+	if = {
+		limit = {
+			check_variable = { fotic_pb_vice_holder > 0 }
+			check_variable = { fotic_pb_kgb_influence > 85 }
+		}
+		add_to_variable = { fotic_pb_vice_influence = 0.4 }
+	}
+}
+
+FOTIC_PB_clamp_variables = {
+	if = {
+		limit = { check_variable = { fotic_pb_premier_loyalty > 100 } }
+		set_variable = { fotic_pb_premier_loyalty = 100 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_premier_loyalty < 0 } }
+		set_variable = { fotic_pb_premier_loyalty = 0 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_premier_influence > 100 } }
+		set_variable = { fotic_pb_premier_influence = 100 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_premier_influence < 0 } }
+		set_variable = { fotic_pb_premier_influence = 0 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_kgb_loyalty > 100 } }
+		set_variable = { fotic_pb_kgb_loyalty = 100 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_kgb_loyalty < 0 } }
+		set_variable = { fotic_pb_kgb_loyalty = 0 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_kgb_influence > 100 } }
+		set_variable = { fotic_pb_kgb_influence = 100 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_kgb_influence < 0 } }
+		set_variable = { fotic_pb_kgb_influence = 0 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_army_loyalty > 100 } }
+		set_variable = { fotic_pb_army_loyalty = 100 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_army_loyalty < 0 } }
+		set_variable = { fotic_pb_army_loyalty = 0 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_army_influence > 100 } }
+		set_variable = { fotic_pb_army_influence = 100 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_army_influence < 0 } }
+		set_variable = { fotic_pb_army_influence = 0 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_interior_loyalty > 100 } }
+		set_variable = { fotic_pb_interior_loyalty = 100 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_interior_loyalty < 0 } }
+		set_variable = { fotic_pb_interior_loyalty = 0 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_interior_influence > 100 } }
+		set_variable = { fotic_pb_interior_influence = 100 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_interior_influence < 0 } }
+		set_variable = { fotic_pb_interior_influence = 0 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_supsoviet_loyalty > 100 } }
+		set_variable = { fotic_pb_supsoviet_loyalty = 100 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_supsoviet_loyalty < 0 } }
+		set_variable = { fotic_pb_supsoviet_loyalty = 0 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_supsoviet_influence > 100 } }
+		set_variable = { fotic_pb_supsoviet_influence = 100 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_supsoviet_influence < 0 } }
+		set_variable = { fotic_pb_supsoviet_influence = 0 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_ideology_loyalty > 100 } }
+		set_variable = { fotic_pb_ideology_loyalty = 100 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_ideology_loyalty < 0 } }
+		set_variable = { fotic_pb_ideology_loyalty = 0 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_ideology_influence > 100 } }
+		set_variable = { fotic_pb_ideology_influence = 100 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_ideology_influence < 0 } }
+		set_variable = { fotic_pb_ideology_influence = 0 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_foreign_loyalty > 100 } }
+		set_variable = { fotic_pb_foreign_loyalty = 100 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_foreign_loyalty < 0 } }
+		set_variable = { fotic_pb_foreign_loyalty = 0 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_foreign_influence > 100 } }
+		set_variable = { fotic_pb_foreign_influence = 100 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_foreign_influence < 0 } }
+		set_variable = { fotic_pb_foreign_influence = 0 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_vice_loyalty > 100 } }
+		set_variable = { fotic_pb_vice_loyalty = 100 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_vice_loyalty < 0 } }
+		set_variable = { fotic_pb_vice_loyalty = 0 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_vice_influence > 100 } }
+		set_variable = { fotic_pb_vice_influence = 100 }
+	}
+	if = {
+		limit = { check_variable = { fotic_pb_vice_influence < 0 } }
+		set_variable = { fotic_pb_vice_influence = 0 }
+	}
+}

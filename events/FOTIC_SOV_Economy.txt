@@ -24,7 +24,6 @@ country_event = {
 		multiply_variable = { fotic_sov_econ_plan_target = 1.15 }
 
 		set_variable = { fotic_sov_econ_plan_fulfillment = 1 }
-		set_variable = { fotic_sov_econ_window_flag = 0 }
 		set_variable = { fotic_sov_econ_hard_currency = 0 }
 
 		FOTIC_SOV_Economy_clamp_variables = yes

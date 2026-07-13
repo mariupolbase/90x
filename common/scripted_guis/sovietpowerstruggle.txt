@@ -1,4 +1,3 @@
-# note to self fix after release formatting is aaaaaaaaaaaaaaaaaaaaaaaaaaaa -reimu
 scripted_gui = {
 
     ps_open_button = {
@@ -28,7 +27,6 @@ scripted_gui = {
         context_type = player_context
         parent_window_token = politics_tab
         window_name = "ps_screen_main"
-
         visible = {
 			has_country_flag = powerstruggle_open
         }

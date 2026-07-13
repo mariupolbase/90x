@@ -1,0 +1,282 @@
+defined_text = {
+	name = FOTIC_SOV_deficit_delta_txt
+	text = {
+		trigger = { check_variable = { fotic_sov_deficit_delta > 0.99 } }
+		localization_key = FOTIC_SOV_deficit_delta_up
+	}
+	text = {
+		trigger = { check_variable = { fotic_sov_deficit_delta < -0.99 } }
+		localization_key = FOTIC_SOV_deficit_delta_down
+	}
+	text = {
+		localization_key = FOTIC_empty_txt
+	}
+}
+
+defined_text = {
+	name = FOTIC_SOV_black_market_delta_txt
+	text = {
+		trigger = { check_variable = { fotic_sov_black_market_delta > 0.99 } }
+		localization_key = FOTIC_SOV_black_market_delta_up
+	}
+	text = {
+		trigger = { check_variable = { fotic_sov_black_market_delta < -0.99 } }
+		localization_key = FOTIC_SOV_black_market_delta_down
+	}
+	text = {
+		localization_key = FOTIC_empty_txt
+	}
+}
+
+defined_text = {
+	name = FOTIC_SOV_party_discipline_delta_txt
+	text = {
+		trigger = { check_variable = { fotic_sov_party_discipline_delta > 0.99 } }
+		localization_key = FOTIC_SOV_party_discipline_delta_up
+	}
+	text = {
+		trigger = { check_variable = { fotic_sov_party_discipline_delta < -0.99 } }
+		localization_key = FOTIC_SOV_party_discipline_delta_down
+	}
+	text = {
+		localization_key = FOTIC_empty_txt
+	}
+}
+
+defined_text = {
+	name = FOTIC_SOV_reformist_influence_delta_txt
+	text = {
+		trigger = { check_variable = { fotic_sov_reformist_influence_delta > 0.99 } }
+		localization_key = FOTIC_SOV_reformist_influence_delta_up
+	}
+	text = {
+		trigger = { check_variable = { fotic_sov_reformist_influence_delta < -0.99 } }
+		localization_key = FOTIC_SOV_reformist_influence_delta_down
+	}
+	text = {
+		localization_key = FOTIC_empty_txt
+	}
+}
+
+defined_text = {
+	name = FOTIC_SOV_conservative_pressure_delta_txt
+	text = {
+		trigger = { check_variable = { fotic_sov_conservative_pressure_delta > 0.99 } }
+		localization_key = FOTIC_SOV_conservative_pressure_delta_up
+	}
+	text = {
+		trigger = { check_variable = { fotic_sov_conservative_pressure_delta < -0.99 } }
+		localization_key = FOTIC_SOV_conservative_pressure_delta_down
+	}
+	text = {
+		localization_key = FOTIC_empty_txt
+	}
+}
+
+defined_text = {
+	name = FOTIC_SOV_kgb_influence_delta_txt
+	text = {
+		trigger = { check_variable = { fotic_sov_kgb_influence_delta > 0.99 } }
+		localization_key = FOTIC_SOV_kgb_influence_delta_up
+	}
+	text = {
+		trigger = { check_variable = { fotic_sov_kgb_influence_delta < -0.99 } }
+		localization_key = FOTIC_SOV_kgb_influence_delta_down
+	}
+	text = {
+		localization_key = FOTIC_empty_txt
+	}
+}
+
+defined_text = {
+	name = FOTIC_SOV_army_loyalty_delta_txt
+	text = {
+		trigger = { check_variable = { fotic_sov_army_loyalty_delta > 0.99 } }
+		localization_key = FOTIC_SOV_army_loyalty_delta_up
+	}
+	text = {
+		trigger = { check_variable = { fotic_sov_army_loyalty_delta < -0.99 } }
+		localization_key = FOTIC_SOV_army_loyalty_delta_down
+	}
+	text = {
+		localization_key = FOTIC_empty_txt
+	}
+}
+
+defined_text = {
+	name = FOTIC_SOV_army_politicization_delta_txt
+	text = {
+		trigger = { check_variable = { fotic_sov_army_politicization_delta > 0.99 } }
+		localization_key = FOTIC_SOV_army_politicization_delta_up
+	}
+	text = {
+		trigger = { check_variable = { fotic_sov_army_politicization_delta < -0.99 } }
+		localization_key = FOTIC_SOV_army_politicization_delta_down
+	}
+	text = {
+		localization_key = FOTIC_empty_txt
+	}
+}
+
+defined_text = {
+	name = FOTIC_SOV_republican_separatism_delta_txt
+	text = {
+		trigger = { check_variable = { fotic_sov_republican_separatism_delta > 0.99 } }
+		localization_key = FOTIC_SOV_republican_separatism_delta_up
+	}
+	text = {
+		trigger = { check_variable = { fotic_sov_republican_separatism_delta < -0.99 } }
+		localization_key = FOTIC_SOV_republican_separatism_delta_down
+	}
+	text = {
+		localization_key = FOTIC_empty_txt
+	}
+}
+
+defined_text = {
+	name = FOTIC_SOV_russian_challenge_delta_txt
+	text = {
+		trigger = { check_variable = { fotic_sov_russian_challenge_delta > 0.99 } }
+		localization_key = FOTIC_SOV_russian_challenge_delta_up
+	}
+	text = {
+		trigger = { check_variable = { fotic_sov_russian_challenge_delta < -0.99 } }
+		localization_key = FOTIC_SOV_russian_challenge_delta_down
+	}
+	text = {
+		localization_key = FOTIC_empty_txt
+	}
+}
+
+defined_text = {
+	name = FOTIC_SOV_union_treaty_progress_delta_txt
+	text = {
+		trigger = { check_variable = { fotic_sov_union_treaty_progress_delta > 0.99 } }
+		localization_key = FOTIC_SOV_union_treaty_progress_delta_up
+	}
+	text = {
+		trigger = { check_variable = { fotic_sov_union_treaty_progress_delta < -0.99 } }
+		localization_key = FOTIC_SOV_union_treaty_progress_delta_down
+	}
+	text = {
+		localization_key = FOTIC_empty_txt
+	}
+}
+
+defined_text = {
+	name = FOTIC_SOV_street_pressure_delta_txt
+	text = {
+		trigger = { check_variable = { fotic_sov_street_pressure_delta > 0.99 } }
+		localization_key = FOTIC_SOV_street_pressure_delta_up
+	}
+	text = {
+		trigger = { check_variable = { fotic_sov_street_pressure_delta < -0.99 } }
+		localization_key = FOTIC_SOV_street_pressure_delta_down
+	}
+	text = {
+		localization_key = FOTIC_empty_txt
+	}
+}
+
+defined_text = {
+	name = FOTIC_SOV_gkchp_risk_delta_txt
+	text = {
+		trigger = { check_variable = { fotic_sov_gkchp_risk_delta > 0.99 } }
+		localization_key = FOTIC_SOV_gkchp_risk_delta_up
+	}
+	text = {
+		trigger = { check_variable = { fotic_sov_gkchp_risk_delta < -0.99 } }
+		localization_key = FOTIC_SOV_gkchp_risk_delta_down
+	}
+	text = {
+		localization_key = FOTIC_empty_txt
+	}
+}
+
+defined_text = {
+	name = FOTIC_SOV_alert_deficit
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { fotic_sov_deficit_delta > 3.99 }
+				check_variable = { fotic_sov_deficit > 74.99 }
+			}
+		}
+		localization_key = FOTIC_SOV_alert_deficit_txt
+	}
+	text = {
+		localization_key = FOTIC_empty_txt
+	}
+}
+
+defined_text = {
+	name = FOTIC_SOV_alert_street
+	text = {
+		trigger = { check_variable = { fotic_sov_street_pressure > 59.99 } }
+		localization_key = FOTIC_SOV_alert_street_txt
+	}
+	text = {
+		localization_key = FOTIC_empty_txt
+	}
+}
+
+defined_text = {
+	name = FOTIC_SOV_alert_separatism
+	text = {
+		trigger = { check_variable = { fotic_sov_republican_separatism > 69.99 } }
+		localization_key = FOTIC_SOV_alert_separatism_txt
+	}
+	text = {
+		localization_key = FOTIC_empty_txt
+	}
+}
+
+defined_text = {
+	name = FOTIC_SOV_alert_gkchp
+	text = {
+		trigger = { check_variable = { fotic_sov_gkchp_risk > 49.99 } }
+		localization_key = FOTIC_SOV_alert_gkchp_txt
+	}
+	text = {
+		localization_key = FOTIC_empty_txt
+	}
+}
+
+defined_text = {
+	name = FOTIC_SOV_alert_treaty
+	text = {
+		trigger = {
+			check_variable = { fotic_sov_union_treaty_progress < 10.01 }
+			date > 1990.6.1
+		}
+		localization_key = FOTIC_SOV_alert_treaty_txt
+	}
+	text = {
+		localization_key = FOTIC_empty_txt
+	}
+}
+
+defined_text = {
+	name = FOTIC_SOV_alerts_ok
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					check_variable = { fotic_sov_deficit_delta > 3.99 }
+					check_variable = { fotic_sov_deficit > 74.99 }
+					check_variable = { fotic_sov_street_pressure > 59.99 }
+					check_variable = { fotic_sov_republican_separatism > 69.99 }
+					check_variable = { fotic_sov_gkchp_risk > 49.99 }
+					AND = {
+						check_variable = { fotic_sov_union_treaty_progress < 10.01 }
+						date > 1990.6.1
+					}
+				}
+			}
+		}
+		localization_key = FOTIC_SOV_alerts_ok_txt
+	}
+	text = {
+		localization_key = FOTIC_empty_txt
+	}
+}
